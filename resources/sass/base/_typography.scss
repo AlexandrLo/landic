@@ -1,0 +1,183 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+@mixin text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  font-feature-settings: "salt" on, "liga" off;
+}
+@mixin text-heading-1 {
+  /* Heading/H1 */
+  @extend .text;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 98px;
+}
+@mixin text-heading-2 {
+  /* Heading/H2 */
+  @extend .text;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+}
+@mixin text-heading-3 {
+  /* Heading/H3 */
+  @extend .text;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 54px;
+}
+@mixin text-heading-4 {
+  /* Heading/H4 */
+  @extend .text;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+}
+@mixin text-heading-5 {
+  /* Heading/H5 */
+  @extend .text;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+@mixin text-heading-6 {
+  /* Heading/H6 */
+  @extend .text;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+@mixin text-subtitle-1 {
+  /* Subtitle/Subtitle 1 */
+  @extend .text;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+@mixin text-subtitle-2 {
+  /* Subtitle/Subtitle 2 */
+  @extend .text;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+@mixin text-lead-1 {
+  /* Lead/Lead 1 */
+  @extend .text;
+  font-size: 18px;
+  line-height: 32px;
+}
+@mixin text-lead-2 {
+  /* Lead/Lead 2 */
+  @extend .text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+@mixin text-body-1 {
+  /* Body/Body 1 */
+  @extend .text;
+  font-size: 16px;
+  line-height: 26px;
+}
+@mixin text-body-2 {
+  /* Body/Body 2 */
+  @extend .text;
+  font-size: 14px;
+  line-height: 24px;
+}
+@mixin text-label-sm {
+  /* Label/Small Label */
+  @extend .text;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+@mixin text-label-md {
+  /* Label/Medium Label */
+  @extend .text;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+@mixin text-label-lg {
+  /* Label/Large Label */
+  @extend .text;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+@mixin text-default {
+  color: $gray-100;
+}
+@mixin text-primary {
+  color: $brand-400;
+}
+
+.text {
+  @include text;
+}
+.text-body-1 {
+  @include text-body-1;
+}
+.text-label-sm {
+  @include text-label-sm;
+}
+.text-label-md {
+  @include text-label-md;
+}
+.text-label-lg {
+  @include text-label-lg;
+}
+.text-lead-1 {
+  @include text-lead-1;
+}
+.text-lead-2 {
+  @include text-lead-2;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-default {
+  @include text-default;
+}
+.text-primary {
+  @include text-primary;
+}
+
+::selection {
+  background-color: transparentize($brand-400, 0.5);
+}
+body {
+  @include text-body-1;
+  @include text-default;
+}
+h1 {
+  @include text-heading-1;
+}
+h2 {
+  @include text-heading-2;
+}
+h3 {
+  @include text-heading-3;
+}
+h4 {
+  @include text-heading-4;
+}
+h5 {
+  @include text-heading-5;
+}
+h6 {
+  @include text-heading-6;
+}

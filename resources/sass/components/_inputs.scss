@@ -1,0 +1,124 @@
+@mixin input-box($bg) {
+  @include text-body-2;
+  color: $gray-100;
+  background: $bg;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 15px;
+  transition: $transition-duration ease all;
+
+  &.is-valid {
+    border-color: $success-400;
+    &:focus {
+      box-shadow: 0 0 0 4px transparentize($success-400, 0.6);
+    }
+    & ~ .validation-feedback {
+      @include text-body-2;
+      color: $success-400;
+      padding-left: 17px;
+      padding-top: 5px;
+    }
+  }
+  &.is-invalid {
+    border-color: $danger-400;
+    &:focus {
+      box-shadow: 0 0 0 4px transparentize($danger-400, 0.6);
+    }
+    & ~ .validation-feedback {
+      @include text-body-2;
+      color: $danger-400;
+      padding-left: 17px;
+      padding-top: 5px;
+    }
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px transparentize($brand-400, 0.6);
+  }
+  &:disabled {
+    color: transparentize($gray-300, 0.5);
+    background: transparentize($bg, 0.5);
+    border-color: transparent;
+    &::placeholder {
+      color: transparentize($gray-300, 0.6);
+    }
+    & ~ label.floating-label {
+      color: transparentize($gray-300, 0.5);
+    }
+  }
+  &::placeholder {
+    color: $gray-300;
+  }
+  // Hide cross button for webkit
+  &::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+  // Make webkit calendar button white
+  &::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+  // Remove input[type="number"] arrows
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  // Floating label input
+  .floating-input-group > & {
+    padding: 25px 15px 5px 15px;
+    // Minimize label when input is focused or filled
+    &:focus ~ label,
+    &:not(:placeholder-shown) ~ label {
+      @include text-label-sm;
+      transform: translateY(-0.4rem);
+    }
+  }
+}
+
+//* Text-like inputs
+input[type="text"],
+input[type="number"],
+input[type="url"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="search"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  @include input-box($background-300);
+  &.input-secondary {
+    @include input-box($background-600);
+  }
+}
+
+//* Other inputs
+input[type="file"] {
+  // TODO
+}
+input[type="radio"] {
+  // TODO
+}
+input[type="range"] {
+  // TODO
+}
+
+.floating-input-group {
+  position: relative;
+  height: 58px;
+  & > label {
+    @include text-body-2;
+    color: $gray-300;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 17px;
+    pointer-events: none;
+    transform-origin: 0 0;
+    transition: $transition-duration ease all;
+  }
+}

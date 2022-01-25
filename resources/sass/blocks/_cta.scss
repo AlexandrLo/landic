@@ -1,0 +1,19 @@
+.cta {
+  color: $gray-700;
+  background: $brand-400;
+}
+.cta-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0;
+}
+.cta-header {
+  @include text-heading-2;
+  max-width: 50rem;
+  text-align: center;
+  margin-bottom: 24px;
+}

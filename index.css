@@ -1,0 +1,1503 @@
+@import url("https://rsms.me/inter/inter.css");
+.p-0.p-0 {
+  padding: 0;
+}
+
+.m-0.m-0 {
+  margin: 0;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+.text, .cta-header, .hero-header, .navbar, .card-body, .card-title, .floating-input-group > label, .floating-input-group > input[type=text].input-secondary:focus ~ label, .floating-input-group > input[type=text].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=number].input-secondary:focus ~ label,
+.floating-input-group > input[type=number].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=url].input-secondary:focus ~ label,
+.floating-input-group > input[type=url].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=date].input-secondary:focus ~ label,
+.floating-input-group > input[type=date].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=datetime-local].input-secondary:focus ~ label,
+.floating-input-group > input[type=datetime-local].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=month].input-secondary:focus ~ label,
+.floating-input-group > input[type=month].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=week].input-secondary:focus ~ label,
+.floating-input-group > input[type=week].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=time].input-secondary:focus ~ label,
+.floating-input-group > input[type=time].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=search].input-secondary:focus ~ label,
+.floating-input-group > input[type=search].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=tel].input-secondary:focus ~ label,
+.floating-input-group > input[type=tel].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=email].input-secondary:focus ~ label,
+.floating-input-group > input[type=email].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=password].input-secondary:focus ~ label,
+.floating-input-group > input[type=password].input-secondary:not(:placeholder-shown) ~ label, input[type=text].input-secondary.is-invalid ~ .validation-feedback,
+input[type=number].input-secondary.is-invalid ~ .validation-feedback,
+input[type=url].input-secondary.is-invalid ~ .validation-feedback,
+input[type=date].input-secondary.is-invalid ~ .validation-feedback,
+input[type=datetime-local].input-secondary.is-invalid ~ .validation-feedback,
+input[type=month].input-secondary.is-invalid ~ .validation-feedback,
+input[type=week].input-secondary.is-invalid ~ .validation-feedback,
+input[type=time].input-secondary.is-invalid ~ .validation-feedback,
+input[type=search].input-secondary.is-invalid ~ .validation-feedback,
+input[type=tel].input-secondary.is-invalid ~ .validation-feedback,
+input[type=email].input-secondary.is-invalid ~ .validation-feedback,
+input[type=password].input-secondary.is-invalid ~ .validation-feedback, input[type=text].input-secondary.is-valid ~ .validation-feedback,
+input[type=number].input-secondary.is-valid ~ .validation-feedback,
+input[type=url].input-secondary.is-valid ~ .validation-feedback,
+input[type=date].input-secondary.is-valid ~ .validation-feedback,
+input[type=datetime-local].input-secondary.is-valid ~ .validation-feedback,
+input[type=month].input-secondary.is-valid ~ .validation-feedback,
+input[type=week].input-secondary.is-valid ~ .validation-feedback,
+input[type=time].input-secondary.is-valid ~ .validation-feedback,
+input[type=search].input-secondary.is-valid ~ .validation-feedback,
+input[type=tel].input-secondary.is-valid ~ .validation-feedback,
+input[type=email].input-secondary.is-valid ~ .validation-feedback,
+input[type=password].input-secondary.is-valid ~ .validation-feedback, input[type=text].input-secondary,
+input[type=number].input-secondary,
+input[type=url].input-secondary,
+input[type=date].input-secondary,
+input[type=datetime-local].input-secondary,
+input[type=month].input-secondary,
+input[type=week].input-secondary,
+input[type=time].input-secondary,
+input[type=search].input-secondary,
+input[type=tel].input-secondary,
+input[type=email].input-secondary,
+input[type=password].input-secondary, .floating-input-group > input[type=text]:focus ~ label, .floating-input-group > input[type=text]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=number]:focus ~ label,
+.floating-input-group > input[type=number]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=url]:focus ~ label,
+.floating-input-group > input[type=url]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=date]:focus ~ label,
+.floating-input-group > input[type=date]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=datetime-local]:focus ~ label,
+.floating-input-group > input[type=datetime-local]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=month]:focus ~ label,
+.floating-input-group > input[type=month]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=week]:focus ~ label,
+.floating-input-group > input[type=week]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=time]:focus ~ label,
+.floating-input-group > input[type=time]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=search]:focus ~ label,
+.floating-input-group > input[type=search]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=tel]:focus ~ label,
+.floating-input-group > input[type=tel]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=email]:focus ~ label,
+.floating-input-group > input[type=email]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=password]:focus ~ label,
+.floating-input-group > input[type=password]:not(:placeholder-shown) ~ label, input[type=text].is-invalid ~ .validation-feedback,
+input[type=number].is-invalid ~ .validation-feedback,
+input[type=url].is-invalid ~ .validation-feedback,
+input[type=date].is-invalid ~ .validation-feedback,
+input[type=datetime-local].is-invalid ~ .validation-feedback,
+input[type=month].is-invalid ~ .validation-feedback,
+input[type=week].is-invalid ~ .validation-feedback,
+input[type=time].is-invalid ~ .validation-feedback,
+input[type=search].is-invalid ~ .validation-feedback,
+input[type=tel].is-invalid ~ .validation-feedback,
+input[type=email].is-invalid ~ .validation-feedback,
+input[type=password].is-invalid ~ .validation-feedback, input[type=text].is-valid ~ .validation-feedback,
+input[type=number].is-valid ~ .validation-feedback,
+input[type=url].is-valid ~ .validation-feedback,
+input[type=date].is-valid ~ .validation-feedback,
+input[type=datetime-local].is-valid ~ .validation-feedback,
+input[type=month].is-valid ~ .validation-feedback,
+input[type=week].is-valid ~ .validation-feedback,
+input[type=time].is-valid ~ .validation-feedback,
+input[type=search].is-valid ~ .validation-feedback,
+input[type=tel].is-valid ~ .validation-feedback,
+input[type=email].is-valid ~ .validation-feedback,
+input[type=password].is-valid ~ .validation-feedback, input[type=text],
+input[type=number],
+input[type=url],
+input[type=date],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=search],
+input[type=tel],
+input[type=email],
+input[type=password], input[type=button].btn-lg.btn-icon,
+input[type=reset].btn-lg.btn-icon,
+input[type=submit].btn-lg.btn-icon,
+button.btn-lg.btn-icon, input[type=button].btn-md.btn-icon,
+input[type=reset].btn-md.btn-icon,
+input[type=submit].btn-md.btn-icon,
+button.btn-md.btn-icon, input[type=button].btn-sm.btn-icon,
+input[type=reset].btn-sm.btn-icon,
+input[type=submit].btn-sm.btn-icon,
+button.btn-sm.btn-icon, input[type=button].btn-lg,
+input[type=reset].btn-lg,
+input[type=submit].btn-lg,
+button.btn-lg, input[type=button].btn-sm,
+input[type=reset].btn-sm,
+input[type=submit].btn-sm,
+button.btn-sm, input[type=button],
+input[type=reset],
+input[type=submit],
+button, h6, h5, h4, h3, h2, h1, body, .text-lead-2, .text-lead-1, .text-label-lg, .text-label-md, .text-label-sm, .text-body-1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  font-feature-settings: "salt" on, "liga" off;
+}
+
+.text-body-1 {
+  /* Body/Body 1 */
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.text-label-sm {
+  /* Label/Small Label */
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text-label-md {
+  /* Label/Medium Label */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.text-label-lg {
+  /* Label/Large Label */
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.text-lead-1 {
+  /* Lead/Lead 1 */
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.text-lead-2 {
+  /* Lead/Lead 2 */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-default {
+  color: #ffffff;
+}
+
+.text-primary {
+  color: #ffd400;
+}
+
+::selection {
+  background-color: rgba(255, 212, 0, 0.5);
+}
+
+body {
+  /* Body/Body 1 */
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+h1 {
+  /* Heading/H1 */
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 98px;
+}
+
+h2 {
+  /* Heading/H2 */
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+h3 {
+  /* Heading/H3 */
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+h4 {
+  /* Heading/H4 */
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+h5 {
+  /* Heading/H5 */
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h6 {
+  /* Heading/H6 */
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+body {
+  margin: 0;
+  background: #312e38;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 26px;
+}
+
+input[type=button],
+input[type=reset],
+input[type=submit],
+button {
+  /* Label/Medium Label */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  background: #ffd400;
+  border: none;
+  border-radius: 1000px;
+  margin: 4px;
+  padding: 10px 20px;
+  transition: 100ms ease all;
+}
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover,
+button:hover {
+  box-shadow: 0 0 0 4px rgba(255, 212, 0, 0.4);
+}
+input[type=button]:active,
+input[type=reset]:active,
+input[type=submit]:active,
+button:active {
+  color: #292929;
+  background: #ffee99;
+}
+input[type=button]:disabled,
+input[type=reset]:disabled,
+input[type=submit]:disabled,
+button:disabled {
+  color: #000000;
+  background: #997f00;
+  box-shadow: none;
+}
+input[type=button].btn-sm,
+input[type=reset].btn-sm,
+input[type=submit].btn-sm,
+button.btn-sm {
+  /* Label/Small Label */
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 6px 12px;
+}
+input[type=button].btn-lg,
+input[type=reset].btn-lg,
+input[type=submit].btn-lg,
+button.btn-lg {
+  /* Label/Large Label */
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 12px 32px;
+}
+input[type=button].btn-secondary,
+input[type=reset].btn-secondary,
+input[type=submit].btn-secondary,
+button.btn-secondary {
+  color: #000000;
+  background: #ffffff;
+}
+input[type=button].btn-secondary:hover,
+input[type=reset].btn-secondary:hover,
+input[type=submit].btn-secondary:hover,
+button.btn-secondary:hover {
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.4);
+}
+input[type=button].btn-secondary:active,
+input[type=reset].btn-secondary:active,
+input[type=submit].btn-secondary:active,
+button.btn-secondary:active {
+  color: #545454;
+  background: #d4d4d4;
+}
+input[type=button].btn-secondary:disabled,
+input[type=reset].btn-secondary:disabled,
+input[type=submit].btn-secondary:disabled,
+button.btn-secondary:disabled {
+  color: #000000;
+  background: #808080;
+  box-shadow: none;
+}
+input[type=button].btn-success,
+input[type=reset].btn-success,
+input[type=submit].btn-success,
+button.btn-success {
+  color: #000000;
+  background: #2dd287;
+}
+input[type=button].btn-success:hover,
+input[type=reset].btn-success:hover,
+input[type=submit].btn-success:hover,
+button.btn-success:hover {
+  box-shadow: 0 0 0 4px rgba(45, 210, 135, 0.4);
+}
+input[type=button].btn-success:active,
+input[type=reset].btn-success:active,
+input[type=submit].btn-success:active,
+button.btn-success:active {
+  color: #545454;
+  background: #abedcf;
+}
+input[type=button].btn-success:disabled,
+input[type=reset].btn-success:disabled,
+input[type=submit].btn-success:disabled,
+button.btn-success:disabled {
+  color: #000000;
+  background: #1b7e51;
+}
+input[type=button].btn-warning,
+input[type=reset].btn-warning,
+input[type=submit].btn-warning,
+button.btn-warning {
+  color: #000000;
+  background: #ff9900;
+}
+input[type=button].btn-warning:hover,
+input[type=reset].btn-warning:hover,
+input[type=submit].btn-warning:hover,
+button.btn-warning:hover {
+  box-shadow: 0 0 0 4px rgba(255, 153, 0, 0.4);
+}
+input[type=button].btn-warning:active,
+input[type=reset].btn-warning:active,
+input[type=submit].btn-warning:active,
+button.btn-warning:active {
+  color: #545454;
+  background: #ffd699;
+}
+input[type=button].btn-warning:disabled,
+input[type=reset].btn-warning:disabled,
+input[type=submit].btn-warning:disabled,
+button.btn-warning:disabled {
+  color: #000000;
+  background: #995c00;
+}
+input[type=button].btn-danger,
+input[type=reset].btn-danger,
+input[type=submit].btn-danger,
+button.btn-danger {
+  color: #000000;
+  background: #d92626;
+}
+input[type=button].btn-danger:hover,
+input[type=reset].btn-danger:hover,
+input[type=submit].btn-danger:hover,
+button.btn-danger:hover {
+  box-shadow: 0 0 0 4px rgba(217, 38, 38, 0.4);
+}
+input[type=button].btn-danger:active,
+input[type=reset].btn-danger:active,
+input[type=submit].btn-danger:active,
+button.btn-danger:active {
+  color: #000000;
+  background: #f0a8a8;
+}
+input[type=button].btn-danger:disabled,
+input[type=reset].btn-danger:disabled,
+input[type=submit].btn-danger:disabled,
+button.btn-danger:disabled {
+  color: #000000;
+  background: #821717;
+}
+input[type=button].btn-transparent,
+input[type=reset].btn-transparent,
+input[type=submit].btn-transparent,
+button.btn-transparent {
+  color: #ffd400;
+  background: transparent;
+  box-shadow: none;
+}
+input[type=button].btn-transparent:hover,
+input[type=reset].btn-transparent:hover,
+input[type=submit].btn-transparent:hover,
+button.btn-transparent:hover {
+  color: #ffd400;
+  background: rgba(255, 255, 255, 0.2);
+  border-color: transparent;
+}
+input[type=button].btn-transparent:active,
+input[type=reset].btn-transparent:active,
+input[type=submit].btn-transparent:active,
+button.btn-transparent:active {
+  color: #ffd400;
+  background: rgba(255, 255, 255, 0.4);
+  border-color: transparent;
+}
+input[type=button].btn-transparent:disabled,
+input[type=reset].btn-transparent:disabled,
+input[type=submit].btn-transparent:disabled,
+button.btn-transparent:disabled {
+  color: #997f00;
+  background: transparent;
+}
+input[type=button].btn-outline, input[type=button].btn-outline-primary,
+input[type=reset].btn-outline,
+input[type=reset].btn-outline-primary,
+input[type=submit].btn-outline,
+input[type=submit].btn-outline-primary,
+button.btn-outline,
+button.btn-outline-primary {
+  color: #ffd400;
+  background: transparent;
+  border: 2px solid #ffd400;
+  box-shadow: none;
+}
+input[type=button].btn-outline:hover, input[type=button].btn-outline-primary:hover,
+input[type=reset].btn-outline:hover,
+input[type=reset].btn-outline-primary:hover,
+input[type=submit].btn-outline:hover,
+input[type=submit].btn-outline-primary:hover,
+button.btn-outline:hover,
+button.btn-outline-primary:hover {
+  color: #ffd400;
+  border-color: #ffd400;
+  background: rgba(255, 212, 0, 0.2);
+}
+input[type=button].btn-outline:active, input[type=button].btn-outline-primary:active,
+input[type=reset].btn-outline:active,
+input[type=reset].btn-outline-primary:active,
+input[type=submit].btn-outline:active,
+input[type=submit].btn-outline-primary:active,
+button.btn-outline:active,
+button.btn-outline-primary:active {
+  color: #ffd400;
+  border-color: #ffd400;
+  background: rgba(255, 212, 0, 0.4);
+}
+input[type=button].btn-outline:disabled, input[type=button].btn-outline-primary:disabled,
+input[type=reset].btn-outline:disabled,
+input[type=reset].btn-outline-primary:disabled,
+input[type=submit].btn-outline:disabled,
+input[type=submit].btn-outline-primary:disabled,
+button.btn-outline:disabled,
+button.btn-outline-primary:disabled {
+  color: #997f00;
+  border-color: #997f00;
+  background: transparent;
+}
+input[type=button].btn-outline-secondary,
+input[type=reset].btn-outline-secondary,
+input[type=submit].btn-outline-secondary,
+button.btn-outline-secondary {
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  box-shadow: none;
+}
+input[type=button].btn-outline-secondary:hover,
+input[type=reset].btn-outline-secondary:hover,
+input[type=submit].btn-outline-secondary:hover,
+button.btn-outline-secondary:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+}
+input[type=button].btn-outline-secondary:active,
+input[type=reset].btn-outline-secondary:active,
+input[type=submit].btn-outline-secondary:active,
+button.btn-outline-secondary:active {
+  color: #ffffff;
+  border-color: #ffffff;
+  background: rgba(255, 255, 255, 0.4);
+}
+input[type=button].btn-outline-secondary:disabled,
+input[type=reset].btn-outline-secondary:disabled,
+input[type=submit].btn-outline-secondary:disabled,
+button.btn-outline-secondary:disabled {
+  color: #808080;
+  border-color: #808080;
+  background: transparent;
+}
+input[type=button].btn-outline-success,
+input[type=reset].btn-outline-success,
+input[type=submit].btn-outline-success,
+button.btn-outline-success {
+  color: #2dd287;
+  background: transparent;
+  border: 2px solid #2dd287;
+  box-shadow: none;
+}
+input[type=button].btn-outline-success:hover,
+input[type=reset].btn-outline-success:hover,
+input[type=submit].btn-outline-success:hover,
+button.btn-outline-success:hover {
+  color: #2dd287;
+  border-color: #2dd287;
+  background: rgba(45, 210, 135, 0.2);
+}
+input[type=button].btn-outline-success:active,
+input[type=reset].btn-outline-success:active,
+input[type=submit].btn-outline-success:active,
+button.btn-outline-success:active {
+  color: #2dd287;
+  border-color: #2dd287;
+  background: rgba(45, 210, 135, 0.4);
+}
+input[type=button].btn-outline-success:disabled,
+input[type=reset].btn-outline-success:disabled,
+input[type=submit].btn-outline-success:disabled,
+button.btn-outline-success:disabled {
+  color: #1b7e51;
+  border-color: #1b7e51;
+  background: transparent;
+}
+input[type=button].btn-outline-warning,
+input[type=reset].btn-outline-warning,
+input[type=submit].btn-outline-warning,
+button.btn-outline-warning {
+  color: #ff9900;
+  background: transparent;
+  border: 2px solid #ff9900;
+  box-shadow: none;
+}
+input[type=button].btn-outline-warning:hover,
+input[type=reset].btn-outline-warning:hover,
+input[type=submit].btn-outline-warning:hover,
+button.btn-outline-warning:hover {
+  color: #ff9900;
+  border-color: #ff9900;
+  background: rgba(255, 153, 0, 0.2);
+}
+input[type=button].btn-outline-warning:active,
+input[type=reset].btn-outline-warning:active,
+input[type=submit].btn-outline-warning:active,
+button.btn-outline-warning:active {
+  color: #ff9900;
+  border-color: #ff9900;
+  background: rgba(255, 153, 0, 0.4);
+}
+input[type=button].btn-outline-warning:disabled,
+input[type=reset].btn-outline-warning:disabled,
+input[type=submit].btn-outline-warning:disabled,
+button.btn-outline-warning:disabled {
+  color: #995c00;
+  border-color: #995c00;
+  background: transparent;
+}
+input[type=button].btn-outline-danger,
+input[type=reset].btn-outline-danger,
+input[type=submit].btn-outline-danger,
+button.btn-outline-danger {
+  color: #d92626;
+  background: transparent;
+  border: 2px solid #d92626;
+  box-shadow: none;
+}
+input[type=button].btn-outline-danger:hover,
+input[type=reset].btn-outline-danger:hover,
+input[type=submit].btn-outline-danger:hover,
+button.btn-outline-danger:hover {
+  color: #d92626;
+  border-color: #d92626;
+  background: rgba(217, 38, 38, 0.2);
+}
+input[type=button].btn-outline-danger:active,
+input[type=reset].btn-outline-danger:active,
+input[type=submit].btn-outline-danger:active,
+button.btn-outline-danger:active {
+  color: #d92626;
+  border-color: #d92626;
+  background: rgba(217, 38, 38, 0.4);
+}
+input[type=button].btn-outline-danger:disabled,
+input[type=reset].btn-outline-danger:disabled,
+input[type=submit].btn-outline-danger:disabled,
+button.btn-outline-danger:disabled {
+  color: #821717;
+  border-color: #821717;
+  background: transparent;
+}
+input[type=button].btn-sm.btn-icon,
+input[type=reset].btn-sm.btn-icon,
+input[type=submit].btn-sm.btn-icon,
+button.btn-sm.btn-icon {
+  /* Label/Small Label */
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  font-size: 16px;
+  padding: 6px;
+}
+input[type=button].btn-md.btn-icon,
+input[type=reset].btn-md.btn-icon,
+input[type=submit].btn-md.btn-icon,
+button.btn-md.btn-icon {
+  /* Label/Medium Label */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-size: 20px;
+  padding: 10px;
+}
+input[type=button].btn-lg.btn-icon,
+input[type=reset].btn-lg.btn-icon,
+input[type=submit].btn-lg.btn-icon,
+button.btn-lg.btn-icon {
+  /* Label/Large Label */
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  font-size: 26px;
+  padding: 12px;
+}
+
+input[type=text],
+input[type=number],
+input[type=url],
+input[type=date],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=search],
+input[type=tel],
+input[type=email],
+input[type=password] {
+  /* Body/Body 2 */
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #494554;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 15px;
+  transition: 100ms ease all;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+input[type=text].is-valid,
+input[type=number].is-valid,
+input[type=url].is-valid,
+input[type=date].is-valid,
+input[type=datetime-local].is-valid,
+input[type=month].is-valid,
+input[type=week].is-valid,
+input[type=time].is-valid,
+input[type=search].is-valid,
+input[type=tel].is-valid,
+input[type=email].is-valid,
+input[type=password].is-valid {
+  border-color: #2dd287;
+}
+input[type=text].is-valid:focus,
+input[type=number].is-valid:focus,
+input[type=url].is-valid:focus,
+input[type=date].is-valid:focus,
+input[type=datetime-local].is-valid:focus,
+input[type=month].is-valid:focus,
+input[type=week].is-valid:focus,
+input[type=time].is-valid:focus,
+input[type=search].is-valid:focus,
+input[type=tel].is-valid:focus,
+input[type=email].is-valid:focus,
+input[type=password].is-valid:focus {
+  box-shadow: 0 0 0 4px rgba(45, 210, 135, 0.4);
+}
+input[type=text].is-valid ~ .validation-feedback,
+input[type=number].is-valid ~ .validation-feedback,
+input[type=url].is-valid ~ .validation-feedback,
+input[type=date].is-valid ~ .validation-feedback,
+input[type=datetime-local].is-valid ~ .validation-feedback,
+input[type=month].is-valid ~ .validation-feedback,
+input[type=week].is-valid ~ .validation-feedback,
+input[type=time].is-valid ~ .validation-feedback,
+input[type=search].is-valid ~ .validation-feedback,
+input[type=tel].is-valid ~ .validation-feedback,
+input[type=email].is-valid ~ .validation-feedback,
+input[type=password].is-valid ~ .validation-feedback {
+  /* Body/Body 2 */
+  font-size: 14px;
+  line-height: 24px;
+  color: #2dd287;
+  padding-left: 17px;
+  padding-top: 5px;
+}
+input[type=text].is-invalid,
+input[type=number].is-invalid,
+input[type=url].is-invalid,
+input[type=date].is-invalid,
+input[type=datetime-local].is-invalid,
+input[type=month].is-invalid,
+input[type=week].is-invalid,
+input[type=time].is-invalid,
+input[type=search].is-invalid,
+input[type=tel].is-invalid,
+input[type=email].is-invalid,
+input[type=password].is-invalid {
+  border-color: #d92626;
+}
+input[type=text].is-invalid:focus,
+input[type=number].is-invalid:focus,
+input[type=url].is-invalid:focus,
+input[type=date].is-invalid:focus,
+input[type=datetime-local].is-invalid:focus,
+input[type=month].is-invalid:focus,
+input[type=week].is-invalid:focus,
+input[type=time].is-invalid:focus,
+input[type=search].is-invalid:focus,
+input[type=tel].is-invalid:focus,
+input[type=email].is-invalid:focus,
+input[type=password].is-invalid:focus {
+  box-shadow: 0 0 0 4px rgba(217, 38, 38, 0.4);
+}
+input[type=text].is-invalid ~ .validation-feedback,
+input[type=number].is-invalid ~ .validation-feedback,
+input[type=url].is-invalid ~ .validation-feedback,
+input[type=date].is-invalid ~ .validation-feedback,
+input[type=datetime-local].is-invalid ~ .validation-feedback,
+input[type=month].is-invalid ~ .validation-feedback,
+input[type=week].is-invalid ~ .validation-feedback,
+input[type=time].is-invalid ~ .validation-feedback,
+input[type=search].is-invalid ~ .validation-feedback,
+input[type=tel].is-invalid ~ .validation-feedback,
+input[type=email].is-invalid ~ .validation-feedback,
+input[type=password].is-invalid ~ .validation-feedback {
+  /* Body/Body 2 */
+  font-size: 14px;
+  line-height: 24px;
+  color: #d92626;
+  padding-left: 17px;
+  padding-top: 5px;
+}
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=url]:focus,
+input[type=date]:focus,
+input[type=datetime-local]:focus,
+input[type=month]:focus,
+input[type=week]:focus,
+input[type=time]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 212, 0, 0.4);
+}
+input[type=text]:disabled,
+input[type=number]:disabled,
+input[type=url]:disabled,
+input[type=date]:disabled,
+input[type=datetime-local]:disabled,
+input[type=month]:disabled,
+input[type=week]:disabled,
+input[type=time]:disabled,
+input[type=search]:disabled,
+input[type=tel]:disabled,
+input[type=email]:disabled,
+input[type=password]:disabled {
+  color: rgba(168, 168, 168, 0.5);
+  background: rgba(73, 69, 84, 0.5);
+  border-color: transparent;
+}
+input[type=text]:disabled::placeholder,
+input[type=number]:disabled::placeholder,
+input[type=url]:disabled::placeholder,
+input[type=date]:disabled::placeholder,
+input[type=datetime-local]:disabled::placeholder,
+input[type=month]:disabled::placeholder,
+input[type=week]:disabled::placeholder,
+input[type=time]:disabled::placeholder,
+input[type=search]:disabled::placeholder,
+input[type=tel]:disabled::placeholder,
+input[type=email]:disabled::placeholder,
+input[type=password]:disabled::placeholder {
+  color: rgba(168, 168, 168, 0.4);
+}
+input[type=text]:disabled ~ label.floating-label,
+input[type=number]:disabled ~ label.floating-label,
+input[type=url]:disabled ~ label.floating-label,
+input[type=date]:disabled ~ label.floating-label,
+input[type=datetime-local]:disabled ~ label.floating-label,
+input[type=month]:disabled ~ label.floating-label,
+input[type=week]:disabled ~ label.floating-label,
+input[type=time]:disabled ~ label.floating-label,
+input[type=search]:disabled ~ label.floating-label,
+input[type=tel]:disabled ~ label.floating-label,
+input[type=email]:disabled ~ label.floating-label,
+input[type=password]:disabled ~ label.floating-label {
+  color: rgba(168, 168, 168, 0.5);
+}
+input[type=text]::placeholder,
+input[type=number]::placeholder,
+input[type=url]::placeholder,
+input[type=date]::placeholder,
+input[type=datetime-local]::placeholder,
+input[type=month]::placeholder,
+input[type=week]::placeholder,
+input[type=time]::placeholder,
+input[type=search]::placeholder,
+input[type=tel]::placeholder,
+input[type=email]::placeholder,
+input[type=password]::placeholder {
+  color: #a8a8a8;
+}
+input[type=text]::-webkit-search-cancel-button,
+input[type=number]::-webkit-search-cancel-button,
+input[type=url]::-webkit-search-cancel-button,
+input[type=date]::-webkit-search-cancel-button,
+input[type=datetime-local]::-webkit-search-cancel-button,
+input[type=month]::-webkit-search-cancel-button,
+input[type=week]::-webkit-search-cancel-button,
+input[type=time]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-cancel-button,
+input[type=tel]::-webkit-search-cancel-button,
+input[type=email]::-webkit-search-cancel-button,
+input[type=password]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+input[type=text]::-webkit-calendar-picker-indicator,
+input[type=number]::-webkit-calendar-picker-indicator,
+input[type=url]::-webkit-calendar-picker-indicator,
+input[type=date]::-webkit-calendar-picker-indicator,
+input[type=datetime-local]::-webkit-calendar-picker-indicator,
+input[type=month]::-webkit-calendar-picker-indicator,
+input[type=week]::-webkit-calendar-picker-indicator,
+input[type=time]::-webkit-calendar-picker-indicator,
+input[type=search]::-webkit-calendar-picker-indicator,
+input[type=tel]::-webkit-calendar-picker-indicator,
+input[type=email]::-webkit-calendar-picker-indicator,
+input[type=password]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+input[type=text]::-webkit-inner-spin-button, input[type=text]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button,
+input[type=url]::-webkit-inner-spin-button,
+input[type=url]::-webkit-outer-spin-button,
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button,
+input[type=datetime-local]::-webkit-inner-spin-button,
+input[type=datetime-local]::-webkit-outer-spin-button,
+input[type=month]::-webkit-inner-spin-button,
+input[type=month]::-webkit-outer-spin-button,
+input[type=week]::-webkit-inner-spin-button,
+input[type=week]::-webkit-outer-spin-button,
+input[type=time]::-webkit-inner-spin-button,
+input[type=time]::-webkit-outer-spin-button,
+input[type=search]::-webkit-inner-spin-button,
+input[type=search]::-webkit-outer-spin-button,
+input[type=tel]::-webkit-inner-spin-button,
+input[type=tel]::-webkit-outer-spin-button,
+input[type=email]::-webkit-inner-spin-button,
+input[type=email]::-webkit-outer-spin-button,
+input[type=password]::-webkit-inner-spin-button,
+input[type=password]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.floating-input-group > input[type=text],
+.floating-input-group > input[type=number],
+.floating-input-group > input[type=url],
+.floating-input-group > input[type=date],
+.floating-input-group > input[type=datetime-local],
+.floating-input-group > input[type=month],
+.floating-input-group > input[type=week],
+.floating-input-group > input[type=time],
+.floating-input-group > input[type=search],
+.floating-input-group > input[type=tel],
+.floating-input-group > input[type=email],
+.floating-input-group > input[type=password] {
+  padding: 25px 15px 5px 15px;
+}
+.floating-input-group > input[type=text]:focus ~ label, .floating-input-group > input[type=text]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=number]:focus ~ label,
+.floating-input-group > input[type=number]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=url]:focus ~ label,
+.floating-input-group > input[type=url]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=date]:focus ~ label,
+.floating-input-group > input[type=date]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=datetime-local]:focus ~ label,
+.floating-input-group > input[type=datetime-local]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=month]:focus ~ label,
+.floating-input-group > input[type=month]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=week]:focus ~ label,
+.floating-input-group > input[type=week]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=time]:focus ~ label,
+.floating-input-group > input[type=time]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=search]:focus ~ label,
+.floating-input-group > input[type=search]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=tel]:focus ~ label,
+.floating-input-group > input[type=tel]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=email]:focus ~ label,
+.floating-input-group > input[type=email]:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=password]:focus ~ label,
+.floating-input-group > input[type=password]:not(:placeholder-shown) ~ label {
+  /* Label/Small Label */
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  transform: translateY(-0.4rem);
+}
+input[type=text].input-secondary,
+input[type=number].input-secondary,
+input[type=url].input-secondary,
+input[type=date].input-secondary,
+input[type=datetime-local].input-secondary,
+input[type=month].input-secondary,
+input[type=week].input-secondary,
+input[type=time].input-secondary,
+input[type=search].input-secondary,
+input[type=tel].input-secondary,
+input[type=email].input-secondary,
+input[type=password].input-secondary {
+  /* Body/Body 2 */
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  background: #18161b;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 15px;
+  transition: 100ms ease all;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+input[type=text].input-secondary.is-valid,
+input[type=number].input-secondary.is-valid,
+input[type=url].input-secondary.is-valid,
+input[type=date].input-secondary.is-valid,
+input[type=datetime-local].input-secondary.is-valid,
+input[type=month].input-secondary.is-valid,
+input[type=week].input-secondary.is-valid,
+input[type=time].input-secondary.is-valid,
+input[type=search].input-secondary.is-valid,
+input[type=tel].input-secondary.is-valid,
+input[type=email].input-secondary.is-valid,
+input[type=password].input-secondary.is-valid {
+  border-color: #2dd287;
+}
+input[type=text].input-secondary.is-valid:focus,
+input[type=number].input-secondary.is-valid:focus,
+input[type=url].input-secondary.is-valid:focus,
+input[type=date].input-secondary.is-valid:focus,
+input[type=datetime-local].input-secondary.is-valid:focus,
+input[type=month].input-secondary.is-valid:focus,
+input[type=week].input-secondary.is-valid:focus,
+input[type=time].input-secondary.is-valid:focus,
+input[type=search].input-secondary.is-valid:focus,
+input[type=tel].input-secondary.is-valid:focus,
+input[type=email].input-secondary.is-valid:focus,
+input[type=password].input-secondary.is-valid:focus {
+  box-shadow: 0 0 0 4px rgba(45, 210, 135, 0.4);
+}
+input[type=text].input-secondary.is-valid ~ .validation-feedback,
+input[type=number].input-secondary.is-valid ~ .validation-feedback,
+input[type=url].input-secondary.is-valid ~ .validation-feedback,
+input[type=date].input-secondary.is-valid ~ .validation-feedback,
+input[type=datetime-local].input-secondary.is-valid ~ .validation-feedback,
+input[type=month].input-secondary.is-valid ~ .validation-feedback,
+input[type=week].input-secondary.is-valid ~ .validation-feedback,
+input[type=time].input-secondary.is-valid ~ .validation-feedback,
+input[type=search].input-secondary.is-valid ~ .validation-feedback,
+input[type=tel].input-secondary.is-valid ~ .validation-feedback,
+input[type=email].input-secondary.is-valid ~ .validation-feedback,
+input[type=password].input-secondary.is-valid ~ .validation-feedback {
+  /* Body/Body 2 */
+  font-size: 14px;
+  line-height: 24px;
+  color: #2dd287;
+  padding-left: 17px;
+  padding-top: 5px;
+}
+input[type=text].input-secondary.is-invalid,
+input[type=number].input-secondary.is-invalid,
+input[type=url].input-secondary.is-invalid,
+input[type=date].input-secondary.is-invalid,
+input[type=datetime-local].input-secondary.is-invalid,
+input[type=month].input-secondary.is-invalid,
+input[type=week].input-secondary.is-invalid,
+input[type=time].input-secondary.is-invalid,
+input[type=search].input-secondary.is-invalid,
+input[type=tel].input-secondary.is-invalid,
+input[type=email].input-secondary.is-invalid,
+input[type=password].input-secondary.is-invalid {
+  border-color: #d92626;
+}
+input[type=text].input-secondary.is-invalid:focus,
+input[type=number].input-secondary.is-invalid:focus,
+input[type=url].input-secondary.is-invalid:focus,
+input[type=date].input-secondary.is-invalid:focus,
+input[type=datetime-local].input-secondary.is-invalid:focus,
+input[type=month].input-secondary.is-invalid:focus,
+input[type=week].input-secondary.is-invalid:focus,
+input[type=time].input-secondary.is-invalid:focus,
+input[type=search].input-secondary.is-invalid:focus,
+input[type=tel].input-secondary.is-invalid:focus,
+input[type=email].input-secondary.is-invalid:focus,
+input[type=password].input-secondary.is-invalid:focus {
+  box-shadow: 0 0 0 4px rgba(217, 38, 38, 0.4);
+}
+input[type=text].input-secondary.is-invalid ~ .validation-feedback,
+input[type=number].input-secondary.is-invalid ~ .validation-feedback,
+input[type=url].input-secondary.is-invalid ~ .validation-feedback,
+input[type=date].input-secondary.is-invalid ~ .validation-feedback,
+input[type=datetime-local].input-secondary.is-invalid ~ .validation-feedback,
+input[type=month].input-secondary.is-invalid ~ .validation-feedback,
+input[type=week].input-secondary.is-invalid ~ .validation-feedback,
+input[type=time].input-secondary.is-invalid ~ .validation-feedback,
+input[type=search].input-secondary.is-invalid ~ .validation-feedback,
+input[type=tel].input-secondary.is-invalid ~ .validation-feedback,
+input[type=email].input-secondary.is-invalid ~ .validation-feedback,
+input[type=password].input-secondary.is-invalid ~ .validation-feedback {
+  /* Body/Body 2 */
+  font-size: 14px;
+  line-height: 24px;
+  color: #d92626;
+  padding-left: 17px;
+  padding-top: 5px;
+}
+input[type=text].input-secondary:focus,
+input[type=number].input-secondary:focus,
+input[type=url].input-secondary:focus,
+input[type=date].input-secondary:focus,
+input[type=datetime-local].input-secondary:focus,
+input[type=month].input-secondary:focus,
+input[type=week].input-secondary:focus,
+input[type=time].input-secondary:focus,
+input[type=search].input-secondary:focus,
+input[type=tel].input-secondary:focus,
+input[type=email].input-secondary:focus,
+input[type=password].input-secondary:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 212, 0, 0.4);
+}
+input[type=text].input-secondary:disabled,
+input[type=number].input-secondary:disabled,
+input[type=url].input-secondary:disabled,
+input[type=date].input-secondary:disabled,
+input[type=datetime-local].input-secondary:disabled,
+input[type=month].input-secondary:disabled,
+input[type=week].input-secondary:disabled,
+input[type=time].input-secondary:disabled,
+input[type=search].input-secondary:disabled,
+input[type=tel].input-secondary:disabled,
+input[type=email].input-secondary:disabled,
+input[type=password].input-secondary:disabled {
+  color: rgba(168, 168, 168, 0.5);
+  background: rgba(24, 22, 27, 0.5);
+  border-color: transparent;
+}
+input[type=text].input-secondary:disabled::placeholder,
+input[type=number].input-secondary:disabled::placeholder,
+input[type=url].input-secondary:disabled::placeholder,
+input[type=date].input-secondary:disabled::placeholder,
+input[type=datetime-local].input-secondary:disabled::placeholder,
+input[type=month].input-secondary:disabled::placeholder,
+input[type=week].input-secondary:disabled::placeholder,
+input[type=time].input-secondary:disabled::placeholder,
+input[type=search].input-secondary:disabled::placeholder,
+input[type=tel].input-secondary:disabled::placeholder,
+input[type=email].input-secondary:disabled::placeholder,
+input[type=password].input-secondary:disabled::placeholder {
+  color: rgba(168, 168, 168, 0.4);
+}
+input[type=text].input-secondary:disabled ~ label.floating-label,
+input[type=number].input-secondary:disabled ~ label.floating-label,
+input[type=url].input-secondary:disabled ~ label.floating-label,
+input[type=date].input-secondary:disabled ~ label.floating-label,
+input[type=datetime-local].input-secondary:disabled ~ label.floating-label,
+input[type=month].input-secondary:disabled ~ label.floating-label,
+input[type=week].input-secondary:disabled ~ label.floating-label,
+input[type=time].input-secondary:disabled ~ label.floating-label,
+input[type=search].input-secondary:disabled ~ label.floating-label,
+input[type=tel].input-secondary:disabled ~ label.floating-label,
+input[type=email].input-secondary:disabled ~ label.floating-label,
+input[type=password].input-secondary:disabled ~ label.floating-label {
+  color: rgba(168, 168, 168, 0.5);
+}
+input[type=text].input-secondary::placeholder,
+input[type=number].input-secondary::placeholder,
+input[type=url].input-secondary::placeholder,
+input[type=date].input-secondary::placeholder,
+input[type=datetime-local].input-secondary::placeholder,
+input[type=month].input-secondary::placeholder,
+input[type=week].input-secondary::placeholder,
+input[type=time].input-secondary::placeholder,
+input[type=search].input-secondary::placeholder,
+input[type=tel].input-secondary::placeholder,
+input[type=email].input-secondary::placeholder,
+input[type=password].input-secondary::placeholder {
+  color: #a8a8a8;
+}
+input[type=text].input-secondary::-webkit-search-cancel-button,
+input[type=number].input-secondary::-webkit-search-cancel-button,
+input[type=url].input-secondary::-webkit-search-cancel-button,
+input[type=date].input-secondary::-webkit-search-cancel-button,
+input[type=datetime-local].input-secondary::-webkit-search-cancel-button,
+input[type=month].input-secondary::-webkit-search-cancel-button,
+input[type=week].input-secondary::-webkit-search-cancel-button,
+input[type=time].input-secondary::-webkit-search-cancel-button,
+input[type=search].input-secondary::-webkit-search-cancel-button,
+input[type=tel].input-secondary::-webkit-search-cancel-button,
+input[type=email].input-secondary::-webkit-search-cancel-button,
+input[type=password].input-secondary::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+input[type=text].input-secondary::-webkit-calendar-picker-indicator,
+input[type=number].input-secondary::-webkit-calendar-picker-indicator,
+input[type=url].input-secondary::-webkit-calendar-picker-indicator,
+input[type=date].input-secondary::-webkit-calendar-picker-indicator,
+input[type=datetime-local].input-secondary::-webkit-calendar-picker-indicator,
+input[type=month].input-secondary::-webkit-calendar-picker-indicator,
+input[type=week].input-secondary::-webkit-calendar-picker-indicator,
+input[type=time].input-secondary::-webkit-calendar-picker-indicator,
+input[type=search].input-secondary::-webkit-calendar-picker-indicator,
+input[type=tel].input-secondary::-webkit-calendar-picker-indicator,
+input[type=email].input-secondary::-webkit-calendar-picker-indicator,
+input[type=password].input-secondary::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+input[type=text].input-secondary::-webkit-inner-spin-button, input[type=text].input-secondary::-webkit-outer-spin-button,
+input[type=number].input-secondary::-webkit-inner-spin-button,
+input[type=number].input-secondary::-webkit-outer-spin-button,
+input[type=url].input-secondary::-webkit-inner-spin-button,
+input[type=url].input-secondary::-webkit-outer-spin-button,
+input[type=date].input-secondary::-webkit-inner-spin-button,
+input[type=date].input-secondary::-webkit-outer-spin-button,
+input[type=datetime-local].input-secondary::-webkit-inner-spin-button,
+input[type=datetime-local].input-secondary::-webkit-outer-spin-button,
+input[type=month].input-secondary::-webkit-inner-spin-button,
+input[type=month].input-secondary::-webkit-outer-spin-button,
+input[type=week].input-secondary::-webkit-inner-spin-button,
+input[type=week].input-secondary::-webkit-outer-spin-button,
+input[type=time].input-secondary::-webkit-inner-spin-button,
+input[type=time].input-secondary::-webkit-outer-spin-button,
+input[type=search].input-secondary::-webkit-inner-spin-button,
+input[type=search].input-secondary::-webkit-outer-spin-button,
+input[type=tel].input-secondary::-webkit-inner-spin-button,
+input[type=tel].input-secondary::-webkit-outer-spin-button,
+input[type=email].input-secondary::-webkit-inner-spin-button,
+input[type=email].input-secondary::-webkit-outer-spin-button,
+input[type=password].input-secondary::-webkit-inner-spin-button,
+input[type=password].input-secondary::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.floating-input-group > input[type=text].input-secondary,
+.floating-input-group > input[type=number].input-secondary,
+.floating-input-group > input[type=url].input-secondary,
+.floating-input-group > input[type=date].input-secondary,
+.floating-input-group > input[type=datetime-local].input-secondary,
+.floating-input-group > input[type=month].input-secondary,
+.floating-input-group > input[type=week].input-secondary,
+.floating-input-group > input[type=time].input-secondary,
+.floating-input-group > input[type=search].input-secondary,
+.floating-input-group > input[type=tel].input-secondary,
+.floating-input-group > input[type=email].input-secondary,
+.floating-input-group > input[type=password].input-secondary {
+  padding: 25px 15px 5px 15px;
+}
+.floating-input-group > input[type=text].input-secondary:focus ~ label, .floating-input-group > input[type=text].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=number].input-secondary:focus ~ label,
+.floating-input-group > input[type=number].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=url].input-secondary:focus ~ label,
+.floating-input-group > input[type=url].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=date].input-secondary:focus ~ label,
+.floating-input-group > input[type=date].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=datetime-local].input-secondary:focus ~ label,
+.floating-input-group > input[type=datetime-local].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=month].input-secondary:focus ~ label,
+.floating-input-group > input[type=month].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=week].input-secondary:focus ~ label,
+.floating-input-group > input[type=week].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=time].input-secondary:focus ~ label,
+.floating-input-group > input[type=time].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=search].input-secondary:focus ~ label,
+.floating-input-group > input[type=search].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=tel].input-secondary:focus ~ label,
+.floating-input-group > input[type=tel].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=email].input-secondary:focus ~ label,
+.floating-input-group > input[type=email].input-secondary:not(:placeholder-shown) ~ label,
+.floating-input-group > input[type=password].input-secondary:focus ~ label,
+.floating-input-group > input[type=password].input-secondary:not(:placeholder-shown) ~ label {
+  /* Label/Small Label */
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  transform: translateY(-0.4rem);
+}
+
+.floating-input-group {
+  position: relative;
+  height: 58px;
+}
+.floating-input-group > label {
+  /* Body/Body 2 */
+  font-size: 14px;
+  line-height: 24px;
+  color: #a8a8a8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 17px;
+  pointer-events: none;
+  transform-origin: 0 0;
+  transition: 100ms ease all;
+}
+
+.card, .card-white, .card-light, .card-black, .card-dark, .card-default {
+  color: #ffffff;
+  background: #25222a;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 24px;
+}
+
+.card-icon {
+  margin-bottom: 16px;
+}
+
+.card-title {
+  /* Heading/H5 */
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+
+.card-body {
+  /* Body/Body 1 */
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.card-default {
+  color: #ffffff;
+  background: #25222a;
+}
+
+.card-dark {
+  color: #ffffff;
+  background: #18161b;
+}
+
+.card-black {
+  color: #ffffff;
+  background: #0c0b0e;
+}
+
+.card-light {
+  color: #ffffff;
+  background: #312e38;
+}
+
+.card-white {
+  color: #000000;
+  background: #ffffff;
+}
+
+.navbar {
+  /* Label/Medium Label */
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background: #18161b;
+  transition-property: background;
+  transition-duration: 300ms;
+}
+
+.navbar-scrolled {
+  background: #18161b;
+}
+
+.navbar-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlinks {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.navlinks > li {
+  display: inline-block;
+}
+
+.navlink {
+  color: #ffffff;
+  padding: 26px;
+  text-decoration: none;
+  display: inline-block;
+  transition-property: background;
+  transition-duration: 100ms;
+}
+.navlink:hover {
+  color: #ffd400;
+}
+.navlink:active {
+  color: #ffee99;
+}
+
+.brand-logo {
+  color: #000000;
+  padding: 10px 26px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nav-right {
+  padding: 0 26px;
+}
+
+.hero {
+  height: 70vh;
+  background-image: url(resources/svg/hero_block.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: 55vh;
+  background-color: #25222a;
+  overflow: auto;
+  margin-bottom: 48px;
+}
+
+.hero-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+}
+
+.hero-content {
+  height: 100%;
+  max-width: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-header {
+  /* Heading/H1 */
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 98px;
+}
+
+.hero-lead {
+  margin-bottom: 26px;
+}
+
+.logo-cloud-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 48px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-cloud-logo {
+  padding: 8px;
+}
+
+.logo-cloud-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.features-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0;
+}
+
+.features-header {
+  max-width: 40rem;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.features-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.features-cards > div {
+  width: 20rem;
+}
+
+.cta {
+  color: #000000;
+  background: #ffd400;
+}
+
+.cta-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0;
+}
+
+.cta-header {
+  /* Heading/H2 */
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  max-width: 50rem;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/*# sourceMappingURL=index.css.map */

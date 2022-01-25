@@ -1,0 +1,43 @@
+.card {
+  color: $gray-100;
+  background: $background-500;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 24px;
+}
+.card-icon {
+  margin-bottom: 16px;
+}
+.card-title {
+  @include text-heading-5;
+  margin-bottom: 16px;
+}
+.card-body {
+  @include text-body-1;
+}
+
+.card-default {
+  @extend .card;
+  color: $gray-100;
+  background: $background-500;
+}
+.card-dark {
+  @extend .card;
+  color: $gray-100;
+  background: $background-600;
+}
+.card-black {
+  @extend .card;
+  color: $gray-100;
+  background: $background-700;
+}
+.card-light {
+  @extend .card;
+  color: $gray-100;
+  background: $background-400;
+}
+.card-white {
+  @extend .card;
+  color: $gray-700;
+  background: $gray-100;
+}

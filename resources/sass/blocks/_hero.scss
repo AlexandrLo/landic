@@ -1,0 +1,31 @@
+.hero {
+  height: 70vh;
+  background-image: url(resources/svg/hero_block.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: 55vh;
+  background-color: $background-500;
+  overflow: auto;
+  margin-bottom: 48px;
+}
+.hero-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: 100%;
+}
+.hero-content {
+  height: 100%;
+  max-width: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hero-header {
+  @include text-heading-1;
+}
+.hero-lead {
+  margin-bottom: 26px;
+}
