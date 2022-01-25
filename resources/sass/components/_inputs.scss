@@ -42,9 +42,6 @@
     &::placeholder {
       color: transparentize($gray-300, 0.6);
     }
-    & ~ label.floating-label {
-      color: transparentize($gray-300, 0.5);
-    }
   }
   &::placeholder {
     color: $gray-300;
@@ -68,6 +65,9 @@
   // Floating label input
   .floating-input-group > & {
     padding: 25px 15px 5px 15px;
+    &:disabled ~ label {
+      color: transparentize($gray-300, 0.6);
+    }
     // Minimize label when input is focused or filled
     &:focus ~ label,
     &:not(:placeholder-shown) ~ label {

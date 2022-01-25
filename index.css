@@ -840,20 +840,6 @@ input[type=email]:disabled::placeholder,
 input[type=password]:disabled::placeholder {
   color: rgba(168, 168, 168, 0.4);
 }
-input[type=text]:disabled ~ label.floating-label,
-input[type=number]:disabled ~ label.floating-label,
-input[type=url]:disabled ~ label.floating-label,
-input[type=date]:disabled ~ label.floating-label,
-input[type=datetime-local]:disabled ~ label.floating-label,
-input[type=month]:disabled ~ label.floating-label,
-input[type=week]:disabled ~ label.floating-label,
-input[type=time]:disabled ~ label.floating-label,
-input[type=search]:disabled ~ label.floating-label,
-input[type=tel]:disabled ~ label.floating-label,
-input[type=email]:disabled ~ label.floating-label,
-input[type=password]:disabled ~ label.floating-label {
-  color: rgba(168, 168, 168, 0.5);
-}
 input[type=text]::placeholder,
 input[type=number]::placeholder,
 input[type=url]::placeholder,
@@ -935,6 +921,20 @@ input[type=password]::-webkit-outer-spin-button {
 .floating-input-group > input[type=email],
 .floating-input-group > input[type=password] {
   padding: 25px 15px 5px 15px;
+}
+.floating-input-group > input[type=text]:disabled ~ label,
+.floating-input-group > input[type=number]:disabled ~ label,
+.floating-input-group > input[type=url]:disabled ~ label,
+.floating-input-group > input[type=date]:disabled ~ label,
+.floating-input-group > input[type=datetime-local]:disabled ~ label,
+.floating-input-group > input[type=month]:disabled ~ label,
+.floating-input-group > input[type=week]:disabled ~ label,
+.floating-input-group > input[type=time]:disabled ~ label,
+.floating-input-group > input[type=search]:disabled ~ label,
+.floating-input-group > input[type=tel]:disabled ~ label,
+.floating-input-group > input[type=email]:disabled ~ label,
+.floating-input-group > input[type=password]:disabled ~ label {
+  color: rgba(168, 168, 168, 0.4);
 }
 .floating-input-group > input[type=text]:focus ~ label, .floating-input-group > input[type=text]:not(:placeholder-shown) ~ label,
 .floating-input-group > input[type=number]:focus ~ label,
@@ -1128,20 +1128,6 @@ input[type=email].input-secondary:disabled::placeholder,
 input[type=password].input-secondary:disabled::placeholder {
   color: rgba(168, 168, 168, 0.4);
 }
-input[type=text].input-secondary:disabled ~ label.floating-label,
-input[type=number].input-secondary:disabled ~ label.floating-label,
-input[type=url].input-secondary:disabled ~ label.floating-label,
-input[type=date].input-secondary:disabled ~ label.floating-label,
-input[type=datetime-local].input-secondary:disabled ~ label.floating-label,
-input[type=month].input-secondary:disabled ~ label.floating-label,
-input[type=week].input-secondary:disabled ~ label.floating-label,
-input[type=time].input-secondary:disabled ~ label.floating-label,
-input[type=search].input-secondary:disabled ~ label.floating-label,
-input[type=tel].input-secondary:disabled ~ label.floating-label,
-input[type=email].input-secondary:disabled ~ label.floating-label,
-input[type=password].input-secondary:disabled ~ label.floating-label {
-  color: rgba(168, 168, 168, 0.5);
-}
 input[type=text].input-secondary::placeholder,
 input[type=number].input-secondary::placeholder,
 input[type=url].input-secondary::placeholder,
@@ -1223,6 +1209,20 @@ input[type=password].input-secondary::-webkit-outer-spin-button {
 .floating-input-group > input[type=email].input-secondary,
 .floating-input-group > input[type=password].input-secondary {
   padding: 25px 15px 5px 15px;
+}
+.floating-input-group > input[type=text].input-secondary:disabled ~ label,
+.floating-input-group > input[type=number].input-secondary:disabled ~ label,
+.floating-input-group > input[type=url].input-secondary:disabled ~ label,
+.floating-input-group > input[type=date].input-secondary:disabled ~ label,
+.floating-input-group > input[type=datetime-local].input-secondary:disabled ~ label,
+.floating-input-group > input[type=month].input-secondary:disabled ~ label,
+.floating-input-group > input[type=week].input-secondary:disabled ~ label,
+.floating-input-group > input[type=time].input-secondary:disabled ~ label,
+.floating-input-group > input[type=search].input-secondary:disabled ~ label,
+.floating-input-group > input[type=tel].input-secondary:disabled ~ label,
+.floating-input-group > input[type=email].input-secondary:disabled ~ label,
+.floating-input-group > input[type=password].input-secondary:disabled ~ label {
+  color: rgba(168, 168, 168, 0.4);
 }
 .floating-input-group > input[type=text].input-secondary:focus ~ label, .floating-input-group > input[type=text].input-secondary:not(:placeholder-shown) ~ label,
 .floating-input-group > input[type=number].input-secondary:focus ~ label,
