@@ -99,17 +99,89 @@ input[type="password"] {
   }
 }
 
-//* Other inputs
-input[type="file"] {
-  // TODO
+//* Checkbox
+@mixin colored-check($color) {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='#{url-friendly-color($color)}' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cpolyline points='216 72 104 184 48 128' fill='none' stroke='#{url-friendly-color($color)}' stroke-linecap='round' stroke-linejoin='round' stroke-width='24'%3E%3C/polyline%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1em;
 }
+input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  &:not(:checked) {
+    & + label::before {
+      background: $background-300;
+    }
+    & + label:hover::before {
+      box-shadow: 0 0 0 4px transparentize($brand-400, 0.5);
+    }
+    & + label:active::before {
+      box-shadow: 0 0 0 4px transparentize($brand-400, 0.5);
+      background: $background-200;
+    }
+  }
+  &:checked {
+    & + label::before {
+      background: $brand-400;
+      @include colored-check($gray-700);
+    }
+    & + label:hover::before {
+      box-shadow: 0 0 0 4px transparentize($brand-400, 0.5);
+    }
+    & + label:active::before {
+      box-shadow: 0 0 0 4px transparentize($brand-400, 0.5);
+      background: $brand-100;
+      @include colored-check($gray-500);
+    }
+  }
+  &:disabled {
+    &:not(:checked) + label::before {
+      background: transparentize($background-300, 0.6);
+      box-shadow: none;
+    }
+    &:checked + label::before {
+      box-shadow: none;
+      background: transparentize($brand-400, 0.6);
+      @include colored-check($gray-700);
+    }
+  }
+  & + label {
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border-radius: 5px;
+      margin-right: 10px;
+      transition: $transition-duration ease all;
+    }
+  }
+}
+
+//* Radio
 input[type="radio"] {
   // TODO
 }
+
+//* File
+input[type="file"] {
+  // TODO
+}
+
+//* Range
 input[type="range"] {
   // TODO
 }
 
+//* Input groups
 .floating-input-group {
   position: relative;
   display: flex;
