@@ -6,6 +6,7 @@
   border-radius: 10px;
   padding: 15px;
   transition: $transition-duration ease all;
+  width: 100%;
 
   &.is-valid {
     border-color: $success-400;
@@ -14,6 +15,7 @@
     }
     & ~ .validation-feedback {
       @include text-body-2;
+      width: 100%;
       color: $success-400;
       padding-left: 17px;
       padding-top: 5px;
@@ -26,6 +28,7 @@
     }
     & ~ .validation-feedback {
       @include text-body-2;
+      width: 100%;
       color: $danger-400;
       padding-left: 17px;
       padding-top: 5px;
@@ -109,7 +112,10 @@ input[type="range"] {
 
 .floating-input-group {
   position: relative;
-  height: 58px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
   & > label {
     @include text-body-2;
     color: $gray-300;
@@ -121,4 +127,12 @@ input[type="range"] {
     transform-origin: 0 0;
     transition: $transition-duration ease all;
   }
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
 }
