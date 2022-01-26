@@ -165,19 +165,21 @@ button {
     @include btn-outline($danger-400, $danger-800);
   }
   //* Icon button
-  &.btn-sm.btn-icon {
-    @include text-label-sm;
-    font-size: 16px;
-    padding: 6px;
-  }
-  &.btn-md.btn-icon {
-    @include text-label-md;
+  &.btn-icon {
+    position: relative;
+    top: 0.45ex;
     font-size: 20px;
     padding: 10px;
-  }
-  &.btn-lg.btn-icon {
-    @include text-label-lg;
-    font-size: 26px;
-    padding: 12px;
+    &.btn-sm {
+      font-size: 16px;
+      padding: 6px;
+    }
+    &.btn-md {
+      // Uses default style
+    }
+    &.btn-lg {
+      font-size: 26px;
+      padding: 12px;
+    }
   }
 }
