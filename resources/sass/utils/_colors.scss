@@ -1,0 +1,39 @@
+.bg-primary {
+  background: $brand-400 !important;
+}
+.bg-black {
+  background: $background-700 !important;
+}
+.bg-dark {
+  background: $background-600 !important;
+}
+.bg-default {
+  background: $background-500 !important;
+}
+.bg-light {
+  background: $background-400 !important;
+}
+.bg-white {
+  background: $gray-100 !important;
+}
+
+.text-default,
+.text-white {
+  color: $gray-100 !important;
+}
+.text-secondary,
+.text-black {
+  color: $gray-700 !important;
+}
+.text-primary {
+  color: $brand-400 !important;
+}
+.text-success {
+  color: $success-400 !important;
+}
+.text-warning {
+  color: $warning-400 !important;
+}
+.text-danger {
+  color: $danger-400 !important;
+}
