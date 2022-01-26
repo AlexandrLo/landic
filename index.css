@@ -1,10 +1,52 @@
 @import url("https://rsms.me/inter/inter.css");
-.p-0.p-0 {
-  padding: 0;
+.bg-primary {
+  background: #ffd400 !important;
 }
 
-.m-0.m-0 {
-  margin: 0;
+.bg-black {
+  background: #0c0b0e !important;
+}
+
+.bg-dark {
+  background: #18161b !important;
+}
+
+.bg-default {
+  background: #25222a !important;
+}
+
+.bg-light {
+  background: #312e38 !important;
+}
+
+.bg-white {
+  background: #ffffff !important;
+}
+
+.text-default,
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-secondary,
+.text-black {
+  color: #000000 !important;
+}
+
+.text-primary {
+  color: #ffd400 !important;
+}
+
+.text-success {
+  color: #2dd287 !important;
+}
+
+.text-warning {
+  color: #ff9900 !important;
+}
+
+.text-danger {
+  color: #d92626 !important;
 }
 
 html {
@@ -16,139 +58,10 @@ html {
     font-family: "Inter var", sans-serif;
   }
 }
-.text, .cta-header, .hero-header, .navbar, .card-body, .card-title, .floating-input-group > label, .floating-input-group > input[type=text].input-secondary:focus ~ label, .floating-input-group > input[type=text].input-secondary:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=number].input-secondary:focus ~ label,
-.floating-input-group > input[type=number].input-secondary:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=url].input-secondary:focus ~ label,
-.floating-input-group > input[type=url].input-secondary:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=date].input-secondary:focus ~ label,
-.floating-input-group > input[type=date].input-secondary:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=datetime-local].input-secondary:focus ~ label,
-.floating-input-group > input[type=datetime-local].input-secondary:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=month].input-secondary:focus ~ label,
-.floating-input-group > input[type=month].input-secondary:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=week].input-secondary:focus ~ label,
-.floating-input-group > input[type=week].input-secondary:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=time].input-secondary:focus ~ label,
-.floating-input-group > input[type=time].input-secondary:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=search].input-secondary:focus ~ label,
-.floating-input-group > input[type=search].input-secondary:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=tel].input-secondary:focus ~ label,
-.floating-input-group > input[type=tel].input-secondary:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=email].input-secondary:focus ~ label,
-.floating-input-group > input[type=email].input-secondary:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=password].input-secondary:focus ~ label,
-.floating-input-group > input[type=password].input-secondary:not(:placeholder-shown) ~ label, input[type=text].input-secondary.is-invalid ~ .validation-feedback,
-input[type=number].input-secondary.is-invalid ~ .validation-feedback,
-input[type=url].input-secondary.is-invalid ~ .validation-feedback,
-input[type=date].input-secondary.is-invalid ~ .validation-feedback,
-input[type=datetime-local].input-secondary.is-invalid ~ .validation-feedback,
-input[type=month].input-secondary.is-invalid ~ .validation-feedback,
-input[type=week].input-secondary.is-invalid ~ .validation-feedback,
-input[type=time].input-secondary.is-invalid ~ .validation-feedback,
-input[type=search].input-secondary.is-invalid ~ .validation-feedback,
-input[type=tel].input-secondary.is-invalid ~ .validation-feedback,
-input[type=email].input-secondary.is-invalid ~ .validation-feedback,
-input[type=password].input-secondary.is-invalid ~ .validation-feedback, input[type=text].input-secondary.is-valid ~ .validation-feedback,
-input[type=number].input-secondary.is-valid ~ .validation-feedback,
-input[type=url].input-secondary.is-valid ~ .validation-feedback,
-input[type=date].input-secondary.is-valid ~ .validation-feedback,
-input[type=datetime-local].input-secondary.is-valid ~ .validation-feedback,
-input[type=month].input-secondary.is-valid ~ .validation-feedback,
-input[type=week].input-secondary.is-valid ~ .validation-feedback,
-input[type=time].input-secondary.is-valid ~ .validation-feedback,
-input[type=search].input-secondary.is-valid ~ .validation-feedback,
-input[type=tel].input-secondary.is-valid ~ .validation-feedback,
-input[type=email].input-secondary.is-valid ~ .validation-feedback,
-input[type=password].input-secondary.is-valid ~ .validation-feedback, input[type=text].input-secondary,
-input[type=number].input-secondary,
-input[type=url].input-secondary,
-input[type=date].input-secondary,
-input[type=datetime-local].input-secondary,
-input[type=month].input-secondary,
-input[type=week].input-secondary,
-input[type=time].input-secondary,
-input[type=search].input-secondary,
-input[type=tel].input-secondary,
-input[type=email].input-secondary,
-input[type=password].input-secondary, .floating-input-group > input[type=text]:focus ~ label, .floating-input-group > input[type=text]:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=number]:focus ~ label,
-.floating-input-group > input[type=number]:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=url]:focus ~ label,
-.floating-input-group > input[type=url]:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=date]:focus ~ label,
-.floating-input-group > input[type=date]:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=datetime-local]:focus ~ label,
-.floating-input-group > input[type=datetime-local]:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=month]:focus ~ label,
-.floating-input-group > input[type=month]:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=week]:focus ~ label,
-.floating-input-group > input[type=week]:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=time]:focus ~ label,
-.floating-input-group > input[type=time]:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=search]:focus ~ label,
-.floating-input-group > input[type=search]:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=tel]:focus ~ label,
-.floating-input-group > input[type=tel]:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=email]:focus ~ label,
-.floating-input-group > input[type=email]:not(:placeholder-shown) ~ label,
-.floating-input-group > input[type=password]:focus ~ label,
-.floating-input-group > input[type=password]:not(:placeholder-shown) ~ label, input[type=text].is-invalid ~ .validation-feedback,
-input[type=number].is-invalid ~ .validation-feedback,
-input[type=url].is-invalid ~ .validation-feedback,
-input[type=date].is-invalid ~ .validation-feedback,
-input[type=datetime-local].is-invalid ~ .validation-feedback,
-input[type=month].is-invalid ~ .validation-feedback,
-input[type=week].is-invalid ~ .validation-feedback,
-input[type=time].is-invalid ~ .validation-feedback,
-input[type=search].is-invalid ~ .validation-feedback,
-input[type=tel].is-invalid ~ .validation-feedback,
-input[type=email].is-invalid ~ .validation-feedback,
-input[type=password].is-invalid ~ .validation-feedback, input[type=text].is-valid ~ .validation-feedback,
-input[type=number].is-valid ~ .validation-feedback,
-input[type=url].is-valid ~ .validation-feedback,
-input[type=date].is-valid ~ .validation-feedback,
-input[type=datetime-local].is-valid ~ .validation-feedback,
-input[type=month].is-valid ~ .validation-feedback,
-input[type=week].is-valid ~ .validation-feedback,
-input[type=time].is-valid ~ .validation-feedback,
-input[type=search].is-valid ~ .validation-feedback,
-input[type=tel].is-valid ~ .validation-feedback,
-input[type=email].is-valid ~ .validation-feedback,
-input[type=password].is-valid ~ .validation-feedback, input[type=text],
-input[type=number],
-input[type=url],
-input[type=date],
-input[type=datetime-local],
-input[type=month],
-input[type=week],
-input[type=time],
-input[type=search],
-input[type=tel],
-input[type=email],
-input[type=password], input[type=button].btn-lg.btn-icon,
-input[type=reset].btn-lg.btn-icon,
-input[type=submit].btn-lg.btn-icon,
-button.btn-lg.btn-icon, input[type=button].btn-md.btn-icon,
-input[type=reset].btn-md.btn-icon,
-input[type=submit].btn-md.btn-icon,
-button.btn-md.btn-icon, input[type=button].btn-sm.btn-icon,
-input[type=reset].btn-sm.btn-icon,
-input[type=submit].btn-sm.btn-icon,
-button.btn-sm.btn-icon, input[type=button].btn-lg,
-input[type=reset].btn-lg,
-input[type=submit].btn-lg,
-button.btn-lg, input[type=button].btn-sm,
-input[type=reset].btn-sm,
-input[type=submit].btn-sm,
-button.btn-sm, input[type=button],
-input[type=reset],
-input[type=submit],
-button, h6, h5, h4, h3, h2, h1, body, .text-lead-2, .text-lead-1, .text-label-lg, .text-label-md, .text-label-sm, .text-body-1 {
+* {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
   font-feature-settings: "salt" on, "liga" off;
 }
 
@@ -196,23 +109,11 @@ button, h6, h5, h4, h3, h2, h1, body, .text-lead-2, .text-lead-1, .text-label-lg
   text-align: center;
 }
 
-.text-default {
-  color: #ffffff;
-}
-
-.text-primary {
-  color: #ffd400;
-}
-
-::selection {
-  background-color: rgba(255, 212, 0, 0.5);
-}
-
 body {
+  color: #ffffff;
   /* Body/Body 1 */
   font-size: 16px;
   line-height: 26px;
-  color: #ffffff;
 }
 
 h1 {
@@ -257,6 +158,10 @@ h6 {
   line-height: 30px;
 }
 
+::selection {
+  background-color: rgba(255, 212, 0, 0.5);
+}
+
 body {
   margin: 0;
   background: #312e38;
@@ -267,6 +172,59 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 26px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.p-1 {
+  padding: 5px !important;
+}
+
+.p-2 {
+  padding: 10px !important;
+}
+
+.p-3 {
+  padding: 15px !important;
+}
+
+.p-4 {
+  padding: 20px !important;
+}
+
+.p-5 {
+  padding: 25px !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.m-1 {
+  margin: 5px !important;
+}
+
+.m-2 {
+  margin: 10px !important;
+}
+
+.m-3 {
+  margin: 15px !important;
+}
+
+.m-4 {
+  margin: 20px !important;
+}
+
+.m-5 {
+  margin: 25px !important;
 }
 
 input[type=button],
@@ -643,36 +601,26 @@ button.btn-outline-danger:disabled {
   border-color: #821717;
   background: transparent;
 }
-input[type=button].btn-sm.btn-icon,
-input[type=reset].btn-sm.btn-icon,
-input[type=submit].btn-sm.btn-icon,
-button.btn-sm.btn-icon {
-  /* Label/Small Label */
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  font-size: 16px;
-  padding: 6px;
-}
-input[type=button].btn-md.btn-icon,
-input[type=reset].btn-md.btn-icon,
-input[type=submit].btn-md.btn-icon,
-button.btn-md.btn-icon {
-  /* Label/Medium Label */
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+input[type=button].btn-icon,
+input[type=reset].btn-icon,
+input[type=submit].btn-icon,
+button.btn-icon {
+  position: relative;
+  top: 0.45ex;
   font-size: 20px;
   padding: 10px;
 }
-input[type=button].btn-lg.btn-icon,
-input[type=reset].btn-lg.btn-icon,
-input[type=submit].btn-lg.btn-icon,
-button.btn-lg.btn-icon {
-  /* Label/Large Label */
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 26px;
+input[type=button].btn-icon.btn-sm,
+input[type=reset].btn-icon.btn-sm,
+input[type=submit].btn-icon.btn-sm,
+button.btn-icon.btn-sm {
+  font-size: 16px;
+  padding: 6px;
+}
+input[type=button].btn-icon.btn-lg,
+input[type=reset].btn-icon.btn-lg,
+input[type=submit].btn-icon.btn-lg,
+button.btn-icon.btn-lg {
   font-size: 26px;
   padding: 12px;
 }
@@ -698,6 +646,7 @@ input[type=password] {
   border-radius: 10px;
   padding: 15px;
   transition: 100ms ease all;
+  width: 100%;
   -webkit-appearance: none;
   -moz-appearance: textfield;
 }
@@ -744,6 +693,7 @@ input[type=password].is-valid ~ .validation-feedback {
   /* Body/Body 2 */
   font-size: 14px;
   line-height: 24px;
+  width: 100%;
   color: #2dd287;
   padding-left: 17px;
   padding-top: 5px;
@@ -791,6 +741,7 @@ input[type=password].is-invalid ~ .validation-feedback {
   /* Body/Body 2 */
   font-size: 14px;
   line-height: 24px;
+  width: 100%;
   color: #d92626;
   padding-left: 17px;
   padding-top: 5px;
@@ -986,6 +937,7 @@ input[type=password].input-secondary {
   border-radius: 10px;
   padding: 15px;
   transition: 100ms ease all;
+  width: 100%;
   -webkit-appearance: none;
   -moz-appearance: textfield;
 }
@@ -1032,6 +984,7 @@ input[type=password].input-secondary.is-valid ~ .validation-feedback {
   /* Body/Body 2 */
   font-size: 14px;
   line-height: 24px;
+  width: 100%;
   color: #2dd287;
   padding-left: 17px;
   padding-top: 5px;
@@ -1079,6 +1032,7 @@ input[type=password].input-secondary.is-invalid ~ .validation-feedback {
   /* Body/Body 2 */
   font-size: 14px;
   line-height: 24px;
+  width: 100%;
   color: #d92626;
   padding-left: 17px;
   padding-top: 5px;
@@ -1256,7 +1210,10 @@ input[type=password].input-secondary::-webkit-outer-spin-button {
 
 .floating-input-group {
   position: relative;
-  height: 58px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
 }
 .floating-input-group > label {
   /* Body/Body 2 */
@@ -1272,55 +1229,49 @@ input[type=password].input-secondary::-webkit-outer-spin-button {
   transition: 100ms ease all;
 }
 
-.card, .card-white, .card-light, .card-black, .card-dark, .card-default {
-  color: #ffffff;
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.card, .card-dashed {
   background: #25222a;
   border-radius: 8px;
   padding: 24px;
   margin: 24px;
 }
-
-.card-icon {
+.card > .card-icon, .card-dashed > .card-icon {
   margin-bottom: 16px;
 }
-
-.card-title {
+.card > .card-title, .card-dashed > .card-title {
   /* Heading/H5 */
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 16px;
 }
-
-.card-body {
+.card > .card-body, .card-dashed > .card-body {
   /* Body/Body 1 */
   font-size: 16px;
   line-height: 26px;
 }
 
-.card-default {
-  color: #ffffff;
-  background: #25222a;
+.card-dashed {
+  padding: 0px;
+  background: transparent;
 }
-
-.card-dark {
-  color: #ffffff;
-  background: #18161b;
+.card-dashed > .card-title {
+  margin: 0;
+  color: #ffd400;
+  text-transform: uppercase;
 }
-
-.card-black {
-  color: #ffffff;
-  background: #0c0b0e;
-}
-
-.card-light {
-  color: #ffffff;
-  background: #312e38;
-}
-
-.card-white {
-  color: #000000;
-  background: #ffffff;
+.card-dashed > .card-body {
+  border: 2px dashed #ffd400;
+  border-radius: 8px;
+  padding: 20px;
 }
 
 .navbar {
@@ -1473,11 +1424,6 @@ input[type=password].input-secondary::-webkit-outer-spin-button {
 }
 .features-cards > div {
   width: 20rem;
-}
-
-.cta {
-  color: #000000;
-  background: #ffd400;
 }
 
 .cta-wrapper {
