@@ -107,6 +107,9 @@ html {
 .text-body-1 {
   @include text-body-1;
 }
+.text-body-2 {
+  @include text-body-2;
+}
 .text-label-sm {
   @include text-label-sm;
 }
