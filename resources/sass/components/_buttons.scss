@@ -170,8 +170,8 @@ a.btn {
   //* Icon button
   &.btn-icon {
     position: relative;
-    top: 0.45ex;
     font-size: 20px;
+    vertical-align: top;
     padding: 10px;
     &.btn-sm {
       font-size: 16px;
