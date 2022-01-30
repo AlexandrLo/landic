@@ -45,8 +45,11 @@
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
-button {
+button,
+a.btn {
   @include btn-default;
+  text-decoration: none;
+  display: inline-block;
 
   //* Button sizes
   &.btn-sm {
