@@ -21,7 +21,9 @@
 .text-white {
   color: $gray-100 !important;
 }
-.text-secondary,
+.text-secondary {
+  color: $gray-300 !important;
+}
 .text-black {
   color: $gray-700 !important;
 }
