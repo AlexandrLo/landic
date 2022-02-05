@@ -1,3 +1,4 @@
 @function url-friendly-color($color) {
-  @return "%23" + str-slice("#{$color}", 2, -1);
+  $hex: ie-hex-str($color);
+  @return "%23" + str-slice("#{$hex}", 4, -1) + str-slice("#{$hex}", 2, 3);
 }
