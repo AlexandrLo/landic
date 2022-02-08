@@ -1,21 +1,8 @@
 @use "sass:map";
 
-// Import variable font
-@import url("https://rsms.me/inter/inter.css");
-html {
-  font-family: "Inter", sans-serif;
-}
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: "Inter var", sans-serif;
-  }
-}
-
 // Base font
 body,
 p {
-  font-family: Inter, sans-serif;
-  font-feature-settings: "salt" on, "liga" off;
   font-style: normal;
   font-weight: 400;
   font-size: $font-size-400;
@@ -157,6 +144,11 @@ $typography-styles: (
   "text-capitalize": (
     styles: (
       text-transform: capitalize,
+    ),
+  ),
+  "text-uppercase": (
+    styles: (
+      text-transform: uppercase,
     ),
   ),
   "text-mark": (
