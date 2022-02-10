@@ -7,11 +7,11 @@
     margin-bottom: 16px;
   }
   & > .card-title {
-    @include text-heading-5;
+    @include typography("h5");
     margin-bottom: 16px;
   }
   & > .card-body {
-    @include text-body-1;
+    @include typography("body1");
   }
 }
 
