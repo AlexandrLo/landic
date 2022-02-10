@@ -1,0 +1,12 @@
+.separator-x {
+  display: block;
+  width: 100%;
+  height: 0.125rem;
+  background: transparentize($gray-50, 0.75);
+}
+.separator-y {
+  display: block;
+  height: 100%;
+  width: 0.125rem;
+  background: transparentize($gray-50, 0.75);
+}
