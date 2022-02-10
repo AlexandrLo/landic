@@ -1,6 +1,6 @@
-@mixin spacing-generator($short-name, $prop, $min: 0, $max: 6) {
+@mixin spacing-generator($short-name, $prop, $min-value, $min: 0, $max: 6) {
   @for $i from 0 through 5 {
-    $spacing: calc(#{$min-spacer} * #{$i}) !important;
+    $spacing: calc(#{$min-value} * #{$i}) !important;
     .#{$short-name}-#{$i} {
       #{$prop}: $spacing;
     }
@@ -27,5 +27,5 @@
   }
 }
 
-@include spacing-generator("p", "padding");
-@include spacing-generator("m", "margin");
+@include spacing-generator("p", "padding", $padding-unit);
+@include spacing-generator("m", "margin", $margin-unit);
