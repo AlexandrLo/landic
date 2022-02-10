@@ -1,0 +1,14 @@
+$border-props: border, border-left, border-right, border-top, border-bottom;
+
+@each $prop in $border-props {
+  .#{$prop} {
+    #{$prop}: #{$border-width} solid $gray-500 !important;
+  }
+}
+@for $size from 0 through 5 {
+  @each $prop in $border-props {
+    .#{$prop}-#{$size} {
+      #{$prop}: #{$border-width * $size} solid $gray-500 !important;
+    }
+  }
+}
