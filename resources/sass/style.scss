@@ -4,14 +4,14 @@
 @import "utils/colors";
 @import "utils/borders";
 @import "utils/flex";
+@import "utils/layout";
+@import "utils/spacing";
 
 // Base
 @import "base/reset";
 @import "base/typography";
 
 // Layout
-@import "layout/grid";
-@import "layout/spacing";
 
 // Components
 @import "components/buttons";
