@@ -4,13 +4,11 @@ $brand-500: hsla(50, 100%, 35%, 1);
 $brand-400: hsla(50, 100%, 50%, 1);
 $brand-300: hsla(50, 100%, 65%, 1);
 $brand-200: hsla(50, 100%, 80%, 1);
-
 $success-600: hsla(153, 65%, 20%, 1);
 $success-500: hsla(153, 65%, 35%, 1);
 $success-400: hsla(153, 65%, 50%, 1);
 $success-300: hsla(153, 65%, 65%, 1);
 $success-200: hsla(153, 65%, 80%, 1);
-
 $warning-600: hsla(36, 100%, 20%, 1);
 $warning-500: hsla(36, 100%, 35%, 1);
 $warning-400: hsla(36, 100%, 50%, 1);
@@ -21,7 +19,6 @@ $danger-500: hsla(360, 70%, 35%, 1);
 $danger-400: hsla(360, 70%, 50%, 1);
 $danger-300: hsla(360, 70%, 60%, 1);
 $danger-200: hsla(360, 70%, 80%, 1);
-
 $background-700: hsla(0, 0%, 0%, 1);
 $background-600: hsla(258, 10%, 10%, 1);
 $background-500: hsla(258, 10%, 15%, 1);
@@ -30,7 +27,6 @@ $background-300: hsla(258, 10%, 30%, 1);
 $background-200: hsla(258, 10%, 50%, 1);
 $background-100: hsla(258, 10%, 80%, 1);
 $background-50: hsla(0, 0%, 100%, 1);
-
 $gray-800: hsla(0, 0%, 0%, 1);
 $gray-700: hsla(0, 0%, 15%, 1);
 $gray-600: hsla(0, 0%, 20%, 1);
@@ -52,10 +48,10 @@ $font-size-400: 1rem; // 16px
 $font-size-300: 0.875rem; // 14px
 $font-size-200: 0.75rem; // 12px
 
-// Utits
+// Utils
 $padding-unit: 0.3125rem;
 $margin-unit: 0.3125rem;
-$transition-duration: 100ms;
+$transition-duration: 250ms;
 $border-width: 0.125rem;
 $box-shadow-size-sm: 0 0 0 0.125rem;
 $box-shadow-size-md: 0 0 0 0.25rem;
