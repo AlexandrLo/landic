@@ -1,44 +1,153 @@
-@mixin btn-default {
-  @include text-label-md;
-  color: $gray-700;
-  background: $brand-400;
-  border: none;
-  border-radius: 1000px;
-  margin: 4px;
-  padding: 10px 20px;
-  transition: $transition-duration ease all;
+@mixin btn-solid-variant($color-main, $color-light, $color-dark) {
+  color: $gray-800;
+  background: $color-main;
   &:hover {
-    box-shadow: 0 0 0 4px transparentize($brand-400, 0.6);
+    box-shadow: $btn-box-shadow transparentize($color-main, 0.5);
   }
   &:active {
-    color: $gray-600;
-    background: $brand-100;
+    color: $gray-500;
+    background: $color-light;
   }
   &:disabled {
-    color: $gray-700;
-    background: $brand-800;
+    color: $gray-800;
+    background: $color-dark;
     box-shadow: none;
   }
 }
-@mixin btn-outline($color-default, $color-disabled) {
+@mixin btn-outline-variant($color-default, $color-disabled) {
   color: $color-default;
   background: transparent;
-  border: 2px solid $color-default;
+  border: $border-width solid $color-default;
   box-shadow: none;
   &:hover {
     color: $color-default;
     border-color: $color-default;
-    background: transparentize($color-default, 0.8);
+    background: transparentize($color-default, 0.75);
   }
   &:active {
     color: $color-default;
     border-color: $color-default;
-    background: transparentize($color-default, 0.6);
+    background: transparentize($color-default, 0.5);
   }
   &:disabled {
     color: $color-disabled;
     border-color: $color-disabled;
     background: transparent;
+  }
+}
+@mixin btn {
+  @include typography("label-md");
+  @include btn-solid-variant($brand-400, $brand-200, $brand-600);
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: $btn-border-radius;
+  margin: $btn-margin;
+  padding: $btn-md-padding $btn-md-padding * 2;
+  transition: $transition-duration ease all;
+  & > i {
+    font-size: $font-size-500;
+  }
+  // Sizes
+  &.btn-sm {
+    @include typography("label-sm");
+    padding: $btn-sm-padding $btn-sm-padding * 2;
+    & > i {
+      font-size: $font-size-300;
+    }
+  }
+  &.btn-md {
+    @include typography("label-md");
+    padding: $btn-md-padding $btn-md-padding * 2;
+    & > i {
+      font-size: $font-size-500;
+    }
+  }
+  &.btn-lg {
+    @include typography("label-lg");
+    padding: $btn-lg-padding $btn-lg-padding * 2;
+    & > i {
+      font-size: $font-size-600;
+    }
+  }
+  // Variants
+  &.btn-primary {
+    @include btn-solid-variant($brand-400, $brand-200, $brand-600);
+  }
+  &.btn-secondary {
+    @include btn-solid-variant($gray-50, $gray-200, $gray-500);
+  }
+  &.btn-success {
+    @include btn-solid-variant($success-400, $success-200, $success-600);
+  }
+  &.btn-warning {
+    @include btn-solid-variant($warning-400, $warning-200, $warning-600);
+  }
+  &.btn-danger {
+    @include btn-solid-variant($danger-400, $danger-200, $danger-600);
+  }
+  &.btn-outline,
+  &.btn-outline-primary {
+    @include btn-outline-variant($brand-400, $brand-600);
+  }
+  &.btn-outline-secondary {
+    @include btn-outline-variant($gray-100, $gray-600);
+  }
+  &.btn-outline-success {
+    @include btn-outline-variant($success-400, $success-600);
+  }
+  &.btn-outline-warning {
+    @include btn-outline-variant($warning-400, $warning-600);
+  }
+  &.btn-outline-danger {
+    @include btn-outline-variant($danger-400, $danger-600);
+  }
+  &.btn-transparent {
+    color: $brand-400;
+    background: transparent;
+    box-shadow: none;
+    text-decoration: underline;
+    &:hover,
+    &:focus {
+      color: $brand-400;
+      background: transparentize($gray-50, 0.75);
+      border-color: transparent;
+    }
+    &:active {
+      color: $brand-400;
+      background: transparentize($gray-50, 0.5);
+      border-color: transparent;
+    }
+    &:disabled {
+      color: $brand-600;
+      background: transparent;
+    }
+  }
+  &.btn-icon {
+    position: relative;
+    vertical-align: top;
+    padding: $btn-md-padding;
+    &::before {
+      content: "";
+      display: block;
+      height: 1.5em;
+      width: 1.5em;
+    }
+    & > i {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &.btn-sm {
+      padding: $btn-sm-padding;
+    }
+    &.btn-md {
+      padding: $btn-md-padding;
+    }
+    &.btn-lg {
+      padding: $btn-lg-padding;
+    }
   }
 }
 
@@ -47,142 +156,5 @@ input[type="reset"],
 input[type="submit"],
 button,
 a.btn {
-  @include btn-default;
-  text-decoration: none;
-  display: inline-block;
-
-  //* Button sizes
-  &.btn-sm {
-    @include text-label-sm;
-    padding: 6px 12px;
-  }
-  &.btn-md {
-    // Uses default style
-  }
-  &.btn-lg {
-    @include text-label-lg;
-    padding: 12px 32px;
-  }
-  //* Solid button variants
-  &.btn-primary {
-    // Uses default style
-  }
-  &.btn-secondary {
-    color: $gray-700;
-    background: $gray-100;
-    &:hover {
-      box-shadow: 0 0 0 4px transparentize($gray-100, 0.6);
-    }
-    &:active {
-      color: $gray-500;
-      background: $gray-200;
-    }
-    &:disabled {
-      color: $gray-700;
-      background: $gray-400;
-      box-shadow: none;
-    }
-  }
-  &.btn-success {
-    color: $gray-700;
-    background: $success-400;
-    &:hover {
-      box-shadow: 0 0 0 4px transparentize($success-400, 0.6);
-    }
-    &:active {
-      color: $gray-500;
-      background: $success-100;
-    }
-    &:disabled {
-      color: $gray-700;
-      background: $success-800;
-    }
-  }
-  &.btn-warning {
-    color: $gray-700;
-    background: $warning-400;
-    &:hover {
-      box-shadow: 0 0 0 4px transparentize($warning-400, 0.6);
-    }
-    &:active {
-      color: $gray-500;
-      background: $warning-100;
-    }
-    &:disabled {
-      color: $gray-700;
-      background: $warning-800;
-    }
-  }
-  &.btn-danger {
-    color: $gray-700;
-    background: $danger-400;
-    &:hover {
-      box-shadow: 0 0 0 4px transparentize($danger-400, 0.6);
-    }
-    &:active {
-      color: $gray-700;
-      background: $danger-100;
-    }
-    &:disabled {
-      color: $gray-700;
-      background: $danger-800;
-    }
-  }
-  //* Transparent (link) button
-  &.btn-transparent {
-    color: $brand-400;
-    background: transparent;
-    box-shadow: none;
-    &:hover {
-      color: $brand-400;
-      background: transparentize($gray-100, 0.8);
-      border-color: transparent;
-    }
-    &:active {
-      color: $brand-400;
-      background: transparentize($gray-100, 0.6);
-      border-color: transparent;
-    }
-    &:disabled {
-      color: $brand-800;
-      background: transparent;
-    }
-  }
-  //* Outline button variants
-  &.btn-outline {
-    @include btn-outline($brand-400, $brand-800);
-  }
-  &.btn-outline-primary {
-    @extend .btn-outline;
-  }
-  &.btn-outline-secondary {
-    @include btn-outline($gray-100, $gray-400);
-  }
-  &.btn-outline-success {
-    @include btn-outline($success-400, $success-800);
-  }
-  &.btn-outline-warning {
-    @include btn-outline($warning-400, $warning-800);
-  }
-  &.btn-outline-danger {
-    @include btn-outline($danger-400, $danger-800);
-  }
-  //* Icon button
-  &.btn-icon {
-    position: relative;
-    font-size: 20px;
-    vertical-align: top;
-    padding: 10px;
-    &.btn-sm {
-      font-size: 16px;
-      padding: 6px;
-    }
-    &.btn-md {
-      // Uses default style
-    }
-    &.btn-lg {
-      font-size: 26px;
-      padding: 12px;
-    }
-  }
+  @include btn;
 }
