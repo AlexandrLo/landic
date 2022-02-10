@@ -13,13 +13,35 @@
   }
 }
 
-$align-items-props: "center" center, "start" flex-start, "end" flex-end,
-  "stretch" stretch, "baseline" baseline;
-$justify-content-props: "center" center, "start" start, "end" end,
-  "around" space-around, "between" space-between, "evenly" space-evenly;
-$flex-direction-props: "column" column, "column-reverse" column-reverse,
-  "row" row, "row-reverse" row-reverse;
-$flex-grow-shrink-props: "0" 0, "1" 1, "2" 2, "3" 3, "4" 4, "5" 5;
+$align-items-props: (
+  "center": center,
+  "start": flex-start,
+  "end": flex-end,
+  "stretch": stretch,
+  "baseline": baseline,
+);
+$justify-content-props: (
+  "center": center,
+  "start": start,
+  "end": end,
+  "around": space-around,
+  "between": space-between,
+  "evenly": space-evenly,
+);
+$flex-direction-props: (
+  "column": column,
+  "column-reverse": column-reverse,
+  "row": row,
+  "row-reverse": row-reverse,
+);
+$flex-grow-shrink-props: (
+  "0": 0,
+  "1": 1,
+  "2": 2,
+  "3": 3,
+  "4": 4,
+  "5": 5,
+);
 
 @include flex-generator("align-items", "align-items", $align-items-props);
 @include flex-generator("align-self", "align-self", $align-items-props);
