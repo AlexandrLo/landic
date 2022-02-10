@@ -4,3 +4,32 @@
   margin: 0 auto;
   padding: 0 calc($padding-unit * 5);
 }
+
+$display-props: (
+  "block": block,
+  "flex": flex,
+  "grid": grid,
+  "inline": inline,
+  "inline-block": inline-block,
+  "inline-flex": inline-flex,
+  "inline-grid": inline-grid,
+);
+@include utility-class-generator("d", "display", $display-props);
+
+.sticky {
+  z-index: 1;
+  position: sticky;
+}
+
+.pos-top {
+  top: 0;
+}
+.pos-bottom {
+  bottom: 0;
+}
+.pos-left {
+  left: 0;
+}
+.pos-right {
+  right: 0;
+}
