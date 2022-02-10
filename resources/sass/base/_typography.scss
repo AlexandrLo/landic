@@ -11,7 +11,7 @@ p {
 
 // Selection
 ::selection {
-  background-color: $brand-400-50;
+  background-color: transparentize($brand-400, 0.5);
 }
 
 $typography-styles: (

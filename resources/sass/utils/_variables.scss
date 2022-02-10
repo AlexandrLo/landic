@@ -56,9 +56,15 @@ $font-size-200: 0.75rem; // 12px
 $min-spacer: 5px;
 $transition-duration: 100ms;
 $border-width: 0.125rem;
-$btn-box-shadow: 0 0 0 0.25rem;
-$btn-border-radius: 100vmax;
+$box-shadow-size-sm: 0 0 0 0.125rem;
+$box-shadow-size-md: 0 0 0 0.25rem;
+$box-shadow-size-lg: 0 0 0 0.5rem;
+$border-radius-sm: 0.3125rem;
+$border-radius-md: 0.625rem;
+$border-radius-lg: 1.625rem;
+$border-radius-pill: 100vmax;
 $btn-margin: 0.25rem;
 $btn-sm-padding: 0.25rem;
 $btn-md-padding: 0.625rem;
 $btn-lg-padding: 1.25rem;
+$input-padding: 0.3125rem;

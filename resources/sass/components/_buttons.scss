@@ -2,7 +2,7 @@
   color: $gray-800;
   background: $color-main;
   &:hover {
-    box-shadow: $btn-box-shadow transparentize($color-main, 0.5);
+    box-shadow: $box-shadow-size-md transparentize($color-main, 0.5);
   }
   &:active {
     color: $gray-500;
@@ -41,7 +41,7 @@
   text-decoration: none;
   display: inline-block;
   border: none;
-  border-radius: $btn-border-radius;
+  border-radius: $border-radius-pill;
   margin: $btn-margin;
   padding: $btn-md-padding $btn-md-padding * 2;
   transition: $transition-duration ease all;
