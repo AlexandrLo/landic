@@ -1,16 +1,5 @@
-.d-flex {
-  display: flex !important;
-}
 .flex-fill {
   flex: 1 1 auto !important;
-}
-
-@mixin flex-generator($class-prefix, $prop-name, $props) {
-  @each $prop, $value in $props {
-    .#{$class-prefix}-#{$prop} {
-      #{$prop-name}: $value !important;
-    }
-  }
 }
 
 $align-items-props: (
@@ -43,14 +32,38 @@ $flex-grow-shrink-props: (
   "5": 5,
 );
 
-@include flex-generator("align-items", "align-items", $align-items-props);
-@include flex-generator("align-self", "align-self", $align-items-props);
-@include flex-generator(
+@include utility-class-generator(
+  "align-items",
+  "align-items",
+  $align-items-props
+);
+@include utility-class-generator(
+  "align-self",
+  "align-self",
+  $align-items-props
+);
+@include utility-class-generator(
   "justify-content",
   "justify-content",
   $justify-content-props
 );
-@include flex-generator("flex", "flex-direction", $flex-direction-props);
-@include flex-generator("flex-grow", "flex-grow", $flex-grow-shrink-props);
-@include flex-generator("flex-shrink", "flex-shrink", $flex-grow-shrink-props);
-@include flex-generator("flex-basis", "flex-basis", $flex-grow-shrink-props);
+@include utility-class-generator(
+  "flex",
+  "flex-direction",
+  $flex-direction-props
+);
+@include utility-class-generator(
+  "flex-grow",
+  "flex-grow",
+  $flex-grow-shrink-props
+);
+@include utility-class-generator(
+  "flex-shrink",
+  "flex-shrink",
+  $flex-grow-shrink-props
+);
+@include utility-class-generator(
+  "flex-basis",
+  "flex-basis",
+  $flex-grow-shrink-props
+);
