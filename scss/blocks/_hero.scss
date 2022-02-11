@@ -1,0 +1,13 @@
+.hero {
+  min-height: 80vh;
+  & .hero-mw.container {
+    max-width: 50rem;
+  }
+}
+.hero-background-image {
+  background-image: $hero-background-image;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}

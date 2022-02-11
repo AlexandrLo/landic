@@ -9,7 +9,7 @@ a.brand-logo {
     display: inline-block;
     & > a:not(.brand-logo) {
       color: $gray-100;
-      padding: calc($padding-unit * 5);
+      padding: calc($padding-unit * 2);
       text-decoration: none;
       display: inline-block;
       transition: $transition-duration ease all;

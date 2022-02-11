@@ -1,0 +1,129 @@
+@use "sass:map";
+@use "sass:list";
+
+@mixin class-gen($class-name, $props) {
+  .#{$class-name} {
+    @each $prop-name, $value in $props {
+      #{$prop-name}: $value !important;
+    }
+  }
+}
+
+@mixin class-gen-responsive($class-name, $props) {
+  @each $breakpoint-name, $breakpoint in $grid-breakpoints {
+    @media only screen and (min-width: $breakpoint) {
+      @include class-gen($class-name, $props);
+    }
+  }
+}
+
+@mixin util-gen($util-defs) {
+  @each $util-name, $util-def in $util-defs {
+    $prop: map.get($util-def, prop);
+    $prefix: map.get($util-def, prefix);
+    $responsive: map.get($util-def, responsive);
+    $values: map.get($util-def, values);
+
+    @each $name, $value in $values {
+      @include class-gen(
+        strings-join($prefix $name),
+        (
+          $prop: $value,
+        )
+      );
+    }
+    @if $responsive {
+      @each $name, $value in $values {
+        @include class-gen-responsive(
+          strings-join($prefix $name),
+          (
+            $prop: $value,
+          )
+        );
+      }
+    }
+  }
+}
+
+@mixin col-gen {
+  @for $i from 1 to 13 {
+    @include class-gen(
+      strings-join(col $i),
+      (
+        flex: 0 0 auto,
+        width: calc(100% / 12 * $i),
+      )
+    );
+  }
+  @for $i from 1 to 13 {
+    @include class-gen-responsive(
+      strings-join(col $i),
+      (
+        flex: 0 0 auto,
+        width: calc(100% / 12 * $i),
+      )
+    );
+  }
+}
+
+@mixin spacing-generator(
+  $short-name,
+  $spacing-name,
+  $min-value,
+  $directions,
+  $min: 0,
+  $max: 10
+) {
+  // Normal classes
+  @each $dir-name, $dir-props in $directions {
+    @for $i from $min through $max {
+      $spacing: calc(#{$min-value} * #{$i});
+      $props: ();
+      @each $prop-name in $dir-props {
+        $props: map.set(
+          $props,
+          strings-join($spacing-name $prop-name),
+          $spacing
+        );
+      }
+      @include class-gen(
+        strings-join(strings-join($short-name $dir-name, "") $i),
+        $props
+      );
+    }
+  }
+  // Responsive classes
+  @each $dir-name, $dir-props in $directions {
+    @for $i from $min through $max {
+      $spacing: calc(#{$min-value} * #{$i});
+      $props: ();
+      @each $prop-name in $dir-props {
+        $props: map.set(
+          $props,
+          strings-join($spacing-name $prop-name),
+          $spacing
+        );
+      }
+      @include class-gen-responsive(
+        strings-join(strings-join($short-name $dir-name, "") $i),
+        $props
+      );
+    }
+  }
+}
+
+@mixin utility-class-complex-generator($class-prefix, $prop-values, $variants) {
+  @each $class-name-variant, $prop-names in $variants {
+    @each $class-name-value, $value in $prop-values {
+      $class-name: strings-join(
+        $class-prefix $class-name-variant $class-name-value,
+        $separator: "-"
+      );
+      .#{$class-name} {
+        @each $prop-name in $prop-names {
+          #{$prop-name}: $value !important;
+        }
+      }
+    }
+  }
+}

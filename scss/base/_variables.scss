@@ -49,8 +49,10 @@ $font-size-300: 0.875rem; // 14px
 $font-size-200: 0.75rem; // 12px
 
 // Utils
-$padding-unit: 0.3125rem;
-$margin-unit: 0.3125rem;
+$padding-unit: 0.625rem;
+$margin-unit: 0.625rem;
+$gap-unit: 0.625rem;
+$container-max-width: 80rem;
 $transition-duration: 250ms;
 $border-width: 0.125rem;
 $box-shadow-size-sm: 0 0 0 0.125rem;
@@ -59,9 +61,40 @@ $box-shadow-size-lg: 0 0 0 0.5rem;
 $border-radius-sm: 0.3125rem;
 $border-radius-md: 0.625rem;
 $border-radius-lg: 1.625rem;
+$border-radius-xl: 6.25rem;
 $border-radius-pill: 100vmax;
 $btn-margin: 0.25rem;
 $btn-sm-padding: 0.25rem;
 $btn-md-padding: 0.625rem;
 $btn-lg-padding: 1.25rem;
 $input-padding: 0.3125rem;
+
+$sizes: (
+  "auto": auto,
+  "25": 25%,
+  "50": 50%,
+  "75": 75%,
+  "100": 100%,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$spacing-directions: (
+  "": "",
+  "x": left right,
+  "y": top bottom,
+  "l": left,
+  "r": right,
+  "t": top,
+  "b": bottom,
+);
+
+// Urls
+$hero-background-image: url(img/hero_bg_image.png);

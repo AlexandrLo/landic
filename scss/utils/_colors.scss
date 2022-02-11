@@ -1,0 +1,49 @@
+$util-colors: (
+  bg: (
+    prop: background,
+    prefix: bg,
+    values: (
+      700: $background-700,
+      600: $background-600,
+      500: $background-500,
+      400: $background-400,
+      300: $background-300,
+      200: $background-200,
+      100: $background-100,
+      50: $background-50,
+      primary: $brand-400,
+      transparent: transparent,
+    ),
+  ),
+  text: (
+    prop: color,
+    prefix: text,
+    values: (
+      default: $gray-50,
+      white: $gray-50,
+      secondary: $gray-300,
+      bg: $background-400,
+      black: $gray-800,
+      primary: $brand-400,
+      success: $success-400,
+      warning: $warning-400,
+      danger: $danger-400,
+    ),
+  ),
+  border: (
+    prop: border-color,
+    prefix: border,
+    values: (
+      default: $gray-500,
+      secondary: $gray-300,
+      white: $gray-50,
+      black: $gray-800,
+      primary: $brand-400,
+      success: $success-400,
+      warning: $warning-400,
+      danger: $danger-400,
+    ),
+  ),
+);
+
+@include util-gen($util-colors);

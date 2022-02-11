@@ -1,0 +1,41 @@
+$border-props: border, border-left, border-right, border-top, border-bottom;
+
+// .border-#{side}
+@each $prop in $border-props {
+  .#{$prop} {
+    #{$prop}: #{$border-width} solid $gray-500 !important;
+  }
+}
+
+// .border-#{side}-#{width}
+@for $size from 0 through 5 {
+  @each $prop in $border-props {
+    .#{$prop}-#{$size} {
+      #{$prop}: #{$border-width * $size} solid $gray-500 !important;
+    }
+  }
+}
+
+// .radius-#{size}
+$radius-prop-sizes: (
+  "": $border-radius-md,
+  "sm": $border-radius-sm,
+  "md": $border-radius-md,
+  "lg": $border-radius-lg,
+  "xl": $border-radius-xl,
+  "pill": $border-radius-pill,
+);
+$radius-variants: (
+  "": border-radius,
+  "start": border-top-left-radius border-bottom-left-radius,
+  "end": border-top-right-radius border-bottom-right-radius,
+  "top": border-top-left-radius border-top-right-radius,
+  "bottom": border-bottom-left-radius border-bottom-right-radius,
+);
+
+// .radius-#{$variant}-#{$size}
+@include utility-class-complex-generator(
+  "rounded",
+  $radius-prop-sizes,
+  $radius-variants
+);

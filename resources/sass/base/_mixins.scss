@@ -1,7 +1,0 @@
-@mixin utility-class-generator($class-prefix, $prop-name, $props) {
-  @each $class-suffix, $value in $props {
-    .#{$class-prefix}-#{$class-suffix} {
-      #{$prop-name}: $value !important;
-    }
-  }
-}

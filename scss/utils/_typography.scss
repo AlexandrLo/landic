@@ -194,7 +194,11 @@ $typography-styles: (
 @mixin typography($style-name: "body1") {
   $styles: map.get(map.get($typography-styles, $style-name), "styles");
   @each $prop, $value in $styles {
-    #{$prop}: $value;
+    @if $prop == font-size {
+      @include font-size($value);
+    } @else {
+      #{$prop}: $value;
+    }
   }
 }
 

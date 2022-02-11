@@ -1,0 +1,20 @@
+@function url-friendly-color($color) {
+  $hex: ie-hex-str($color);
+  @return "%23" + str-slice("#{$hex}", 4, -1) + str-slice("#{$hex}", 2, 3);
+}
+
+@function strings-join($list, $separator: "-") {
+  $result: "";
+  $is-first: true;
+  @each $string in $list {
+    @if $string != "" {
+      @if $is-first {
+        $result: #{$string};
+        $is-first: false;
+      } @else {
+        $result: #{$result}#{$separator}#{$string};
+      }
+    }
+  }
+  @return $result;
+}
