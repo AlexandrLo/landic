@@ -1,15 +1,16 @@
 {
-	"name": "landify",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"watch": "npx sass --watch resources/sass/style.scss:index.css"
-	},
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"sass": "^1.49.0"
-	}
+  "name": "landify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx sass --watch scss/style.scss:index.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rfs": "^9.0.6",
+    "sass": "^1.49.0"
+  }
 }
