@@ -12,7 +12,7 @@
 @mixin class-gen-responsive($class-name, $props) {
   @each $breakpoint-name, $breakpoint in $grid-breakpoints {
     @media only screen and (min-width: $breakpoint) {
-      @include class-gen($class-name, $props);
+      @include class-gen(strings-join($class-name $breakpoint-name), $props);
     }
   }
 }
