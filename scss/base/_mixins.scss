@@ -46,7 +46,7 @@
 }
 
 @mixin col-gen {
-  @for $i from 1 to 13 {
+  @for $i from 1 through 12 {
     @include class-gen(
       strings-join(col $i),
       (
@@ -55,7 +55,13 @@
       )
     );
   }
-  @for $i from 1 to 13 {
+  @include class-gen-responsive(
+    col,
+    (
+      flex: 1 0 0%,
+    )
+  );
+  @for $i from 1 through 12 {
     @include class-gen-responsive(
       strings-join(col $i),
       (
@@ -72,7 +78,7 @@
   $min-value,
   $directions,
   $min: 0,
-  $max: 10
+  $max: 5
 ) {
   // Normal classes
   @each $dir-name, $dir-props in $directions {
