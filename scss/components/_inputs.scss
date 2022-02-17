@@ -1,3 +1,4 @@
+//* Text-like inputs
 @mixin input-validated($is-valid: true) {
   $validation-color: $danger-400;
   @if $is-valid {
@@ -85,8 +86,6 @@
     }
   }
 }
-
-//* Text-like inputs
 input[type="text"],
 input[type="number"],
 input[type="url"],
@@ -106,7 +105,7 @@ input[type="password"] {
 }
 
 //* Checkbox
-@mixin colored-check($color) {
+@mixin colored-check-bg($color) {
   background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='#{url-friendly-color($color)}' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cpolyline points='216 72 104 184 48 128' fill='none' stroke='#{url-friendly-color($color)}' stroke-linecap='round' stroke-linejoin='round' stroke-width='24'%3E%3C/polyline%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: center center;
@@ -119,7 +118,6 @@ input[type="password"] {
   $color: transparent;
   $color-active: transparent;
   $color-disabled: transparent;
-
   @if $is-checked {
     $background: $brand-400;
     $background-active: $brand-200;
@@ -129,34 +127,9 @@ input[type="password"] {
     $color-disabled: $gray-800;
   }
 
-  & + label::before {
-    background: $background;
-    @include colored-check($color);
-  }
-  & + label:hover::before {
-    box-shadow: $box-shadow-size-md transparentize($brand-400, 0.5);
-  }
-  & + label:active::before {
-    box-shadow: $box-shadow-size-md transparentize($brand-400, 0.5);
-    background: $background-active;
-    @include colored-check($color-active);
-  }
-  &:disabled + label::before {
-    box-shadow: none;
-    background: transparentize($background-disabled, 0.75);
-    @include colored-check($color-disabled);
-  }
-}
-input[type="checkbox"] {
   position: absolute;
   z-index: -1;
   opacity: 0;
-  &:checked {
-    @include checkbox-is-checked(true);
-  }
-  &:not(:checked) {
-    @include checkbox-is-checked(false);
-  }
   & + label {
     display: inline-flex;
     align-items: center;
@@ -171,7 +144,30 @@ input[type="checkbox"] {
       border-radius: $border-radius-sm;
       margin-right: 1rem;
       transition: $transition-duration ease all;
+      background: $background;
+      @include colored-check-bg($color);
     }
+    &:hover::before {
+      box-shadow: $box-shadow-size-md transparentize($brand-400, 0.5);
+    }
+    &:active::before {
+      box-shadow: $box-shadow-size-md transparentize($brand-400, 0.5);
+      background: $background-active;
+      @include colored-check-bg($color-active);
+    }
+  }
+  &:disabled + label::before {
+    box-shadow: none;
+    background: transparentize($background-disabled, 0.75);
+    @include colored-check-bg($color-disabled);
+  }
+}
+input[type="checkbox"].check {
+  &:checked {
+    @include checkbox-is-checked(true);
+  }
+  &:not(:checked) {
+    @include checkbox-is-checked(false);
   }
 }
 
