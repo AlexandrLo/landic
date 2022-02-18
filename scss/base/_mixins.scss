@@ -61,6 +61,20 @@
       flex: 1 0 0%,
     )
   );
+  @include class-gen(
+    strings-join(col auto),
+    (
+      flex: 0 0 auto,
+      width: auto,
+    )
+  );
+  @include class-gen-responsive(
+    strings-join(col auto),
+    (
+      flex: 0 0 auto,
+      width: auto,
+    )
+  );
   @for $i from 1 through 12 {
     @include class-gen-responsive(
       strings-join(col $i),
