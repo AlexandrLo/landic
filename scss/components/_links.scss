@@ -5,15 +5,20 @@ a.brand-logo {
 .navlinks {
   margin: 0;
   padding: 0;
+  align-items: center;
   & > li {
     display: inline-block;
-    & > a:not(.brand-logo) {
-      color: $gray-100;
-      padding: calc($padding-unit * 2);
-      text-decoration: none;
+    & > a {
+      @include typography("label-md");
       display: inline-block;
+      width: 100%;
+      padding: $padding-unit * 3;
+      color: $gray-100;
+      text-decoration: none;
+      text-align: center;
       transition: $transition-duration ease all;
-      &:hover {
+      &:hover,
+      &.active {
         color: $brand-400;
       }
       &:active {

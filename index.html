@@ -10,142 +10,65 @@
   <script src="index.js"></script>
 </head>
 
-<body>
+<body class="bg-400 text-white">
   <!-- NAVBAR -->
-  <nav class="nav-sticky bg-dark">
-    <div class="content-wrapper d-flex justify-content-between align-items-center">
-      <ul class="navlinks">
-        <li>
-          <a class="brand-logo mr-5" href="index.html">
-            <img src="resources/svg/logo.svg" alt="Brand logo">
-          </a>
-        </li>
-        <li><a href="components.html">Components</a></li>
-        <li><a href="blocks.html">Blocks</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
+  <header class="sticky pos-top bg-600">
+    <nav class="container row align-center">
+      <input type="checkbox" class="navbar-toggle" id="navbar-toggle">
+      <label class="d-none-lg mr-2" for="navbar-toggle"></label>
+      <a class="brand-logo mr-2" href="index.html">
+        <img src="assets/svg/brand-logo-default.svg" aria-label="Brand logo">
+      </a>
+      <ul class="navlinks d-flex-lg row col-12 col-lg">
+        <li class="col-12 col-auto-lg"><a href="components.html">Components</a></li>
+        <li class="col-12 col-auto-lg"><a href="blocks.html">Blocks</a></li>
+        <li class="col-12 col-auto-lg"><a href="#">Contact</a></li>
+        <li class="col-12 col-auto-lg"><a href="#">About</a></li>
       </ul>
-      <input type="button" class="btn" value="Download Now">
-    </div>
-  </nav>
+      <input type="button" class="btn d-none d-block-lg" value="Download Now">
+    </nav>
+  </header>
   <!-- HERO -->
-  <div class="hero">
-    <div class="hero-wrapper">
-      <div class="hero-content">
-        <div class="hero-header">
-          Landing page
-          </br>
-          UI kit
+  <div class="d-flex justify-center bg-500 mb-5 py-5">
+    <div class="container row align-center p-0">
+      <div class="col-12 col-6-xl p-3">
+        <h3>
+          Landing Page
+          Design System
+        </h3>
+        <p class="lead1 my-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida rhoncus convallis sed magna. Tristique
+          vivamus enim amet, vitae vel iaculis lectus.
+        </p>
+        <div>
+          <a href="#" class="btn btn-lg">Get Started</a>
+          <a href="#" class="btn btn-lg btn-transparent">Download</a>
         </div>
-        <div class="hero-lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Nunc odio in et, lectus sit lorem id integer.
-        </div>
-        <input type="button" class="btn-lg" value="Get Started">
+      </div>
+      <div class="col-12 col-6-xl p-3 d-flex justify-center">
+        <img src="assets/svg/hero-illustration-1.svg" alt="Hero illustration">
       </div>
     </div>
   </div>
-  <!-- LOGO CLOUD -->
-  <div class="logo-cloud-wrapper">
-    <div class="logo-cloud-content">
-      <h2 class="m-0">150 000+</h2>
-      <div class="text-lead-1">
-        Customers who use Landic UI Kit to build
-        their new startup landing page.
+  <!-- Footer -->
+  <footer class="bg-700 py-3">
+    <div class="container d-flex justify-between align-center">
+      <div class="text-center text-body-2 text-secondary">
+        © 2022 Landic Design System. All rights reserved
+      </div>
+      <div>
+        <a class="btn btn-transparent btn-icon" href="#">
+          <i class="ph-instagram-logo-bold"></i>
+        </a>
+        <a class="btn btn-transparent btn-icon" href="#">
+          <i class="ph-telegram-logo-bold"></i>
+        </a>
+        <a class="btn btn-transparent btn-icon" href="#">
+          <i class="ph-github-logo-bold"></i>
+        </a>
       </div>
     </div>
-    <div class="logo-cloud-logos">
-      <img class="logo-cloud-logo" src="resources/svg/logo_airbnb.svg" alt="Airbnb">
-      <img class="logo-cloud-logo" src="resources/svg/logo_amazon.svg" alt="Amazon">
-      <img class="logo-cloud-logo" src="resources/svg/logo_fedex.svg" alt="FedEx">
-      <img class="logo-cloud-logo" src="resources/svg/logo_google.svg" alt="Google">
-      <img class="logo-cloud-logo" src="resources/svg/logo_microsoft.svg" alt="Microsoft">
-      <img class="logo-cloud-logo" src="resources/svg/logo_ola.svg" alt="OLA">
-      <img class="logo-cloud-logo" src="resources/svg/logo_oyo.svg" alt="OYO">
-      <img class="logo-cloud-logo" src="resources/svg/logo_walmart.svg" alt="Wallmart">
-    </div>
-  </div>
-  <!-- FEATURES -->
-  <div class="features-wrapper">
-    <div class="features-header">
-      <h2 class="m-0">Discover the key features</h2>
-      <div class="text-lead-1">
-        Lorem ipsum is common placeholder text used to demonstrate
-        the graphic elements of a document or visual presentation.
-      </div>
-    </div>
-    <div class="features-cards">
-      <div class="card bg-light p-0">
-        <div class="card-icon text-center text-primary">
-          <i class="ph-flow-arrow-bold ph-3x"></i>
-        </div>
-        <div class="card-title text-center">Robust workflow</div>
-        <div class="card-body text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Sed erat nibh tristique ipsum.
-        </div>
-      </div>
-      <div class="card bg-light p-0">
-        <div class="card-icon text-center text-primary">
-          <i class="ph-swatches-bold ph-3x"></i>
-        </div>
-        <div class="card-title text-center">Flexibility</div>
-        <div class="card-body text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Sed erat nibh tristique ipsum.
-        </div>
-      </div>
-      <div class="card bg-light p-0">
-        <div class="card-icon text-center text-primary">
-          <i class="ph-heart-bold ph-3x"></i>
-        </div>
-        <div class="card-title text-center">User friendly</div>
-        <div class="card-body text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Sed erat nibh tristique ipsum.
-        </div>
-      </div>
-      <div class="card bg-light p-0">
-        <div class="card-icon text-center text-primary">
-          <i class="ph-layout-bold ph-3x"></i>
-        </div>
-        <div class="card-title text-center">Multiple layouts</div>
-        <div class="card-body text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Sed erat nibh tristique ipsum.
-        </div>
-      </div>
-      <div class="card bg-light p-0">
-        <div class="card-icon text-center text-primary">
-          <i class="ph-puzzle-piece-bold ph-3x"></i>
-        </div>
-        <div class="card-title text-center">Better components</div>
-        <div class="card-body text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Sed erat nibh tristique ipsum.
-        </div>
-      </div>
-      <div class="card bg-light p-0">
-        <div class="card-icon text-center text-primary">
-          <i class="ph-stack-bold ph-3x"></i>
-        </div>
-        <div class="card-title text-center">Well organised</div>
-        <div class="card-body text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Sed erat nibh tristique ipsum.
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- CTA -->
-  <div class="bg-primary text-black">
-    <div class="cta-wrapper">
-      <div class="cta-header">
-        Fasten your website creation process with Landify UI Kit
-      </div>
-      <input type="button" class="btn-lg btn-secondary" value="Get Started">
-    </div>
-  </div>
+  </footer>
 </body>
 
 </html>

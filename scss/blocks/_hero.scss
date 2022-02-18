@@ -1,13 +1,14 @@
-.hero {
-  min-height: 80vh;
-  & .hero-mw.container {
-    max-width: 50rem;
-  }
-}
-.hero-background-image {
-  background-image: $hero-background-image;
+.hero-bg-1 {
+  background-image: $hero-bg-1;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
+  background-size: cover;
+}
+.hero-bg-2 {
+  background-image: $hero-bg-2;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
   background-size: cover;
 }

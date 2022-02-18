@@ -10,115 +10,310 @@
   <script src="index.js"></script>
 </head>
 
-<body>
+<body class="bg-400 text-white">
   <!-- NAVBAR -->
-  <nav class="nav-sticky bg-dark">
-    <div class="content-wrapper d-flex justify-content-between align-items-center">
-      <ul class="navlinks">
-        <li>
-          <a class="brand-logo mr-5" href="index.html">
-            <img src="resources/svg/logo.svg" alt="Brand logo">
-          </a>
-        </li>
-        <li><a href="components.html">Components</a></li>
-        <li><a href="blocks.html">Blocks</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About</a></li>
+  <header class="sticky pos-top bg-600">
+    <nav class="container row align-center">
+      <input type="checkbox" class="navbar-toggle" id="navbar-toggle">
+      <label class="d-none-lg mr-2" for="navbar-toggle"></label>
+      <a class="brand-logo mr-2" href="index.html">
+        <img src="assets/svg/brand-logo-default.svg" aria-label="Brand logo">
+      </a>
+      <ul class="navlinks d-flex-lg row col-12 col-lg">
+        <li class="col-12 col-auto-lg"><a href="components.html">Components</a></li>
+        <li class="col-12 col-auto-lg"><a href="blocks.html" class="active">Blocks</a></li>
+        <li class="col-12 col-auto-lg"><a href="#">Contact</a></li>
+        <li class="col-12 col-auto-lg"><a href="#">About</a></li>
       </ul>
-      <input type="button" class="btn" value="Download Now">
-    </div>
-  </nav>
+      <input type="button" class="btn d-none d-block-lg" value="Download Now">
+    </nav>
+  </header>
 
   <!-- NAVBARS -->
   <div class="card-dashed">
-    <div class="card-title">Navbars</div>
+    <div class="card-title">Navbar</div>
     <div class="card-body">
       <!-- Navbar 1 -->
-      <div class="py-5">
-        <nav class="bg-dark">
-          <div class="content-wrapper d-flex justify-content-between align-items-center">
-            <ul class="navlinks">
-              <li>
-                <a class="brand-logo mr-5" href="#">
-                  <img src="resources/svg/logo.svg" alt="Brand logo">
-                </a>
-              </li>
-              <li><a href="#">Components</a></li>
-              <li><a href="#">Blocks</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">About</a></li>
+      <div class="py-2">
+        <header class="bg-600">
+          <nav class="container row align-center">
+            <input type="checkbox" class="navbar-toggle" id="navbar-toggle-1">
+            <label class="d-none-lg mr-2" for="navbar-toggle-1"></label>
+            <a class="brand-logo mr-2" href="index.html">
+              <img src="assets/svg/brand-logo-default.svg" aria-label="Brand logo">
+            </a>
+            <ul class="navlinks d-flex-lg row col-12 col-lg">
+              <li class="col-12 col-auto-lg"><a href="">News</a></li>
+              <li class="col-12 col-auto-lg"><a href="">Contact</a></li>
+              <li class="col-12 col-auto-lg"><a href="">About</a></li>
             </ul>
-            <input type="button" class="btn" value="Download Now">
-          </div>
-        </nav>
+            <input type="button" class="btn d-none d-block-lg" value="Download Now">
+          </nav>
+        </header>
       </div>
       <!-- Navbar 2 -->
-      <div class="py-5">
-        <nav class="bg-dark">
-          <div class="content-wrapper d-flex justify-content-between align-items-center">
-            <ul class="navlinks">
-              <li>
-                <a class="brand-logo mr-5" href="#">
-                  <img src="resources/svg/logo.svg" alt="Brand logo">
-                </a>
-              </li>
+      <div class="py-2">
+        <header class="bg-600">
+          <nav class="container row align-center">
+            <input type="checkbox" class="navbar-toggle" id="navbar-toggle-2">
+            <label class="d-none-lg mr-2" for="navbar-toggle-2"></label>
+            <a class="brand-logo mr-2" href="index.html">
+              <img src="assets/svg/brand-logo-default.svg" aria-label="Brand logo">
+            </a>
+            <ul class="navlinks d-flex-lg row col-12 col-lg justify-end">
+              <li class="col-12 col-auto-lg"><a href="">News</a></li>
+              <li class="col-12 col-auto-lg"><a href="">Contact</a></li>
+              <li class="col-12 col-auto-lg"><a href="">About</a></li>
             </ul>
-            <ul class="navlinks">
-              <li><a href="#">Components</a></li>
-              <li><a href="#">Blocks</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">About</a></li>
-            </ul>
-          </div>
-        </nav>
+          </nav>
+        </header>
       </div>
       <!-- Navbar 3 -->
-      <div class="py-5">
-        <nav class="bg-dark">
-          <div class="content-wrapper d-flex justify-content-center align-items-center">
-            <ul class="navlinks flex-grow-1 flex-basis-0">
-              <li><a href="#">Components</a></li>
-              <li><a href="#">Blocks</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <a class="brand-logo" href="#">
-              <img src="resources/svg/logo.svg" alt="Brand logo">
+      <div class="py-2">
+        <header class="bg-600">
+          <nav class="container row align-center">
+            <input type="checkbox" class="navbar-toggle" id="navbar-toggle-3">
+            <label class="d-none-lg mr-2" for="navbar-toggle-3"></label>
+            <a class="brand-logo d-block d-none-lg" href="index.html">
+              <img src="assets/svg/brand-logo-default.svg" aria-label="Brand logo">
             </a>
-            <div class="flex-grow-1 flex-basis-0 text-end">
-              <input type="button" class="btn" value="Download Now">
+            <ul class="navlinks d-flex-lg row col-12 col-lg">
+              <li class="col-12 col-auto-lg"><a href="">News</a></li>
+              <li class="col-12 col-auto-lg"><a href="">Contact</a></li>
+              <li class="col-12 col-auto-lg"><a href="">About</a></li>
+            </ul>
+            <a class="brand-logo d-none d-flex-lg col-auto justify-center" href="index.html">
+              <img src="assets/svg/brand-logo-default.svg" aria-label="Brand logo">
+            </a>
+            <div class="d-none d-flex-lg col justify-end">
+              <input type="button" class="btn " value="Download Now">
             </div>
-          </div>
-        </nav>
+          </nav>
+        </header>
       </div>
       <!-- Navbar 4 -->
-      <div class="py-5">
-        <nav class="bg-dark">
-          <div class="content-wrapper d-flex justify-content-center align-items-center">
-            <div class="flex-grow-1 flex-basis-0">
-              <a class="brand-logo" href="#">
-                <img src="resources/svg/logo.svg" alt="Brand logo">
-              </a>
-            </div>
-            <ul class="navlinks">
-              <li><a href="#">Components</a></li>
-              <li><a href="#">Blocks</a></li>
-              <li><a href="#">Contact</a></li>
+      <div class="py-2">
+        <header class="bg-600">
+          <nav class="container row align-center">
+            <input type="checkbox" class="navbar-toggle" id="navbar-toggle-4">
+            <label class="d-none-lg mr-2" for="navbar-toggle-4"></label>
+            <a class="brand-logo col justify-center" href="index.html">
+              <img src="assets/svg/brand-logo-default.svg" aria-label="Brand logo">
+            </a>
+            <ul class="navlinks d-flex-lg row col-12 col-auto-lg">
+              <li class="col-12 col-auto-lg"><a href="">News</a></li>
+              <li class="col-12 col-auto-lg"><a href="">Contact</a></li>
+              <li class="col-12 col-auto-lg"><a href="">About</a></li>
             </ul>
-            <div class="flex-grow-1 flex-basis-0 text-end">
-              <input type="button" class="btn" value="Download Now">
+            <div class="d-none d-flex-lg col justify-end">
+              <input type="button" class="btn " value="Download Now">
+            </div>
+          </nav>
+        </header>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- HEROS -->
+  <div class="card-dashed">
+    <div class="card-title">Hero</div>
+    <div class="card-body">
+      <!-- Hero 1 -->
+      <div class="d-flex min-vh-90 bg-primary text-bg rounded-bottom-xl mb-5">
+        <div class="container p-3 d-flex flex-column justify-end">
+          <h1 class="mb-2">
+            Landing Page Design System
+          </h1>
+          <p class="lead1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida rhoncus convallis sed magna. Tristique
+            vivamus enim amet, vitae vel iaculis lectus. Mi dictum mattis venenatis blandit viverra id sagittis egestas
+            diam. Cras lectus erat eget varius vitae.
+          </p>
+          <div class="d-flex flex-wrap justify-center mt-5">
+            <a href="#" class="btn btn-lg btn-transparent text-black">Download</a>
+            <a href="#" class="btn btn-lg btn-secondary">Get Started</a>
+          </div>
+        </div>
+      </div>
+      <!-- Hero 2 -->
+      <div class="hero-bg-1 mb-5">
+        <div class="d-flex min-vh-80 py-5 bf-blur bf-brightness">
+          <div class="container max-w-5 d-flex flex-column justify-center align-center">
+            <h2 class="text-center">
+              Landing Page Design System
+            </h2>
+            <p class="lead1 text-center my-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida rhoncus convallis sed magna. Tristique
+              vivamus enim amet, vitae vel iaculis lectus. Mi dictum mattis venenatis blandit viverra id sagittis
+              egestas
+              diam. Cras lectus erat eget varius vitae.
+            </p>
+            <div class="d-flex justify-center">
+              <a href="#" class="btn btn-lg">Get Started</a>
             </div>
           </div>
-        </nav>
+        </div>
       </div>
+      <!-- Hero 3 -->
+      <div class="d-flex justify-center bg-500 mb-5 py-5">
+        <div class="container row align-center p-0">
+          <div class="col-12 col-6-xl p-3">
+            <h3>
+              Landing Page
+              Design System
+            </h3>
+            <p class="lead1 my-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida rhoncus convallis sed magna. Tristique
+              vivamus enim amet, vitae vel iaculis lectus.
+            </p>
+            <div>
+              <a href="#" class="btn btn-lg">Get Started</a>
+              <a href="#" class="btn btn-lg btn-transparent">Download</a>
+            </div>
+          </div>
+          <div class="col-12 col-6-xl p-3 d-flex justify-center">
+            <img src="assets/svg/hero-illustration-1.svg" alt="Hero illustration">
+          </div>
+        </div>
+      </div>
+      <!-- Hero 4 -->
+      <div class="hero-bg-2 mb-5">
+        <div class="d-flex min-vh-80 py-5">
+          <div class="container d-flex flex-column justify-center align-center">
+            <h3 class="text-center mt-5">
+              Track your product sales from anywhere, anytime.
+            </h3>
+            <div class="d-flex justify-center my-5">
+              <a href="#" class="btn btn-lg">Get Started</a>
+            </div>
+            <div class="col-12 col-6-xl p-3 d-flex justify-center">
+              <img src="assets/svg/hero-illustration-2.svg" alt="Hero illustration">
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
   <!-- FOOTERS -->
   <div class="card-dashed">
-    <div class="card-title">Footers</div>
+    <div class="card-title">Footer</div>
     <div class="card-body">
+      <!-- Footer 1 -->
+      <div class="py-5">
+        <footer class="bg-700 py-5">
+          <div class="container text-center text-body-2 text-secondary">
+            © 2022 Landic Design System. All rights reserved
+          </div>
+        </footer>
+      </div>
+      <!-- Footer 2 -->
+      <div class="py-5">
+        <footer class="bg-700 py-3">
+          <div class="container d-flex justify-content-between align-items-center">
+            <div class="text-center text-body-2 text-secondary">
+              © 2022 Landic Design System. All rights reserved
+            </div>
+            <div>
+              <a class="btn btn-transparent btn-icon" href="#">
+                <i class="ph-instagram-logo-bold"></i>
+              </a>
+              <a class="btn btn-transparent btn-icon" href="#">
+                <i class="ph-telegram-logo-bold"></i>
+              </a>
+              <a class="btn btn-transparent btn-icon" href="#">
+                <i class="ph-github-logo-bold"></i>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- Footer 3 -->
+      <div class="py-5">
+        <footer class="bg-700 py-3">
+          <div class="container d-flex justify-content-between align-items-center">
+            <div class="text-body-2 text-secondary flex-grow-1 flex-basis-0">
+              © 2022 Landic Design System. All rights reserved
+            </div>
+            <a class="brand-logo py-3" href="#">
+              <img src="svg/logo.svg" alt="Brand logo">
+            </a>
+            <div class="flex-grow-1 flex-basis-0 text-end">
+              <a class="btn btn-transparent btn-icon" href="#">
+                <i class="ph-instagram-logo-bold"></i>
+              </a>
+              <a class="btn btn-transparent btn-icon" href="#">
+                <i class="ph-telegram-logo-bold"></i>
+              </a>
+              <a class="btn btn-transparent btn-icon" href="#">
+                <i class="ph-github-logo-bold"></i>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- Footer 4 -->
+      <div class="py-5">
+        <footer class="bg-700">
+          <div class="container">
+            <div class="py-3 d-flex flex-column align-items-center">
+              <a class="brand-logo py-3" href="#">
+                <img src="svg/logo.svg" alt="Brand logo">
+              </a>
+              <ul class="navlinks">
+                <li><a href="#">Components</a></li>
+                <li><a href="#">Blocks</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </div>
+            <div class="separator-x"></div>
+            <div class="py-3 d-flex justify-content-between align-items-center">
+              <div class="text-center text-body-2 text-secondary">
+                © 2022 Landic Design System. All rights reserved
+              </div>
+              <div>
+                <a class="btn btn-transparent btn-icon" href="#">
+                  <i class="ph-instagram-logo-bold"></i>
+                </a>
+                <a class="btn btn-transparent btn-icon" href="#">
+                  <i class="ph-telegram-logo-bold"></i>
+                </a>
+                <a class="btn btn-transparent btn-icon" href="#">
+                  <i class="ph-github-logo-bold"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
     </div>
   </div>
+
+
+
+  <footer class="bg-700 py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="text-center text-body-2 text-secondary">
+        © 2022 Landic Design System. All rights reserved
+      </div>
+      <div>
+        <a class="btn btn-transparent btn-icon" href="#">
+          <i class="ph-instagram-logo-bold"></i>
+        </a>
+        <a class="btn btn-transparent btn-icon" href="#">
+          <i class="ph-telegram-logo-bold"></i>
+        </a>
+        <a class="btn btn-transparent btn-icon" href="#">
+          <i class="ph-github-logo-bold"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
