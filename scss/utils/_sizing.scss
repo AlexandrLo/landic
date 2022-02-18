@@ -21,5 +21,64 @@ $util-sizing: (
       auto: auto,
     ),
   ),
+  min-vh: (
+    prop: min-height,
+    prefix: min-vh,
+    values: (
+      100: 100vh,
+      90: 90vh,
+      80: 80vh,
+      70: 70vh,
+      60: 60vh,
+      50: 50vh,
+    ),
+  ),
+  min-vw: (
+    prop: min-width,
+    prefix: min-vw,
+    values: (
+      100: 100vw,
+      90: 90vw,
+      80: 80vw,
+      70: 70vw,
+      60: 60vw,
+      50: 50vw,
+    ),
+  ),
+  max-vh: (
+    prop: max-height,
+    prefix: max-vh,
+    values: (
+      100: 100vh,
+      90: 90vh,
+      80: 80vh,
+      70: 70vh,
+      60: 60vh,
+      50: 50vh,
+    ),
+  ),
+  max-vw: (
+    prop: max-width,
+    prefix: max-vw,
+    values: (
+      100: 100vw,
+      90: 90vw,
+      80: 80vw,
+      70: 70vw,
+      60: 60vw,
+      50: 50vw,
+    ),
+  ),
+  max-w: (
+    prop: max-width,
+    prefix: max-w,
+    values: (
+      1: $size-unit * 1,
+      2: $size-unit * 2,
+      3: $size-unit * 3,
+      4: $size-unit * 4,
+      5: $size-unit * 5,
+    ),
+  ),
 );
 @include util-gen($util-sizing);
