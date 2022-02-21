@@ -29,11 +29,11 @@
     }
     &::before {
       content: "";
-      margin-top: 0.625rem;
-      margin-bottom: 0.625rem;
+      margin-top: $margin-unit;
+      margin-bottom: $margin-unit;
       display: inline-block;
-      width: 2.75rem;
-      height: 2.75rem;
+      width: 2.5rem;
+      height: 2.5rem;
       border-radius: $border-radius-pill;
       flex-shrink: 0;
       flex-grow: 0;

@@ -1,3 +1,33 @@
-@include spacing-generator("p", "padding", $padding-unit, $spacing-directions);
-@include spacing-generator("m", "margin", $margin-unit, $spacing-directions);
+$spacing-directions: (
+  "": "",
+  "x": left right,
+  "y": top bottom,
+  "l": left,
+  "r": right,
+  "t": top,
+  "b": bottom,
+);
+$spacing-sizes: (
+  "0": 0,
+  "1": 1,
+  "2": 1.5,
+  "3": 3,
+  "4": 5,
+  "5": 8,
+);
+
+@include spacing-generator(
+  "p",
+  "padding",
+  $padding-unit,
+  $spacing-directions,
+  $spacing-sizes
+);
+@include spacing-generator(
+  "m",
+  "margin",
+  $margin-unit,
+  $spacing-directions,
+  $spacing-sizes
+);
 // @include spacing-generator("gap", "gap", $gap-unit, "");

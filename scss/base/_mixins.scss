@@ -89,15 +89,14 @@
 @mixin spacing-generator(
   $short-name,
   $spacing-name,
-  $min-value,
+  $unit,
   $directions,
-  $min: 0,
-  $max: 5
+  $sizes
 ) {
   // Normal classes
   @each $dir-name, $dir-props in $directions {
-    @for $i from $min through $max {
-      $spacing: calc(#{$min-value} * #{$i});
+    @each $size-name, $size-value in $sizes {
+      $spacing: calc(#{$unit} * #{$size-value});
       $props: ();
       @each $prop-name in $dir-props {
         $props: map.set(
@@ -107,15 +106,15 @@
         );
       }
       @include class-gen(
-        strings-join(strings-join($short-name $dir-name, "") $i),
+        strings-join(strings-join($short-name $dir-name, "") $size-name),
         $props
       );
     }
   }
   // Responsive classes
   @each $dir-name, $dir-props in $directions {
-    @for $i from $min through $max {
-      $spacing: calc(#{$min-value} * #{$i});
+    @each $size-name, $size-value in $sizes {
+      $spacing: calc(#{$unit} * #{$size-value});
       $props: ();
       @each $prop-name in $dir-props {
         $props: map.set(
@@ -125,7 +124,7 @@
         );
       }
       @include class-gen-responsive(
-        strings-join(strings-join($short-name $dir-name, "") $i),
+        strings-join(strings-join($short-name $dir-name, "") $size-name),
         $props
       );
     }

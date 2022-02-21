@@ -49,9 +49,9 @@ $font-size-300: 0.875rem; // 14px
 $font-size-200: 0.75rem; // 12px
 
 // Utils
-$padding-unit: 0.625rem;
-$margin-unit: 0.625rem;
-$gap-unit: 0.625rem;
+$padding-unit: 1rem;
+$margin-unit: 1rem;
+$gap-unit: 1rem;
 $size-unit: 10rem;
 $container-max-width: 80rem;
 $transition-duration: 250ms;
@@ -70,14 +70,6 @@ $btn-md-padding: 0.625rem;
 $btn-lg-padding: 1.25rem;
 $input-padding: 0.3125rem;
 
-$sizes: (
-  "auto": auto,
-  "25": 25%,
-  "50": 50%,
-  "75": 75%,
-  "100": 100%,
-);
-
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -85,16 +77,6 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-);
-
-$spacing-directions: (
-  "": "",
-  "x": left right,
-  "y": top bottom,
-  "l": left,
-  "r": right,
-  "t": top,
-  "b": bottom,
 );
 
 // Urls
