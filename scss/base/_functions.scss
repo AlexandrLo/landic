@@ -1,3 +1,6 @@
+@use "sass:list";
+@use "sass:map";
+
 @function url-friendly-color($color) {
   $hex: ie-hex-str($color);
   @return "%23" + str-slice("#{$hex}", 4, -1) + str-slice("#{$hex}", 2, 3);
@@ -15,6 +18,19 @@
         $result: #{$result}#{$separator}#{$string};
       }
     }
+  }
+  @return $result;
+}
+
+@function lists2map($keys, $values) {
+  $result: ();
+  @for $i from 1 through list.length($keys) {
+    $j: $i;
+    @if $j > list.length($values) {
+      $j: list.length($values);
+    }
+
+    $result: map.set($result, nth($keys, $i), nth($values, $j));
   }
   @return $result;
 }
