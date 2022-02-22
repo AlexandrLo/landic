@@ -5742,6 +5742,43 @@ a.btn.btn-outline-danger:disabled {
   border-color: #570f0f;
   background: transparent;
 }
+input[type=button].btn-outline-dark,
+input[type=reset].btn-outline-dark,
+input[type=submit].btn-outline-dark,
+button.btn-outline-dark,
+a.btn.btn-outline-dark {
+  color: #312e38;
+  background: transparent;
+  border: 0.125rem solid #312e38;
+  box-shadow: none;
+}
+input[type=button].btn-outline-dark:hover,
+input[type=reset].btn-outline-dark:hover,
+input[type=submit].btn-outline-dark:hover,
+button.btn-outline-dark:hover,
+a.btn.btn-outline-dark:hover {
+  color: #312e38;
+  border-color: #312e38;
+  background: rgba(49, 46, 56, 0.25);
+}
+input[type=button].btn-outline-dark:active,
+input[type=reset].btn-outline-dark:active,
+input[type=submit].btn-outline-dark:active,
+button.btn-outline-dark:active,
+a.btn.btn-outline-dark:active {
+  color: #312e38;
+  border-color: #312e38;
+  background: rgba(49, 46, 56, 0.5);
+}
+input[type=button].btn-outline-dark:disabled,
+input[type=reset].btn-outline-dark:disabled,
+input[type=submit].btn-outline-dark:disabled,
+button.btn-outline-dark:disabled,
+a.btn.btn-outline-dark:disabled {
+  color: #333333;
+  border-color: #333333;
+  background: transparent;
+}
 input[type=button].btn-transparent,
 input[type=reset].btn-transparent,
 input[type=submit].btn-transparent,

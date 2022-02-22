@@ -102,6 +102,9 @@
   &.btn-outline-danger {
     @include btn-outline-variant($danger-400, $danger-600);
   }
+  &.btn-outline-dark {
+    @include btn-outline-variant($background-400, $gray-600);
+  }
   &.btn-transparent {
     color: $brand-400;
     background: transparent;
