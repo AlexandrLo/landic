@@ -1,9 +1,40 @@
+@use "sass:map";
+
 .row {
   display: flex;
   flex-wrap: wrap;
 }
-.col {
-  flex: 1 0 0%;
+
+$col-sizes: (
+  "auto": (
+    0 0 auto,
+    auto,
+  ),
+);
+@for $i from 1 through $grid-columns {
+  $col-sizes: map.set(
+    $col-sizes,
+    $i,
+    (0 0 auto, calc(100% / $grid-columns * $i))
+  );
 }
 
-@include col-gen;
+$util-grid: (
+  col: (
+    props: flex,
+    prefix: col,
+    responsive: true,
+    values: (
+      "": (
+        1 0 0%,
+      ),
+    ),
+  ),
+  col-n: (
+    props: flex width,
+    prefix: col,
+    responsive: true,
+    values: $col-sizes,
+  ),
+);
+@include util-gen($util-grid);

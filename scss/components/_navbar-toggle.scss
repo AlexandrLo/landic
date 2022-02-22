@@ -29,8 +29,8 @@
     }
     &::before {
       content: "";
-      margin-top: $margin-unit;
-      margin-bottom: $margin-unit;
+      margin-top: $spacing-unit;
+      margin-bottom: $spacing-unit;
       display: inline-block;
       width: 2.5rem;
       height: 2.5rem;

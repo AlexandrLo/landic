@@ -1,6 +1,6 @@
 $util-sizing: (
   width: (
-    prop: width,
+    props: width,
     prefix: w,
     values: (
       25: 25%,
@@ -11,7 +11,7 @@ $util-sizing: (
     ),
   ),
   height: (
-    prop: height,
+    props: height,
     prefix: h,
     values: (
       25: 25%,
@@ -22,7 +22,7 @@ $util-sizing: (
     ),
   ),
   min-vh: (
-    prop: min-height,
+    props: min-height,
     prefix: min-vh,
     values: (
       100: 100vh,
@@ -34,7 +34,7 @@ $util-sizing: (
     ),
   ),
   min-vw: (
-    prop: min-width,
+    props: min-width,
     prefix: min-vw,
     values: (
       100: 100vw,
@@ -46,7 +46,7 @@ $util-sizing: (
     ),
   ),
   max-vh: (
-    prop: max-height,
+    props: max-height,
     prefix: max-vh,
     values: (
       100: 100vh,
@@ -58,7 +58,7 @@ $util-sizing: (
     ),
   ),
   max-vw: (
-    prop: max-width,
+    props: max-width,
     prefix: max-vw,
     values: (
       100: 100vw,
@@ -70,7 +70,7 @@ $util-sizing: (
     ),
   ),
   max-w: (
-    prop: max-width,
+    props: max-width,
     prefix: max-w,
     values: (
       1: $size-unit * 1,

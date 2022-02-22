@@ -2,7 +2,7 @@
   width: 100%;
   max-width: $container-max-width;
   margin: 0 auto;
-  padding: 0 calc($padding-unit * 1.5);
+  padding: 0 calc($spacing-unit * 1.5);
 }
 
 .sticky {
@@ -25,7 +25,7 @@
 
 $util-layout: (
   d: (
-    prop: display,
+    props: display,
     prefix: "d",
     responsive: true,
     values: (

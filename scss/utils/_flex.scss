@@ -1,14 +1,16 @@
 $util-flex: (
   flex: (
-    prop: flex,
+    props: flex,
     prefix: flex,
     responsive: true,
     values: (
-      fill: 1 1 auto,
+      fill: (
+        1 1 auto,
+      ),
     ),
   ),
   align: (
-    prop: align-items,
+    props: align-items,
     prefix: align,
     values: (
       center: center,
@@ -19,7 +21,7 @@ $util-flex: (
     ),
   ),
   justify: (
-    prop: justify-content,
+    props: justify-content,
     prefix: justify,
     values: (
       center: center,
@@ -31,7 +33,7 @@ $util-flex: (
     ),
   ),
   flex-direction: (
-    prop: flex-direction,
+    props: flex-direction,
     prefix: flex,
     values: (
       column: column,
@@ -41,7 +43,7 @@ $util-flex: (
     ),
   ),
   flex-grow: (
-    prop: flex-grow,
+    props: flex-grow,
     prefix: flex-grow,
     values: (
       0: 0,
@@ -51,7 +53,7 @@ $util-flex: (
     ),
   ),
   flex-shrink: (
-    prop: flex-shrink,
+    props: flex-shrink,
     prefix: flex-shrink,
     values: (
       0: 0,
@@ -61,7 +63,7 @@ $util-flex: (
     ),
   ),
   flex-basis: (
-    prop: flex-basis,
+    props: flex-basis,
     prefix: flex-basis,
     responsive: true,
     values: (
@@ -73,7 +75,7 @@ $util-flex: (
     ),
   ),
   flex-wrap: (
-    prop: flex-wrap,
+    props: flex-wrap,
     prefix: flex,
     responsive: true,
     values: (

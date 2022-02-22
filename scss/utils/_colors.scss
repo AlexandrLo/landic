@@ -1,6 +1,6 @@
 $util-colors: (
   bg: (
-    prop: background,
+    props: background,
     prefix: bg,
     values: (
       700: $background-700,
@@ -16,7 +16,7 @@ $util-colors: (
     ),
   ),
   text: (
-    prop: color,
+    props: color,
     prefix: text,
     values: (
       default: $gray-50,
@@ -31,7 +31,7 @@ $util-colors: (
     ),
   ),
   border: (
-    prop: border-color,
+    props: border-color,
     prefix: border,
     values: (
       default: $gray-500,

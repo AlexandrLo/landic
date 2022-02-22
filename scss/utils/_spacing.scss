@@ -1,33 +1,102 @@
-$spacing-directions: (
-  "": "",
-  "x": left right,
-  "y": top bottom,
-  "l": left,
-  "r": right,
-  "t": top,
-  "b": bottom,
-);
 $spacing-sizes: (
   "0": 0,
-  "1": 1,
-  "2": 1.5,
-  "3": 3,
-  "4": 5,
-  "5": 8,
+  "1": $spacing-unit * 1,
+  "2": $spacing-unit * 1.5,
+  "3": $spacing-unit * 3,
+  "4": $spacing-unit * 5,
+  "5": $spacing-unit * 8,
 );
 
-@include spacing-generator(
-  "p",
-  "padding",
-  $padding-unit,
-  $spacing-directions,
-  $spacing-sizes
+$util-spacing: (
+  m: (
+    props: margin,
+    prefix: m,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  mx: (
+    props: margin-left margin-right,
+    prefix: mx,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  my: (
+    props: margin-top margin-bottom,
+    prefix: my,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  ml: (
+    props: margin-left,
+    prefix: ml,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  mr: (
+    props: margin-right,
+    prefix: mr,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  mt: (
+    props: margin-top,
+    prefix: mt,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  mb: (
+    props: margin-bottom,
+    prefix: mb,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  p: (
+    props: padding,
+    prefix: p,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  px: (
+    props: padding-left padding-right,
+    prefix: px,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  py: (
+    props: padding-top padding-bottom,
+    prefix: py,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  pl: (
+    props: padding-left,
+    prefix: pl,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  pr: (
+    props: padding-right,
+    prefix: pr,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  pt: (
+    props: padding-top,
+    prefix: pt,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  pb: (
+    props: padding-bottom,
+    prefix: pb,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
+  gap: (
+    props: gap,
+    prefix: gap,
+    responsive: true,
+    values: $spacing-sizes,
+  ),
 );
-@include spacing-generator(
-  "m",
-  "margin",
-  $margin-unit,
-  $spacing-directions,
-  $spacing-sizes
-);
-// @include spacing-generator("gap", "gap", $gap-unit, "");
+@include util-gen($util-spacing);

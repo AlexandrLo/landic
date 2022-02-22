@@ -1,41 +1,80 @@
-$border-props: border, border-left, border-right, border-top, border-bottom;
-
-// .border-#{side}
-@each $prop in $border-props {
-  .#{$prop} {
-    #{$prop}: #{$border-width} solid $gray-500 !important;
-  }
-}
-
-// .border-#{side}-#{width}
-@for $size from 0 through 5 {
-  @each $prop in $border-props {
-    .#{$prop}-#{$size} {
-      #{$prop}: #{$border-width * $size} solid $gray-500 !important;
-    }
-  }
-}
-
-// .radius-#{size}
-$radius-prop-sizes: (
+$border-sizes: (
+  "": (
+    $border-width solid $gray-500,
+  ),
+  "0": (
+    0 solid $gray-500,
+  ),
+  "1": (
+    $border-width * 1 solid $gray-500,
+  ),
+  "2": (
+    $border-width * 2 solid $gray-500,
+  ),
+  "3": (
+    $border-width * 3 solid $gray-500,
+  ),
+);
+$border-radius-sizes: (
   "": $border-radius-md,
-  "sm": $border-radius-sm,
-  "md": $border-radius-md,
-  "lg": $border-radius-lg,
-  "xl": $border-radius-xl,
+  "0": 0,
+  "1": $border-radius-sm,
+  "2": $border-radius-md,
+  "3": $border-radius-lg,
+  "4": $border-radius-xl,
   "pill": $border-radius-pill,
 );
-$radius-variants: (
-  "": border-radius,
-  "start": border-top-left-radius border-bottom-left-radius,
-  "end": border-top-right-radius border-bottom-right-radius,
-  "top": border-top-left-radius border-top-right-radius,
-  "bottom": border-bottom-left-radius border-bottom-right-radius,
-);
 
-// .radius-#{$variant}-#{$size}
-@include utility-class-complex-generator(
-  "rounded",
-  $radius-prop-sizes,
-  $radius-variants
+$util-borders: (
+  b: (
+    props: border,
+    prefix: b,
+    values: $border-sizes,
+  ),
+  bl: (
+    props: border-left,
+    prefix: bl,
+    values: $border-sizes,
+  ),
+  br: (
+    props: border-right,
+    prefix: br,
+    values: $border-sizes,
+  ),
+  bt: (
+    props: border-top,
+    prefix: bt,
+    values: $border-sizes,
+  ),
+  bb: (
+    props: border-bottom,
+    prefix: bb,
+    values: $border-sizes,
+  ),
+  rounded: (
+    props: border-radius,
+    prefix: rounded,
+    values: $border-radius-sizes,
+  ),
+  rounded-left: (
+    props: border-top-left-radius border-bottom-left-radius,
+    prefix: rounded-left,
+    values: $border-radius-sizes,
+  ),
+  rounded-right: (
+    props: border-top-right-radius border-bottom-right-radius,
+    prefix: rounded-right,
+    values: $border-radius-sizes,
+  ),
+  rounded-top: (
+    props: border-top-left-radius border-top-right-radius,
+    prefix: rounded-top,
+    values: $border-radius-sizes,
+  ),
+  rounded-bottom: (
+    props: border-bottom-left-radius border-bottom-right-radius,
+    prefix: rounded-bottom,
+    values: $border-radius-sizes,
+  ),
 );
+@include util-gen($util-borders);
