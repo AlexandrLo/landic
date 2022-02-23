@@ -1,22 +1,35 @@
 @use "sass:map";
 @use "sass:list";
 
-@mixin class-gen($class-name, $props, $value) {
+@mixin class-gen($class-name, $props, $value, $important: true, $rfs: false) {
   $prop-map: lists2map($props, $value);
+  @debug $important;
   .#{$class-name} {
     @each $prop, $value in $prop-map {
-      #{$prop}: $value !important;
+      @if $prop == font-size and $rfs {
+        @include font-size($value if($important, !important, null));
+      } @else {
+        #{$prop}: $value if($important, !important, null);
+      }
     }
   }
 }
 
-@mixin class-gen-responsive($class-name, $props, $value) {
+@mixin class-gen-responsive(
+  $class-name,
+  $props,
+  $value,
+  $important: true,
+  $rfs: false
+) {
   @each $breakpoint-name, $breakpoint in $grid-breakpoints {
     @media only screen and (min-width: $breakpoint) {
       @include class-gen(
         strings-join($class-name $breakpoint-name),
         $props,
-        $value
+        $value,
+        $important,
+        $rfs
       );
     }
   }
@@ -28,9 +41,21 @@
     $prefix: map.get($util-def, prefix);
     $responsive: map.get($util-def, responsive);
     $values: map.get($util-def, values);
+    $important: if(
+      map-has-key($util-def, important),
+      map.get($util-def, important),
+      true
+    );
+    $rfs: if(map-has-key($util-def, rfs), map.get($util-def, rfs), false);
 
     @each $name, $value in $values {
-      @include class-gen(strings-join($prefix $name), $props, $value);
+      @include class-gen(
+        strings-join($prefix $name),
+        $props,
+        $value,
+        $important,
+        $rfs
+      );
     }
   }
 
@@ -39,13 +64,21 @@
     $prefix: map.get($util-def, prefix);
     $responsive: map.get($util-def, responsive);
     $values: map.get($util-def, values);
+    $important: if(
+      map-has-key($util-def, important),
+      map.get($util-def, important),
+      true
+    );
+    $rfs: if(map-has-key($util-def, rfs), map.get($util-def, rfs), false);
 
     @if $responsive {
       @each $name, $value in $values {
         @include class-gen-responsive(
           strings-join($prefix $name),
           $props,
-          $value
+          $value,
+          $important,
+          $rfs
         );
       }
     }
