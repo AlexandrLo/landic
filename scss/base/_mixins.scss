@@ -3,7 +3,6 @@
 
 @mixin class-gen($class-name, $props, $value, $important: true, $rfs: false) {
   $prop-map: lists2map($props, $value);
-  @debug $important;
   .#{$class-name} {
     @each $prop, $value in $prop-map {
       @if $prop == font-size and $rfs {
