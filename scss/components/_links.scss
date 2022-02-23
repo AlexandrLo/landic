@@ -9,7 +9,7 @@ a.brand-logo {
   & > li {
     display: inline-block;
     & > a {
-      @include typography("label-md");
+      @include typography("label", "md");
       display: inline-block;
       width: 100%;
       padding: $spacing-unit * 1.5;

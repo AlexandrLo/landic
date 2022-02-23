@@ -12,7 +12,7 @@
     box-shadow: $box-shadow-size-md transparentize($validation-color, 0.5);
   }
   & ~ .validation-feedback {
-    @include typography("body2");
+    @include typography("body", "2");
     width: 100%;
     color: $validation-color;
     padding-left: $border-width + $input-padding * 2;
@@ -20,7 +20,7 @@
   }
 }
 @mixin input-box($bg) {
-  @include typography("body2");
+  @include typography("body", "2");
   color: $gray-50;
   background: $bg;
   border: $border-width solid transparent;
@@ -81,7 +81,7 @@
     // Minimize label when input is focused or filled
     &:focus ~ label,
     &:not(:placeholder-shown) ~ label {
-      @include typography("label-sm");
+      @include typography("label", "sm");
       transform: translateY(-0.5rem);
     }
   }
@@ -194,7 +194,7 @@ input[type="range"] {
   align-items: stretch;
   width: 100%;
   & > label {
-    @include typography("body2");
+    @include typography("body", "2");
     color: $gray-300;
     position: absolute;
     top: 0;

@@ -36,7 +36,7 @@
   }
 }
 @mixin btn {
-  @include typography("label-md");
+  @include typography("label", "md");
   @include btn-solid-variant($brand-400, $brand-200, $brand-600);
   text-decoration: none;
   display: inline-block;
@@ -50,21 +50,21 @@
   }
   // Sizes
   &.btn-sm {
-    @include typography("label-sm");
+    @include typography("label", "sm");
     padding: $btn-sm-padding $btn-sm-padding * 2;
     & > i {
       font-size: $font-size-300;
     }
   }
   &.btn-md {
-    @include typography("label-md");
+    @include typography("label", "md");
     padding: $btn-md-padding $btn-md-padding * 2;
     & > i {
       font-size: $font-size-500;
     }
   }
   &.btn-lg {
-    @include typography("label-lg");
+    @include typography("label", "lg");
     padding: $btn-lg-padding $btn-lg-padding * 2;
     & > i {
       font-size: $font-size-600;

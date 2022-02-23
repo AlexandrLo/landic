@@ -1,6 +1,152 @@
-@use "sass:map";
+$util-typography: (
+  "fs": (
+    props: font-size,
+    prefix: fs,
+    rfs: true,
+    values: (
+      "1000": $font-size-1000,
+      "900": $font-size-900,
+      "800": $font-size-800,
+      "700": $font-size-700,
+      "600": $font-size-600,
+      "500": $font-size-500,
+      "400": $font-size-400,
+      "300": $font-size-300,
+      "200": $font-size-200,
+      "100": $font-size-100,
+    ),
+  ),
+  "text-align": (
+    props: text-align,
+    prefix: text,
+    responsive: true,
+    values: (
+      "center": center,
+      "start": start,
+      "end": end,
+    ),
+  ),
+  "text-transform": (
+    props: text-transform,
+    prefix: text,
+    values: (
+      "capitalize": capitalize,
+      "uppercase": uppercase,
+      "lowercase": lowercase,
+    ),
+  ),
+  "text-weight": (
+    props: font-weight,
+    prefix: text,
+    values: (
+      "heavy": 900,
+      "extra-bold": 800,
+      "bold": 700,
+      "semi-bold": 600,
+      "medium": 500,
+      "regular": 400,
+      "light": 300,
+      "extra-light": 200,
+      "thin": 100,
+    ),
+  ),
+  "font-style": (
+    props: font-style,
+    prefix: text,
+    values: (
+      "italic": italic,
+      "normal": normal,
+    ),
+  ),
+  "text-decoration": (
+    props: text-decoration,
+    prefix: text,
+    values: (
+      "underline": underline,
+      "line-through": line-through,
+    ),
+  ),
+  "text-mark": (
+    props: padding background-color,
+    prefix: text,
+    values: (
+      "mark": 0.2em $brand-300,
+    ),
+  ),
+  "heading": (
+    props: font-weight font-size line-height,
+    prefix: heading,
+    important: false,
+    rfs: true,
+    values: (
+      "1": 900 $font-size-1000 1.2,
+      "2": 900 $font-size-900 1.2,
+      "3": 800 $font-size-800 1.3,
+      "4": 800 $font-size-700 1.3,
+      "5": 800 $font-size-600 1.4,
+      "6": 800 $font-size-500 1.5,
+    ),
+  ),
+  "subtitle": (
+    props: font-weight font-size line-height,
+    prefix: subtitle,
+    important: false,
+    rfs: true,
+    values: (
+      "1": 700 $font-size-500 1.5,
+      "2": 500 $font-size-500 1.5,
+    ),
+  ),
+  "lead": (
+    props: font-weight font-size line-height,
+    prefix: lead,
+    important: false,
+    rfs: true,
+    values: (
+      "1": 400 $font-size-500 1.5,
+      "2": 500 $font-size-400 1.5,
+    ),
+  ),
+  "body": (
+    props: font-weight font-size line-height,
+    prefix: body,
+    important: false,
+    rfs: true,
+    values: (
+      "1": 400 $font-size-400 1.5,
+      "2": 400 $font-size-300 1.5,
+    ),
+  ),
+  "label": (
+    props: font-weight font-size line-height,
+    prefix: label,
+    important: false,
+    rfs: true,
+    values: (
+      "lg": 600 $font-size-500 1.5,
+      "md": 600 $font-size-400 1.5,
+      "sm": 600 $font-size-200 1.5,
+    ),
+  ),
+);
+@include util-gen($util-typography);
 
-// Base font
+@mixin typography($type, $variant) {
+  $type-def: map-get($util-typography, $type);
+  $props: map-get($type-def, props);
+  $important: map-get($type-def, important);
+  $rfs: map-get($type-def, rfs);
+  $values: map-get(map-get($type-def, values), $variant);
+  $prop-map: lists2map($props, $values);
+  @each $prop, $value in $prop-map {
+    @if $prop == font-size and $rfs {
+      @include font-size($value if($important, !important, null));
+    } @else {
+      #{$prop}: $value if($important, !important, null);
+    }
+  }
+}
+
 body,
 p {
   font-style: normal;
@@ -9,214 +155,40 @@ p {
   line-height: 1.5;
 }
 
-// Selection
 ::selection {
   background-color: transparentize($brand-400, 0.5);
 }
 
-$typography-styles: (
-  "h1": (
-    elements: "h1",
-    styles: (
-      font-weight: 900,
-      font-size: $font-size-1000,
-      line-height: 1.2,
-    ),
-  ),
-  "h2": (
-    elements: "h2",
-    styles: (
-      font-weight: 900,
-      font-size: $font-size-900,
-      line-height: 1.2,
-    ),
-  ),
-  "h3": (
-    elements: "h3",
-    styles: (
-      font-weight: 800,
-      font-size: $font-size-800,
-      line-height: 1.3,
-    ),
-  ),
-  "h4": (
-    elements: "h4",
-    styles: (
-      font-weight: 800,
-      font-size: $font-size-700,
-      line-height: 1.3,
-    ),
-  ),
-  "h5": (
-    elements: "h5",
-    styles: (
-      font-weight: 800,
-      font-size: $font-size-600,
-      line-height: 1.4,
-    ),
-  ),
-  "h6": (
-    elements: "h6",
-    styles: (
-      font-weight: 800,
-      font-size: $font-size-500,
-      line-height: 1.5,
-    ),
-  ),
-  "subtitle1": (
-    styles: (
-      font-weight: 700,
-      font-size: $font-size-500,
-      line-height: 1.5,
-    ),
-  ),
-  "subtitle2": (
-    styles: (
-      font-weight: 500,
-      font-size: $font-size-500,
-      line-height: 1.5,
-    ),
-  ),
-  "lead1": (
-    styles: (
-      font-weight: 400,
-      font-size: $font-size-500,
-      line-height: 1.5,
-    ),
-  ),
-  "lead2": (
-    styles: (
-      font-weight: 500,
-      font-size: $font-size-400,
-      line-height: 1.5,
-    ),
-  ),
-  "body1": (
-    styles: (
-      font-weight: 400,
-      font-size: $font-size-400,
-      line-height: 1.5,
-    ),
-  ),
-  "body2": (
-    styles: (
-      font-weight: 400,
-      font-size: $font-size-300,
-      line-height: 1.5,
-    ),
-  ),
-  "label-sm": (
-    styles: (
-      font-weight: 600,
-      font-size: $font-size-200,
-      line-height: 1.5,
-    ),
-  ),
-  "label-md": (
-    styles: (
-      font-weight: 600,
-      font-size: $font-size-400,
-      line-height: 1.5,
-    ),
-  ),
-  "label-lg": (
-    styles: (
-      font-weight: 600,
-      font-size: $font-size-500,
-      line-height: 1.5,
-    ),
-  ),
-  "text-center": (
-    styles: (
-      text-align: center,
-    ),
-  ),
-  "text-start": (
-    styles: (
-      text-align: start,
-    ),
-  ),
-  "text-end": (
-    styles: (
-      text-align: end,
-    ),
-  ),
-  "text-capitalize": (
-    styles: (
-      text-transform: capitalize,
-    ),
-  ),
-  "text-uppercase": (
-    styles: (
-      text-transform: uppercase,
-    ),
-  ),
-  "text-mark": (
-    elements: "mark",
-    styles: (
-      padding: 0.2em,
-      background-color: $brand-300,
-    ),
-  ),
-  "text-line-through": (
-    elements: "del" "s",
-    styles: (
-      text-decoration: line-through,
-    ),
-  ),
-  "text-underline": (
-    elements: "ins" "u",
-    styles: (
-      text-decoration: underline,
-    ),
-  ),
-  "text-small": (
-    elements: "small",
-    styles: (
-      font-size: $font-size-300,
-    ),
-  ),
-  "text-bold": (
-    elements: "b" "strong",
-    styles: (
-      font-weight: 600,
-    ),
-  ),
-  "text-italic": (
-    elements: "i" "em",
-    styles: (
-      font-style: italic,
-    ),
-  ),
-);
-
-// Mixin for including any typography style
-@mixin typography($style-name: "body1") {
-  $styles: map.get(map.get($typography-styles, $style-name), "styles");
-  @each $prop, $value in $styles {
-    @if $prop == font-size {
-      @include font-size($value);
-    } @else {
-      #{$prop}: $value;
-    }
-  }
+b,
+strong {
+  @extend .text-bold;
 }
 
-// Generate classes for all typography styles
-@each $style-name, $style-def in $typography-styles {
-  .#{$style-name} {
-    @include typography($style-name);
-  }
+i,
+em {
+  @extend .text-italic;
 }
 
-// Generate styles for elements in typography styles
-@each $style-name, $style-def in $typography-styles {
-  $elements: map.get($style-def, "elements");
-  @if $elements {
-    @each $element in $elements {
-      #{$element} {
-        @extend .#{$style-name};
-      }
-    }
+small {
+  @extend .fs-300;
+}
+
+ins,
+u {
+  @extend .text-underline;
+}
+
+del,
+s {
+  @extend .text-line-through;
+}
+
+mark {
+  @extend .text-mark;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    @extend .heading-#{$i};
   }
 }

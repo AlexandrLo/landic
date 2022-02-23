@@ -4373,6 +4373,361 @@ html {
     gap: 8rem !important;
   }
 }
+.fs-1000 {
+  font-size: calc(2.025rem + 9.3vw) !important;
+}
+@media (min-width: 1200px) {
+  .fs-1000 {
+    font-size: 9rem !important;
+  }
+}
+
+.fs-900 {
+  font-size: calc(1.725rem + 5.7vw) !important;
+}
+@media (min-width: 1200px) {
+  .fs-900 {
+    font-size: 6rem !important;
+  }
+}
+
+.fs-800 {
+  font-size: calc(1.575rem + 3.9vw) !important;
+}
+@media (min-width: 1200px) {
+  .fs-800 {
+    font-size: 4.5rem !important;
+  }
+}
+
+.fs-700 {
+  font-size: calc(1.4125rem + 1.95vw) !important;
+}
+@media (min-width: 1200px) {
+  .fs-700 {
+    font-size: 2.875rem !important;
+  }
+}
+
+.fs-600 {
+  font-size: calc(1.3rem + 0.6vw) !important;
+}
+@media (min-width: 1200px) {
+  .fs-600 {
+    font-size: 1.75rem !important;
+  }
+}
+
+.fs-500 {
+  font-size: 1.25rem !important;
+}
+
+.fs-400 {
+  font-size: 1rem !important;
+}
+
+.fs-300, small {
+  font-size: 0.875rem !important;
+}
+
+.fs-200 {
+  font-size: 0.75rem !important;
+}
+
+.fs-100 {
+  font-size: 0.5rem !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-start {
+  text-align: start !important;
+}
+
+.text-end {
+  text-align: end !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-heavy {
+  font-weight: 900 !important;
+}
+
+.text-extra-bold {
+  font-weight: 800 !important;
+}
+
+.text-bold, b,
+strong {
+  font-weight: 700 !important;
+}
+
+.text-semi-bold {
+  font-weight: 600 !important;
+}
+
+.text-medium {
+  font-weight: 500 !important;
+}
+
+.text-regular {
+  font-weight: 400 !important;
+}
+
+.text-light {
+  font-weight: 300 !important;
+}
+
+.text-extra-light {
+  font-weight: 200 !important;
+}
+
+.text-thin {
+  font-weight: 100 !important;
+}
+
+.text-italic, i,
+em {
+  font-style: italic !important;
+}
+
+.text-normal {
+  font-style: normal !important;
+}
+
+.text-underline, ins,
+u {
+  text-decoration: underline !important;
+}
+
+.text-line-through, del,
+s {
+  text-decoration: line-through !important;
+}
+
+.text-mark, mark {
+  padding: 0.2em !important;
+  background-color: #ffe14d !important;
+}
+
+.heading-1, h1 {
+  font-weight: 900;
+  font-size: calc(2.025rem + 9.3vw) ;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .heading-1, h1 {
+    font-size: 9rem ;
+  }
+}
+
+.heading-2, h2 {
+  font-weight: 900;
+  font-size: calc(1.725rem + 5.7vw) ;
+  line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .heading-2, h2 {
+    font-size: 6rem ;
+  }
+}
+
+.heading-3, h3 {
+  font-weight: 800;
+  font-size: calc(1.575rem + 3.9vw) ;
+  line-height: 1.3;
+}
+@media (min-width: 1200px) {
+  .heading-3, h3 {
+    font-size: 4.5rem ;
+  }
+}
+
+.heading-4, h4 {
+  font-weight: 800;
+  font-size: calc(1.4125rem + 1.95vw) ;
+  line-height: 1.3;
+}
+@media (min-width: 1200px) {
+  .heading-4, h4 {
+    font-size: 2.875rem ;
+  }
+}
+
+.heading-5, h5 {
+  font-weight: 800;
+  font-size: calc(1.3rem + 0.6vw) ;
+  line-height: 1.4;
+}
+@media (min-width: 1200px) {
+  .heading-5, h5 {
+    font-size: 1.75rem ;
+  }
+}
+
+.heading-6, h6 {
+  font-weight: 800;
+  font-size: 1.25rem ;
+  line-height: 1.5;
+}
+
+.subtitle-1 {
+  font-weight: 700;
+  font-size: 1.25rem ;
+  line-height: 1.5;
+}
+
+.subtitle-2 {
+  font-weight: 500;
+  font-size: 1.25rem ;
+  line-height: 1.5;
+}
+
+.lead-1 {
+  font-weight: 400;
+  font-size: 1.25rem ;
+  line-height: 1.5;
+}
+
+.lead-2 {
+  font-weight: 500;
+  font-size: 1rem ;
+  line-height: 1.5;
+}
+
+.body-1 {
+  font-weight: 400;
+  font-size: 1rem ;
+  line-height: 1.5;
+}
+
+.body-2 {
+  font-weight: 400;
+  font-size: 0.875rem ;
+  line-height: 1.5;
+}
+
+.label-lg {
+  font-weight: 600;
+  font-size: 1.25rem ;
+  line-height: 1.5;
+}
+
+.label-md {
+  font-weight: 600;
+  font-size: 1rem ;
+  line-height: 1.5;
+}
+
+.label-sm {
+  font-weight: 600;
+  font-size: 0.75rem ;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 0) {
+  .text-center-xs {
+    text-align: center !important;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .text-center-sm {
+    text-align: center !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .text-center-md {
+    text-align: center !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .text-center-lg {
+    text-align: center !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .text-center-xl {
+    text-align: center !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .text-center-xxl {
+    text-align: center !important;
+  }
+}
+@media only screen and (min-width: 0) {
+  .text-start-xs {
+    text-align: start !important;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .text-start-sm {
+    text-align: start !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .text-start-md {
+    text-align: start !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .text-start-lg {
+    text-align: start !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .text-start-xl {
+    text-align: start !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .text-start-xxl {
+    text-align: start !important;
+  }
+}
+@media only screen and (min-width: 0) {
+  .text-end-xs {
+    text-align: end !important;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .text-end-sm {
+    text-align: end !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .text-end-md {
+    text-align: end !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .text-end-lg {
+    text-align: end !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .text-end-xl {
+    text-align: end !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .text-end-xxl {
+    text-align: end !important;
+  }
+}
 body,
 p {
   font-style: normal;
@@ -4383,166 +4738,6 @@ p {
 
 ::selection {
   background-color: rgba(255, 213, 0, 0.5);
-}
-
-.h1, h1 {
-  font-weight: 900;
-  font-size: calc(2.025rem + 9.3vw);
-  line-height: 1.2;
-}
-@media (min-width: 1200px) {
-  .h1, h1 {
-    font-size: 9rem;
-  }
-}
-
-.h2, h2 {
-  font-weight: 900;
-  font-size: calc(1.725rem + 5.7vw);
-  line-height: 1.2;
-}
-@media (min-width: 1200px) {
-  .h2, h2 {
-    font-size: 6rem;
-  }
-}
-
-.h3, h3 {
-  font-weight: 800;
-  font-size: calc(1.575rem + 3.9vw);
-  line-height: 1.3;
-}
-@media (min-width: 1200px) {
-  .h3, h3 {
-    font-size: 4.5rem;
-  }
-}
-
-.h4, h4 {
-  font-weight: 800;
-  font-size: calc(1.4125rem + 1.95vw);
-  line-height: 1.3;
-}
-@media (min-width: 1200px) {
-  .h4, h4 {
-    font-size: 2.875rem;
-  }
-}
-
-.h5, h5 {
-  font-weight: 800;
-  font-size: calc(1.3rem + 0.6vw);
-  line-height: 1.4;
-}
-@media (min-width: 1200px) {
-  .h5, h5 {
-    font-size: 1.75rem;
-  }
-}
-
-.h6, h6 {
-  font-weight: 800;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.subtitle1 {
-  font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.subtitle2 {
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.lead1 {
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.lead2 {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.body1 {
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.body2 {
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-
-.label-sm {
-  font-weight: 600;
-  font-size: 0.75rem;
-  line-height: 1.5;
-}
-
-.label-md {
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.label-lg {
-  font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-start {
-  text-align: start;
-}
-
-.text-end {
-  text-align: end;
-}
-
-.text-capitalize {
-  text-transform: capitalize;
-}
-
-.text-uppercase {
-  text-transform: uppercase;
-}
-
-.text-mark, mark {
-  padding: 0.2em;
-  background-color: #ffe14d;
-}
-
-.text-line-through, s, del {
-  text-decoration: line-through;
-}
-
-.text-underline, u, ins {
-  text-decoration: underline;
-}
-
-.text-small, small {
-  font-size: 0.875rem;
-}
-
-.text-bold, strong, b {
-  font-weight: 600;
-}
-
-.text-italic, em, i {
-  font-style: italic;
 }
 
 .w-25 {
@@ -5287,7 +5482,7 @@ input[type=submit],
 button,
 a.btn {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1rem ;
   line-height: 1.5;
   color: black;
   background: #ffd500;
@@ -5336,7 +5531,7 @@ input[type=submit].btn-sm,
 button.btn-sm,
 a.btn.btn-sm {
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.75rem ;
   line-height: 1.5;
   padding: 0.25rem 0.5rem;
 }
@@ -5353,7 +5548,7 @@ input[type=submit].btn-md,
 button.btn-md,
 a.btn.btn-md {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1rem ;
   line-height: 1.5;
   padding: 0.625rem 1.25rem;
 }
@@ -5370,7 +5565,7 @@ input[type=submit].btn-lg,
 button.btn-lg,
 a.btn.btn-lg {
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.25rem ;
   line-height: 1.5;
   padding: 1.25rem 2.5rem;
 }
@@ -5883,7 +6078,7 @@ input[type=tel],
 input[type=email],
 input[type=password] {
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 0.875rem ;
   line-height: 1.5;
   color: white;
   background: #494554;
@@ -5949,7 +6144,7 @@ input[type=tel].is-valid ~ .validation-feedback,
 input[type=email].is-valid ~ .validation-feedback,
 input[type=password].is-valid ~ .validation-feedback {
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 0.875rem ;
   line-height: 1.5;
   width: 100%;
   color: #2dd288;
@@ -6011,7 +6206,7 @@ input[type=tel].is-invalid ~ .validation-feedback,
 input[type=email].is-invalid ~ .validation-feedback,
 input[type=password].is-invalid ~ .validation-feedback {
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 0.875rem ;
   line-height: 1.5;
   width: 100%;
   color: #d92626;
@@ -6201,7 +6396,7 @@ input[type=password]::-webkit-outer-spin-button {
 .floating-input-group > input[type=password]:focus ~ label,
 .floating-input-group > input[type=password]:not(:placeholder-shown) ~ label {
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.75rem ;
   line-height: 1.5;
   transform: translateY(-0.5rem);
 }
@@ -6218,7 +6413,7 @@ input[type=tel].input-secondary,
 input[type=email].input-secondary,
 input[type=password].input-secondary {
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 0.875rem ;
   line-height: 1.5;
   color: white;
   background: #18171c;
@@ -6284,7 +6479,7 @@ input[type=tel].input-secondary.is-valid ~ .validation-feedback,
 input[type=email].input-secondary.is-valid ~ .validation-feedback,
 input[type=password].input-secondary.is-valid ~ .validation-feedback {
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 0.875rem ;
   line-height: 1.5;
   width: 100%;
   color: #2dd288;
@@ -6346,7 +6541,7 @@ input[type=tel].input-secondary.is-invalid ~ .validation-feedback,
 input[type=email].input-secondary.is-invalid ~ .validation-feedback,
 input[type=password].input-secondary.is-invalid ~ .validation-feedback {
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 0.875rem ;
   line-height: 1.5;
   width: 100%;
   color: #d92626;
@@ -6536,7 +6731,7 @@ input[type=password].input-secondary::-webkit-outer-spin-button {
 .floating-input-group > input[type=password].input-secondary:focus ~ label,
 .floating-input-group > input[type=password].input-secondary:not(:placeholder-shown) ~ label {
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.75rem ;
   line-height: 1.5;
   transform: translateY(-0.5rem);
 }
@@ -6641,7 +6836,7 @@ input[type=checkbox].check:not(:checked):disabled + label::before {
 }
 .floating-input-group > label {
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 0.875rem ;
   line-height: 1.5;
   color: #a6a6a6;
   position: absolute;
@@ -6675,18 +6870,18 @@ input[type=checkbox].check:not(:checked):disabled + label::before {
 }
 .card > .card-title, .card-dashed > .card-title {
   font-weight: 800;
-  font-size: calc(1.3rem + 0.6vw);
+  font-size: calc(1.3rem + 0.6vw) ;
   line-height: 1.4;
   margin-bottom: 16px;
 }
 @media (min-width: 1200px) {
   .card > .card-title, .card-dashed > .card-title {
-    font-size: 1.75rem;
+    font-size: 1.75rem ;
   }
 }
 .card > .card-body, .card-dashed > .card-body {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1rem ;
   line-height: 1.5;
 }
 
@@ -6720,7 +6915,7 @@ a.brand-logo {
 }
 .navlinks > li > a {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1rem ;
   line-height: 1.5;
   display: inline-block;
   width: 100%;
@@ -6913,7 +7108,7 @@ input[type=checkbox].navbar-toggle:not(:checked) + label:active::before {
 
 .cta-header {
   font-weight: 900;
-  font-size: calc(1.725rem + 5.7vw);
+  font-size: calc(1.725rem + 5.7vw) ;
   line-height: 1.2;
   max-width: 50rem;
   text-align: center;
@@ -6921,7 +7116,7 @@ input[type=checkbox].navbar-toggle:not(:checked) + label:active::before {
 }
 @media (min-width: 1200px) {
   .cta-header {
-    font-size: 6rem;
+    font-size: 6rem ;
   }
 }
 
