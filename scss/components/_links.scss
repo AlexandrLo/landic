@@ -27,3 +27,45 @@ a.brand-logo {
     }
   }
 }
+
+a.link {
+  @include typography("body", "1");
+  position: relative;
+  color: $brand-400;
+  text-decoration: none;
+  transition: $transition-duration ease color;
+  &.link-sm {
+    @include typography("label", "sm");
+  }
+  &.link-md {
+    @include typography("label", "md");
+  }
+  &.link-lg {
+    @include typography("label", "lg");
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: $brand-400;
+    transition: $transition-duration ease;
+    transition-property: transform background-color;
+  }
+  &:hover,
+  &:focus {
+    color: $brand-300;
+    &::after {
+      background-color: $brand-300;
+      transform: translate3d(0, 0.1em, 0);
+    }
+  }
+  &:active {
+    color: $brand-200;
+    &::after {
+      background-color: $brand-200;
+    }
+  }
+}
