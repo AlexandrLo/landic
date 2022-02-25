@@ -14,26 +14,6 @@
   }
 }
 
-@mixin class-gen-responsive(
-  $class-name,
-  $props,
-  $value,
-  $important: true,
-  $rfs: false
-) {
-  @each $breakpoint-name, $breakpoint in $grid-breakpoints {
-    @media only screen and (min-width: $breakpoint) {
-      @include class-gen(
-        strings-join($class-name $breakpoint-name),
-        $props,
-        $value,
-        $important,
-        $rfs
-      );
-    }
-  }
-}
-
 @mixin util-gen($util-defs) {
   @each $util-name, $util-def in $util-defs {
     $props: map.get($util-def, props);
@@ -71,14 +51,18 @@
     $rfs: if(map-has-key($util-def, rfs), map.get($util-def, rfs), false);
 
     @if $responsive {
-      @each $name, $value in $values {
-        @include class-gen-responsive(
-          strings-join($prefix $name),
-          $props,
-          $value,
-          $important,
-          $rfs
-        );
+      @each $breakpoint-name, $breakpoint in $grid-breakpoints {
+        @media only screen and (min-width: $breakpoint) {
+          @each $name, $value in $values {
+            @include class-gen(
+              strings-join($prefix $name $breakpoint-name),
+              $props,
+              $value,
+              $important,
+              $rfs
+            );
+          }
+        }
       }
     }
   }
