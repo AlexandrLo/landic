@@ -1,0 +1,44 @@
+$util-bg: (
+  bg-image: (
+    props: background-image,
+    prefix: bg,
+    values: $bg-images,
+  ),
+  bg-repeat: (
+    props: background-repeat,
+    prefix: bg,
+    values: (
+      "no-repeat": no-repeat,
+      "repeat": repeat,
+      "repeat-x": repeat-x,
+      "repeat-y": repeat-y,
+    ),
+  ),
+  bg-size: (
+    props: background-size,
+    prefix: bg,
+    values: (
+      "contain": contain,
+      "cover": cover,
+    ),
+  ),
+  bg-x: (
+    props: background-position-x,
+    prefix: bg-x,
+    values: (
+      "center": center,
+      "left": left,
+      "right": right,
+    ),
+  ),
+  bg-y: (
+    props: background-position-y,
+    prefix: bg-y,
+    values: (
+      "center": center,
+      "top": top,
+      "bottom": bottom,
+    ),
+  ),
+);
+@include util-gen($util-bg);
