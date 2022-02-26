@@ -6507,30 +6507,18 @@ input[type=checkbox].navbar-toggle:not(:checked) + label:active::before {
   justify-content: space-evenly;
 }
 
-.features-wrapper {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 48px 0;
+.feature-bg-1 {
+  background-image: url("assets/img/feature-background-1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
 }
 
-.features-header {
-  max-width: 40rem;
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.features-cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.features-cards > div {
-  width: 20rem;
+.feature-bg-2 {
+  background-image: url("assets/img/feature-background-2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
 }
 
 .cta-wrapper {
