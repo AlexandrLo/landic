@@ -4864,6 +4864,70 @@ p {
     width: 100% !important;
   }
 }
+.bg-feature-1 {
+  background-image: url("assets/img/feature-background-1.png") !important;
+}
+
+.bg-feature-2 {
+  background-image: url("assets/img/feature-background-2.png") !important;
+}
+
+.bg-hero-1 {
+  background-image: url("assets/img/hero-bg.png") !important;
+}
+
+.bg-hero-2 {
+  background-image: url("assets/svg/hero-bg.svg") !important;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat !important;
+}
+
+.bg-repeat {
+  background-repeat: repeat !important;
+}
+
+.bg-repeat-x {
+  background-repeat: repeat-x !important;
+}
+
+.bg-repeat-y {
+  background-repeat: repeat-y !important;
+}
+
+.bg-contain {
+  background-size: contain !important;
+}
+
+.bg-cover {
+  background-size: cover !important;
+}
+
+.bg-x-center {
+  background-position-x: center !important;
+}
+
+.bg-x-left {
+  background-position-x: left !important;
+}
+
+.bg-x-right {
+  background-position-x: right !important;
+}
+
+.bg-y-center {
+  background-position-y: center !important;
+}
+
+.bg-y-top {
+  background-position-y: top !important;
+}
+
+.bg-y-bottom {
+  background-position-y: bottom !important;
+}
+
 input[type=button],
 input[type=reset],
 input[type=submit],
@@ -6467,82 +6531,6 @@ input[type=checkbox].navbar-toggle:not(:checked) + label:active::before {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 2em;
-}
-
-.hero-bg-1 {
-  background-image: url(assets/img/hero-bg.png);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-  background-size: cover;
-}
-
-.hero-bg-2 {
-  background-image: url(assets/svg/hero-bg.svg);
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: bottom;
-  background-size: cover;
-}
-
-.logo-cloud-wrapper {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 48px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo-cloud-logo {
-  padding: 8px;
-}
-
-.logo-cloud-logos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.feature-bg-1 {
-  background-image: url("assets/img/feature-background-1.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-}
-
-.feature-bg-2 {
-  background-image: url("assets/img/feature-background-2.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-}
-
-.cta-wrapper {
-  max-width: 1200px;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 64px 0;
-}
-
-.cta-header {
-  font-weight: 900;
-  font-size: calc(1.725rem + 5.7vw) ;
-  line-height: 1.2;
-  max-width: 50rem;
-  text-align: center;
-  margin-bottom: 24px;
-}
-@media (min-width: 1200px) {
-  .cta-header {
-    font-size: 6rem ;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */
