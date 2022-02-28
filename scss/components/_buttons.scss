@@ -41,7 +41,7 @@
   text-decoration: none;
   display: inline-block;
   border: none;
-  border-radius: $border-radius-pill;
+  border-radius: map-get($border-radius-sizes, "pill");
   margin: $btn-margin;
   padding: $btn-md-padding $btn-md-padding * 2;
   transition: $transition-duration ease all;

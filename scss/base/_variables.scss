@@ -70,11 +70,14 @@ $grid-breakpoints: (
 
 // Border
 $border-width: 0.125rem;
-$border-radius-sm: 0.3125rem;
-$border-radius-md: 0.625rem;
-$border-radius-lg: 1.625rem;
-$border-radius-xl: 6.25rem;
-$border-radius-pill: 100vmax;
+$border-radius-sizes: (
+  "0": 0,
+  "1": 0.3125rem,
+  "2": 0.625rem,
+  "3": 1.625rem,
+  "4": 6.25rem,
+  "pill": 100vmax,
+);
 
 // Components
 $btn-margin: 0.25rem;

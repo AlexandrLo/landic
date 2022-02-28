@@ -24,7 +24,7 @@
   color: $gray-50;
   background: $bg;
   border: $border-width solid transparent;
-  border-radius: $border-radius-md;
+  border-radius: map-get($border-radius-sizes, "md");
   padding: $input-padding * 2 $input-padding * 4;
   transition: $transition-duration ease all;
 
@@ -141,7 +141,7 @@ input[type="password"] {
       height: 1.25rem;
       flex-shrink: 0;
       flex-grow: 0;
-      border-radius: $border-radius-sm;
+      border-radius: map-get($border-radius-sizes, "sm");
       margin-right: 1rem;
       transition: $transition-duration ease all;
       background: $background;

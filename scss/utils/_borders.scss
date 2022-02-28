@@ -15,15 +15,6 @@ $border-sizes: (
     $border-width * 3 solid $gray-500,
   ),
 );
-$border-radius-sizes: (
-  "": $border-radius-md,
-  "0": 0,
-  "1": $border-radius-sm,
-  "2": $border-radius-md,
-  "3": $border-radius-lg,
-  "4": $border-radius-xl,
-  "pill": $border-radius-pill,
-);
 
 $util-borders: (
   b: (

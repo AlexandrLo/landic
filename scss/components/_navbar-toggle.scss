@@ -34,7 +34,7 @@
       display: inline-block;
       width: 2.5rem;
       height: 2.5rem;
-      border-radius: $border-radius-pill;
+      border-radius: map-get($border-radius-sizes, "pill");
       flex-shrink: 0;
       flex-grow: 0;
       transition: $transition-duration ease all;
