@@ -2,6 +2,19 @@
   @include util($util-spacing, "p", "3");
   @include util($util-borders, "rounded", "3");
   @include util($util-colors, "bg", "500");
+
+  & > .card-image {
+    @include util($util-borders, "rounded", "2");
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    overflow: hidden;
+    & > img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .card-white {
