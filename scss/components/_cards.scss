@@ -1,18 +1,17 @@
 .card {
-  background: $background-500;
-  border-radius: 8px;
-  padding: 24px;
-  margin: 24px;
-  & > .card-icon {
-    margin-bottom: 16px;
-  }
-  & > .card-title {
-    @include typography("heading", "5");
-    margin-bottom: 16px;
-  }
-  & > .card-body {
-    @include typography("body", "1");
-  }
+  @include util($util-spacing, "p", "3");
+  @include util($util-borders, "rounded", "3");
+  @include util($util-colors, "bg", "500");
+}
+
+.card-white {
+  @extend .card;
+  @include util($util-colors, "bg", "50");
+  @include util($util-colors, "text", "black");
+}
+.card-black {
+  @extend .card;
+  @include util($util-colors, "bg", "700");
 }
 
 .card-dashed {

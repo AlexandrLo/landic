@@ -279,10 +279,6 @@ html {
   border-bottom: 0.375rem solid #595959 !important;
 }
 
-.rounded {
-  border-radius: 0.625rem !important;
-}
-
 .rounded-0 {
   border-radius: 0 !important;
 }
@@ -305,11 +301,6 @@ html {
 
 .rounded-pill {
   border-radius: 100vmax !important;
-}
-
-.rounded-left {
-  border-top-left-radius: 0.625rem !important;
-  border-bottom-left-radius: 0.625rem !important;
 }
 
 .rounded-left-0 {
@@ -342,11 +333,6 @@ html {
   border-bottom-left-radius: 100vmax !important;
 }
 
-.rounded-right {
-  border-top-right-radius: 0.625rem !important;
-  border-bottom-right-radius: 0.625rem !important;
-}
-
 .rounded-right-0 {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
@@ -377,11 +363,6 @@ html {
   border-bottom-right-radius: 100vmax !important;
 }
 
-.rounded-top {
-  border-top-left-radius: 0.625rem !important;
-  border-top-right-radius: 0.625rem !important;
-}
-
 .rounded-top-0 {
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
@@ -410,11 +391,6 @@ html {
 .rounded-top-pill {
   border-top-left-radius: 100vmax !important;
   border-top-right-radius: 100vmax !important;
-}
-
-.rounded-bottom {
-  border-bottom-left-radius: 0.625rem !important;
-  border-bottom-right-radius: 0.625rem !important;
 }
 
 .rounded-bottom-0 {
@@ -5535,7 +5511,6 @@ input[type=password] {
   color: white;
   background: #494554;
   border: 0.125rem solid transparent;
-  border-radius: 0.625rem;
   padding: 0.625rem 1.25rem;
   transition: 250ms ease all;
   -webkit-appearance: none;
@@ -5870,7 +5845,6 @@ input[type=password].input-secondary {
   color: white;
   background: #18171c;
   border: 0.125rem solid transparent;
-  border-radius: 0.625rem;
   padding: 0.625rem 1.25rem;
   transition: 250ms ease all;
   -webkit-appearance: none;
@@ -6205,7 +6179,6 @@ input[type=checkbox].check:checked + label::before {
   height: 1.25rem;
   flex-shrink: 0;
   flex-grow: 0;
-  border-radius: 0.3125rem;
   margin-right: 1rem;
   transition: 250ms ease all;
   background: #ffd500;
@@ -6250,7 +6223,6 @@ input[type=checkbox].check:not(:checked) + label::before {
   height: 1.25rem;
   flex-shrink: 0;
   flex-grow: 0;
-  border-radius: 0.3125rem;
   margin-right: 1rem;
   transition: 250ms ease all;
   background: #494554;
@@ -6311,30 +6283,19 @@ input[type=checkbox].check:not(:checked):disabled + label::before {
   width: 100%;
 }
 
-.card, .card-dashed {
+.card, .card-dashed, .card-black, .card-white {
+  padding: 3rem;
+  border-radius: 1.625rem;
   background: #25222a;
-  border-radius: 8px;
-  padding: 24px;
-  margin: 24px;
 }
-.card > .card-icon, .card-dashed > .card-icon {
-  margin-bottom: 16px;
+
+.card-white {
+  background: white;
+  color: black;
 }
-.card > .card-title, .card-dashed > .card-title {
-  font-weight: 800;
-  font-size: calc(1.3rem + 0.6vw) ;
-  line-height: 1.4;
-  margin-bottom: 16px;
-}
-@media (min-width: 1200px) {
-  .card > .card-title, .card-dashed > .card-title {
-    font-size: 1.75rem ;
-  }
-}
-.card > .card-body, .card-dashed > .card-body {
-  font-weight: 400;
-  font-size: 1rem ;
-  line-height: 1.5;
+
+.card-black {
+  background: black;
 }
 
 .card-dashed {
