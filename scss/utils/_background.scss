@@ -2,7 +2,16 @@ $util-bg: (
   "bg-image": (
     props: background-image,
     prefix: bg,
+    responsive: true,
     values: $bg-images,
+  ),
+  "bg-none": (
+    props: background-image,
+    prefix: bg,
+    responsive: true,
+    values: (
+      "none": none,
+    ),
   ),
   "bg-repeat": (
     props: background-repeat,

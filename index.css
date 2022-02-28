@@ -4856,6 +4856,10 @@ p {
   background-image: url("assets/svg/hero-bg.svg") !important;
 }
 
+.bg-none {
+  background-image: none !important;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat !important;
 }
@@ -4904,6 +4908,138 @@ p {
   background-position-y: bottom !important;
 }
 
+@media only screen and (min-width: 0) {
+  .bg-feature-1-xs {
+    background-image: url("assets/img/feature-background-1.png") !important;
+  }
+
+  .bg-feature-2-xs {
+    background-image: url("assets/img/feature-background-2.png") !important;
+  }
+
+  .bg-hero-1-xs {
+    background-image: url("assets/img/hero-bg.png") !important;
+  }
+
+  .bg-hero-2-xs {
+    background-image: url("assets/svg/hero-bg.svg") !important;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .bg-feature-1-sm {
+    background-image: url("assets/img/feature-background-1.png") !important;
+  }
+
+  .bg-feature-2-sm {
+    background-image: url("assets/img/feature-background-2.png") !important;
+  }
+
+  .bg-hero-1-sm {
+    background-image: url("assets/img/hero-bg.png") !important;
+  }
+
+  .bg-hero-2-sm {
+    background-image: url("assets/svg/hero-bg.svg") !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .bg-feature-1-md {
+    background-image: url("assets/img/feature-background-1.png") !important;
+  }
+
+  .bg-feature-2-md {
+    background-image: url("assets/img/feature-background-2.png") !important;
+  }
+
+  .bg-hero-1-md {
+    background-image: url("assets/img/hero-bg.png") !important;
+  }
+
+  .bg-hero-2-md {
+    background-image: url("assets/svg/hero-bg.svg") !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .bg-feature-1-lg {
+    background-image: url("assets/img/feature-background-1.png") !important;
+  }
+
+  .bg-feature-2-lg {
+    background-image: url("assets/img/feature-background-2.png") !important;
+  }
+
+  .bg-hero-1-lg {
+    background-image: url("assets/img/hero-bg.png") !important;
+  }
+
+  .bg-hero-2-lg {
+    background-image: url("assets/svg/hero-bg.svg") !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .bg-feature-1-xl {
+    background-image: url("assets/img/feature-background-1.png") !important;
+  }
+
+  .bg-feature-2-xl {
+    background-image: url("assets/img/feature-background-2.png") !important;
+  }
+
+  .bg-hero-1-xl {
+    background-image: url("assets/img/hero-bg.png") !important;
+  }
+
+  .bg-hero-2-xl {
+    background-image: url("assets/svg/hero-bg.svg") !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .bg-feature-1-xxl {
+    background-image: url("assets/img/feature-background-1.png") !important;
+  }
+
+  .bg-feature-2-xxl {
+    background-image: url("assets/img/feature-background-2.png") !important;
+  }
+
+  .bg-hero-1-xxl {
+    background-image: url("assets/img/hero-bg.png") !important;
+  }
+
+  .bg-hero-2-xxl {
+    background-image: url("assets/svg/hero-bg.svg") !important;
+  }
+}
+@media only screen and (min-width: 0) {
+  .bg-none-xs {
+    background-image: none !important;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .bg-none-sm {
+    background-image: none !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .bg-none-md {
+    background-image: none !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .bg-none-lg {
+    background-image: none !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .bg-none-xl {
+    background-image: none !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .bg-none-xxl {
+    background-image: none !important;
+  }
+}
 input[type=button],
 input[type=reset],
 input[type=submit],
@@ -6287,6 +6423,18 @@ input[type=checkbox].check:not(:checked):disabled + label::before {
   padding: 3rem;
   border-radius: 1.625rem;
   background: #25222a;
+}
+.card > .card-image, .card-dashed > .card-image, .card-black > .card-image, .card-white > .card-image {
+  border-radius: 0.625rem;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2/1;
+  overflow: hidden;
+}
+.card > .card-image > img, .card-dashed > .card-image > img, .card-black > .card-image > img, .card-white > .card-image > img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .card-white {
