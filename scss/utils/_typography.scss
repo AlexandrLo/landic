@@ -187,6 +187,16 @@ mark {
   @extend .text-mark;
 }
 
+q {
+  @extend .lead-1;
+  &::after {
+    content: "";
+  }
+  &::before {
+    content: "";
+  }
+}
+
 @for $i from 1 through 6 {
   h#{$i} {
     @extend .heading-#{$i};

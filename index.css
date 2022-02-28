@@ -303,6 +303,10 @@ html {
   border-radius: 100vmax !important;
 }
 
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
 .rounded-left-0 {
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
@@ -331,6 +335,11 @@ html {
 .rounded-left-pill {
   border-top-left-radius: 100vmax !important;
   border-bottom-left-radius: 100vmax !important;
+}
+
+.rounded-left-circle {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
 }
 
 .rounded-right-0 {
@@ -363,6 +372,11 @@ html {
   border-bottom-right-radius: 100vmax !important;
 }
 
+.rounded-right-circle {
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
 .rounded-top-0 {
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
@@ -393,6 +407,11 @@ html {
   border-top-right-radius: 100vmax !important;
 }
 
+.rounded-top-circle {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+}
+
 .rounded-bottom-0 {
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
@@ -421,6 +440,11 @@ html {
 .rounded-bottom-pill {
   border-bottom-left-radius: 100vmax !important;
   border-bottom-right-radius: 100vmax !important;
+}
+
+.rounded-bottom-circle {
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
 }
 
 .flex-fill {
@@ -4044,7 +4068,7 @@ s {
   line-height: 1.5;
 }
 
-.lead-1 {
+.lead-1, q {
   font-weight: 400;
   font-size: 1.25rem ;
   line-height: 1.5;
@@ -4174,6 +4198,13 @@ p {
 
 ::selection {
   background-color: rgba(255, 213, 0, 0.5);
+}
+
+q::after {
+  content: "";
+}
+q::before {
+  content: "";
 }
 
 .w-25 {
@@ -6633,6 +6664,18 @@ input[type=checkbox].navbar-toggle:not(:checked) + label:active::before {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 2em;
+}
+
+.avatar, .avatar-lg, .avatar-md, .avatar-sm {
+  border-radius: 50%;
+  width: 5rem;
+  aspect-ratio: 1/1;
+}
+.avatar-sm {
+  width: 2.5rem;
+}
+.avatar-lg {
+  width: 8rem;
 }
 
 /*# sourceMappingURL=index.css.map */
