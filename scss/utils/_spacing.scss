@@ -8,91 +8,91 @@ $spacing-sizes: (
 );
 
 $util-spacing: (
-  m: (
+  "m": (
     props: margin,
     prefix: m,
     responsive: true,
     values: $spacing-sizes,
   ),
-  mx: (
+  "mx": (
     props: margin-left margin-right,
     prefix: mx,
     responsive: true,
     values: $spacing-sizes,
   ),
-  my: (
+  "my": (
     props: margin-top margin-bottom,
     prefix: my,
     responsive: true,
     values: $spacing-sizes,
   ),
-  ml: (
+  "ml": (
     props: margin-left,
     prefix: ml,
     responsive: true,
     values: $spacing-sizes,
   ),
-  mr: (
+  "mr": (
     props: margin-right,
     prefix: mr,
     responsive: true,
     values: $spacing-sizes,
   ),
-  mt: (
+  "mt": (
     props: margin-top,
     prefix: mt,
     responsive: true,
     values: $spacing-sizes,
   ),
-  mb: (
+  "mb": (
     props: margin-bottom,
     prefix: mb,
     responsive: true,
     values: $spacing-sizes,
   ),
-  p: (
+  "p": (
     props: padding,
     prefix: p,
     responsive: true,
     values: $spacing-sizes,
   ),
-  px: (
+  "px": (
     props: padding-left padding-right,
     prefix: px,
     responsive: true,
     values: $spacing-sizes,
   ),
-  py: (
+  "py": (
     props: padding-top padding-bottom,
     prefix: py,
     responsive: true,
     values: $spacing-sizes,
   ),
-  pl: (
+  "pl": (
     props: padding-left,
     prefix: pl,
     responsive: true,
     values: $spacing-sizes,
   ),
-  pr: (
+  "pr": (
     props: padding-right,
     prefix: pr,
     responsive: true,
     values: $spacing-sizes,
   ),
-  pt: (
+  "pt": (
     props: padding-top,
     prefix: pt,
     responsive: true,
     values: $spacing-sizes,
   ),
-  pb: (
+  "pb": (
     props: padding-bottom,
     prefix: pb,
     responsive: true,
     values: $spacing-sizes,
   ),
-  gap: (
+  "gap": (
     props: gap,
     prefix: gap,
     responsive: true,

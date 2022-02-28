@@ -1,10 +1,10 @@
 $util-bg: (
-  bg-image: (
+  "bg-image": (
     props: background-image,
     prefix: bg,
     values: $bg-images,
   ),
-  bg-repeat: (
+  "bg-repeat": (
     props: background-repeat,
     prefix: bg,
     values: (
@@ -14,7 +14,7 @@ $util-bg: (
       "repeat-y": repeat-y,
     ),
   ),
-  bg-size: (
+  "bg-size": (
     props: background-size,
     prefix: bg,
     values: (
@@ -22,7 +22,7 @@ $util-bg: (
       "cover": cover,
     ),
   ),
-  bg-x: (
+  "bg-x": (
     props: background-position-x,
     prefix: bg-x,
     values: (
@@ -31,7 +31,7 @@ $util-bg: (
       "right": right,
     ),
   ),
-  bg-y: (
+  "bg-y": (
     props: background-position-y,
     prefix: bg-y,
     values: (

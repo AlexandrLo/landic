@@ -67,3 +67,21 @@
     }
   }
 }
+
+@mixin util($util-def, $type, $variant, $important: false) {
+  $type-def: map-get($util-def, $type);
+
+  $props: map-get($type-def, props);
+  $rfs: map-get($type-def, rfs);
+  $values: map-get(map-get($type-def, values), $variant);
+
+  $prop-map: lists2map($props, $values);
+
+  @each $prop, $value in $prop-map {
+    @if $prop == font-size and $rfs {
+      @include font-size($value if($important, !important, null));
+    } @else {
+      #{$prop}: $value if($important, !important, null);
+    }
+  }
+}

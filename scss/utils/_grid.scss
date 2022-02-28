@@ -14,13 +14,13 @@ $col-sizes: (
 @for $i from 1 through $grid-columns {
   $col-sizes: map.set(
     $col-sizes,
-    $i,
+    "#{$i}",
     (0 0 auto, calc(100% / $grid-columns * $i))
   );
 }
 
 $util-grid: (
-  col: (
+  "col": (
     props: flex,
     prefix: col,
     responsive: true,
@@ -30,7 +30,7 @@ $util-grid: (
       ),
     ),
   ),
-  col-n: (
+  "col-n": (
     props: flex width,
     prefix: col,
     responsive: true,

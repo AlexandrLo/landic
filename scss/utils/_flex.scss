@@ -1,87 +1,87 @@
 $util-flex: (
-  flex: (
+  "flex": (
     props: flex,
     prefix: flex,
     responsive: true,
     values: (
-      fill: (
+      "fill": (
         1 1 auto,
       ),
     ),
   ),
-  align: (
+  "align": (
     props: align-items,
     prefix: align,
     values: (
-      center: center,
-      start: flex-start,
-      end: flex-end,
-      stretch: stretch,
-      baseline: baseline,
+      "center": center,
+      "start": flex-start,
+      "end": flex-end,
+      "stretch": stretch,
+      "baseline": baseline,
     ),
   ),
-  justify: (
+  "justify": (
     props: justify-content,
     prefix: justify,
     values: (
-      center: center,
-      start: start,
-      end: end,
-      around: space-around,
-      between: space-between,
-      evenly: space-evenly,
+      "center": center,
+      "start": start,
+      "end": end,
+      "around": space-around,
+      "between": space-between,
+      "evenly": space-evenly,
     ),
   ),
-  flex-direction: (
+  "flex-direction": (
     props: flex-direction,
     prefix: flex,
     values: (
-      column: column,
-      column-reverse: column-reverse,
-      row: row,
-      row-reverse: row-reverse,
+      "column": column,
+      "column-reverse": column-reverse,
+      "row": row,
+      "row-reverse": row-reverse,
     ),
   ),
-  flex-grow: (
+  "flex-grow": (
     props: flex-grow,
     prefix: flex-grow,
     values: (
-      0: 0,
-      1: 1,
-      2: 2,
-      3: 3,
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
     ),
   ),
-  flex-shrink: (
+  "flex-shrink": (
     props: flex-shrink,
     prefix: flex-shrink,
     values: (
-      0: 0,
-      1: 1,
-      2: 2,
-      3: 3,
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
     ),
   ),
-  flex-basis: (
+  "flex-basis": (
     props: flex-basis,
     prefix: flex-basis,
     responsive: true,
     values: (
-      0: 0%,
-      25: 25%,
-      50: 50%,
-      75: 75%,
-      100: 100%,
+      "0": 0%,
+      "25": 25%,
+      "50": 50%,
+      "75": 75%,
+      "100": 100%,
     ),
   ),
-  flex-wrap: (
+  "flex-wrap": (
     props: flex-wrap,
     prefix: flex,
     responsive: true,
     values: (
-      wrap: wrap,
-      wrap-reverse: wrap-reverse,
-      nowrap: nowrap,
+      "wrap": wrap,
+      "wrap-reverse": wrap-reverse,
+      "nowrap": nowrap,
     ),
   ),
 );
