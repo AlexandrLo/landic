@@ -26,20 +26,10 @@
   @extend .card;
   @include util($util-colors, "bg", "700");
 }
-
 .card-dashed {
   @extend .card;
-
-  padding: 0px;
+  padding: 0;
+  @include util($util-spacing, "py", "2");
+  border: 2px dashed $brand-400;
   background: transparent;
-  & > .card-title {
-    margin: 0;
-    color: $brand-400;
-    text-transform: uppercase;
-  }
-  & > .card-body {
-    border: 2px dashed $brand-400;
-    border-radius: 8px;
-    padding: 20px;
-  }
 }

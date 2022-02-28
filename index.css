@@ -6447,18 +6447,11 @@ input[type=checkbox].check:not(:checked):disabled + label::before {
 }
 
 .card-dashed {
-  padding: 0px;
-  background: transparent;
-}
-.card-dashed > .card-title {
-  margin: 0;
-  color: #ffd500;
-  text-transform: uppercase;
-}
-.card-dashed > .card-body {
+  padding: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   border: 2px dashed #ffd500;
-  border-radius: 8px;
-  padding: 20px;
+  background: transparent;
 }
 
 a.brand-logo {
