@@ -156,13 +156,16 @@ $border-radius-sizes: (
 );
 
 // Components
-$btn-margin: 0.25rem;
-$btn-sm-padding: 0.25rem;
-$btn-md-padding: 0.625rem;
-$btn-lg-padding: 1.25rem;
-$box-shadow-size-sm: 0 0 0 0.125rem;
-$box-shadow-size-md: 0 0 0 0.25rem;
-$box-shadow-size-lg: 0 0 0 0.5rem;
+$box-shadow-outline: (
+  "sm": 0 0 0 $border-width,
+  "md": 0 0 0 $border-width * 2,
+  "lg": 0 0 0 $border-width * 4,
+);
+$outline-sizes: (
+  "sm": $border-width,
+  "md": $border-width * 2,
+  "lg": $border-width * 4,
+);
 $input-padding: 0.3125rem;
 
 // Assets
