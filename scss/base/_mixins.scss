@@ -85,3 +85,77 @@
     }
   }
 }
+
+@mixin btn-color-gen($variants) {
+  @each $variant-name, $variant in $variants {
+    $type: map-get($variant, "type");
+    $main-color: map-get(map-get($variant, "colors"), "main");
+    $text-color: map-get(map-get($variant, "colors"), "text");
+    $selector: ();
+    @each $name in map-get($variant, "names") {
+      $selector: append($selector, ".#{$name}", $separator: comma);
+    }
+
+    #{$selector} {
+      @extend .btn;
+
+      $main-bg: map-get($main-color, "400");
+      $main-border: map-get($main-color, "400");
+      $main-text: map-get($text-color, "800");
+      $hover-bg: map-get($main-color, "400");
+      $active-bg: map-get($main-color, "200");
+      $active-border: map-get($main-color, "200");
+      $active-text: map-get($text-color, "700");
+      $disabled-bg: map-get($main-color, "600");
+      $disabled-border: map-get($main-color, "600");
+      $disabled-text: map-get($text-color, "800");
+      @if $type == "outline" {
+        $main-bg: transparent;
+        $main-border: map-get($main-color, "400");
+        $main-text: map-get($text-color, "400");
+        $hover-bg: transparentize(map-get($main-color, "400"), 0.75);
+        $active-bg: transparentize(map-get($main-color, "400"), 0.5);
+        $active-border: map-get($main-color, "400");
+        $active-text: map-get($text-color, "400");
+        $disabled-bg: transparent;
+        $disabled-border: map-get($main-color, "600");
+        $disabled-text: map-get($text-color, "600");
+      } @else if $type == "transparent" {
+        $main-bg: transparent;
+        $main-border: transparent;
+        $main-text: map-get($text-color, "400");
+        $hover-bg: transparentize(map-get($main-color, "400"), 0.75);
+        $active-bg: transparentize(map-get($main-color, "400"), 0.5);
+        $active-border: transparent;
+        $active-text: map-get($text-color, "200");
+        $disabled-bg: transparent;
+        $disabled-border: transparent;
+        $disabled-text: map-get($text-color, "600");
+        text-decoration: underline;
+      }
+
+      border: $border-width solid $main-border;
+      color: $main-text;
+      background: $main-bg;
+      --outline-color: #{transparentize($main-bg, 0.5)};
+
+      &:hover,
+      &:focus {
+        --outline-size: #{map-get($outline-sizes, "md")};
+        background: $hover-bg;
+      }
+      &:active {
+        color: $active-text;
+        background: $active-bg;
+        border-color: $active-border;
+      }
+      &:disabled {
+        color: $disabled-text;
+        border-color: $disabled-border;
+        background: $disabled-bg;
+        --outline-size: 0;
+        --outline-color: transparent;
+      }
+    }
+  }
+}
