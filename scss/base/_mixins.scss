@@ -159,3 +159,21 @@
     }
   }
 }
+
+@mixin link-color-gen($variants) {
+  @each $variant-name, $variant in $variants {
+    $color: map-get($variant, "color");
+    $selector: ();
+    @each $name in map-get($variant, "names") {
+      $selector: append($selector, ".#{$name}", $separator: comma);
+    }
+
+    #{$selector} {
+      @extend .link;
+      color: map-get($color, "400");
+      &:active {
+        color: map-get($color, "200");
+      }
+    }
+  }
+}

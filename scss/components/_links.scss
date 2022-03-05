@@ -1,7 +1,3 @@
-a.brand-logo {
-  text-decoration: none;
-  display: inline-block;
-}
 .navlinks {
   margin: 0;
   padding: 0;
@@ -13,59 +9,62 @@ a.brand-logo {
       display: inline-block;
       width: 100%;
       padding: $spacing-unit * 1.5;
-      color: $gray-100;
+      color: map-get($color-gray, "50");
       text-decoration: none;
       text-align: center;
       transition: $transition-duration ease all;
       &:hover,
       &.active {
-        color: $brand-400;
+        color: map-get($color-brand, "400");
       }
       &:active {
-        color: $brand-200;
+        color: map-get($color-brand, "200");
       }
     }
   }
 }
 
-a.link {
-  @include typography("body", "1");
-  position: relative;
-  color: $brand-400;
-  text-decoration: none;
+.link {
   transition: $transition-duration ease color;
-  &.link-sm {
-    @include typography("label", "sm");
-  }
-  &.link-md {
-    @include typography("label", "md");
-  }
-  &.link-lg {
-    @include typography("label", "lg");
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.1em;
-    background-color: $brand-400;
-    transition: $transition-duration ease;
-    transition-property: transform background-color;
-  }
-  &:hover,
-  &:focus {
-    color: $brand-300;
-    &::after {
-      background-color: $brand-300;
-      transform: translate3d(0, 0.1em, 0);
-    }
-  }
-  &:active {
-    color: $brand-200;
-    &::after {
-      background-color: $brand-200;
-    }
-  }
+  text-decoration: underline;
+  text-underline-offset: 0.1rem;
 }
+
+.parent-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+$link-colors: (
+  "primary": (
+    names: link-primary link,
+    color: $color-brand,
+  ),
+  "light": (
+    names: link-light,
+    color: $color-light,
+  ),
+  "dark": (
+    names: link-dark,
+    color: $color-dark,
+  ),
+  "success": (
+    names: link-success,
+    color: $color-success,
+  ),
+  "warning": (
+    names: link-warning,
+    color: $color-warning,
+  ),
+  "danger": (
+    names: link-danger,
+    color: $color-danger,
+  ),
+);
+
+@include link-color-gen($link-colors);
