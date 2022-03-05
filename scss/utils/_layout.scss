@@ -39,5 +39,16 @@ $util-layout: (
       "inline-grid": inline-grid,
     ),
   ),
+  "position": (
+    props: position,
+    prefix: "position",
+    values: (
+      "absolute": absolute,
+      "fixed": fixed,
+      "relative": relative,
+      "static": static,
+      "sticky": sticky,
+    ),
+  ),
 );
 @include util-gen($util-layout);
