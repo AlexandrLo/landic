@@ -70,7 +70,7 @@ $util-typography: (
     props: padding background-color,
     prefix: text,
     values: (
-      "mark": 0.2em $brand-300,
+      "mark": 0.2em map-get($color-brand, "400"),
     ),
   ),
   "heading": (
@@ -156,7 +156,7 @@ p {
 }
 
 ::selection {
-  background-color: transparentize($brand-400, 0.5);
+  background-color: transparentize(map-get($color-brand, "400"), 0.5);
 }
 
 b,

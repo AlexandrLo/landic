@@ -30,6 +30,6 @@
   @extend .card;
   padding: 0;
   @include util($util-spacing, "py", "2");
-  border: 2px dashed $brand-400;
+  border: 2px dashed map-get($color-brand, "400");
   background: transparent;
 }

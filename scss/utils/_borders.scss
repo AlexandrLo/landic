@@ -1,18 +1,18 @@
 $border-sizes: (
   "": (
-    $border-width solid $gray-500,
+    $border-width solid map-get($color-gray, "400"),
   ),
   "0": (
-    0 solid $gray-500,
+    0 solid map-get($color-gray, "400"),
   ),
   "1": (
-    $border-width * 1 solid $gray-500,
+    $border-width * 1 solid map-get($color-gray, "400"),
   ),
   "2": (
-    $border-width * 2 solid $gray-500,
+    $border-width * 2 solid map-get($color-gray, "400"),
   ),
   "3": (
-    $border-width * 3 solid $gray-500,
+    $border-width * 3 solid map-get($color-gray, "400"),
   ),
 );
 

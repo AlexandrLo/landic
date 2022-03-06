@@ -15,6 +15,8 @@
 }
 //* Navbar toggle mixin
 @mixin navbar-toggle($is-toggled: false) {
+  $icon-color: map-get($color-light, "400");
+  $icon-bg: map-get($color-gray, "50");
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -40,25 +42,25 @@
       transition: $transition-duration ease all;
       background: transparent;
       @if $is-toggled {
-        @include colored-x-bg($gray-50);
+        @include colored-x-bg($icon-color);
       } @else {
-        @include colored-stack-bg($gray-50);
+        @include colored-stack-bg($icon-color);
       }
     }
     &:hover::before {
-      background: transparentize($gray-50, 0.75);
+      background: transparentize($icon-bg, 0.75);
       @if $is-toggled {
-        @include colored-x-bg($gray-50);
+        @include colored-x-bg($icon-color);
       } @else {
-        @include colored-stack-bg($gray-50);
+        @include colored-stack-bg($icon-color);
       }
     }
     &:active::before {
-      background: transparentize($gray-50, 0.5);
+      background: transparentize($icon-bg, 0.5);
       @if $is-toggled {
-        @include colored-x-bg($gray-50);
+        @include colored-x-bg($icon-color);
       } @else {
-        @include colored-stack-bg($gray-50);
+        @include colored-stack-bg($icon-color);
       }
     }
   }

@@ -1,15 +1,17 @@
 //* Text-like inputs
 @mixin input-validated($is-valid: true) {
-  $validation-color: $danger-400;
+  $validation-color: map-get($color-danger, "400");
   @if $is-valid {
-    $validation-color: $success-400;
+    $validation-color: map-get($color-success, "400");
   }
   border-color: $validation-color;
   &:hover {
-    box-shadow: $box-shadow-size-sm transparentize($validation-color, 0.25);
+    box-shadow: map-get($box-shadow-outline, "sm")
+      transparentize($validation-color, 0.25);
   }
   &:focus {
-    box-shadow: $box-shadow-size-md transparentize($validation-color, 0.5);
+    box-shadow: map-get($box-shadow-outline, "md")
+      transparentize($validation-color, 0.5);
   }
   & ~ .validation-feedback {
     @include typography("body", "2");
@@ -21,7 +23,7 @@
 }
 @mixin input-box($bg) {
   @include typography("body", "2");
-  color: $gray-50;
+  color: map-get($color-gray, "50");
   background: $bg;
   border: $border-width solid transparent;
   border-radius: map-get($border-radius-sizes, "md");
@@ -36,22 +38,24 @@
   }
   &:hover {
     outline: none;
-    box-shadow: $box-shadow-size-sm transparentize($brand-400, 0.25);
+    box-shadow: map-get($box-shadow-outline, "sm")
+      transparentize(map-get($color-brand, "400"), 0.25);
   }
   &:focus {
     outline: none;
-    box-shadow: $box-shadow-size-md transparentize($brand-400, 0.5);
+    box-shadow: map-get($box-shadow-outline, "md")
+      transparentize(map-get($color-brand, "400"), 0.5);
   }
   &:disabled {
-    color: $gray-500;
-    background: transparentize($background-700, 0.25);
+    color: map-get($color-gray, "500");
+    background: transparentize(map-get($color-background, "700"), 0.25);
     border-color: transparent;
     &::placeholder {
-      color: $gray-500;
+      color: map-get($color-gray, "500");
     }
   }
   &::placeholder {
-    color: $gray-300;
+    color: map-get($color-gray, "300");
   }
   // Hide cross button for webkit
   &::-webkit-search-cancel-button {
@@ -76,7 +80,7 @@
     padding-top: $input-padding * 5;
     padding-bottom: $input-padding;
     &:disabled ~ label {
-      color: $gray-500;
+      color: map-get($color-gray, "500");
     }
     // Minimize label when input is focused or filled
     &:focus ~ label,
@@ -98,9 +102,9 @@ input[type="search"],
 input[type="tel"],
 input[type="email"],
 input[type="password"] {
-  @include input-box($background-300);
+  @include input-box(map-get($color-background, "300"));
   &.input-secondary {
-    @include input-box($background-600);
+    @include input-box(map-get($color-background, "600"));
   }
 }
 
@@ -112,19 +116,19 @@ input[type="password"] {
   background-size: 1em;
 }
 @mixin checkbox-is-checked($is-checked: true) {
-  $background: $background-300;
-  $background-active: $background-200;
-  $background-disabled: $background-700;
+  $background: map-get($color-background, "300");
+  $background-active: map-get($color-background, "200");
+  $background-disabled: map-get($color-background, "700");
   $color: transparent;
   $color-active: transparent;
   $color-disabled: transparent;
   @if $is-checked {
-    $background: $brand-400;
-    $background-active: $brand-200;
-    $background-disabled: $brand-400;
-    $color: $gray-800;
-    $color-active: $gray-500;
-    $color-disabled: $gray-800;
+    $background: map-get($color-brand, "400");
+    $background-active: map-get($color-brand, "200");
+    $background-disabled: map-get($color-brand, "400");
+    $color: map-get($color-gray, "800");
+    $color-active: map-get($color-gray, "500");
+    $color-disabled: map-get($color-gray, "800");
   }
 
   position: absolute;
@@ -148,10 +152,12 @@ input[type="password"] {
       @include colored-check-bg($color);
     }
     &:hover::before {
-      box-shadow: $box-shadow-size-md transparentize($brand-400, 0.5);
+      box-shadow: map-get($box-shadow-outline, "md")
+        transparentize(map-get($color-brand, "400"), 0.5);
     }
     &:active::before {
-      box-shadow: $box-shadow-size-md transparentize($brand-400, 0.5);
+      box-shadow: map-get($box-shadow-outline, "md")
+        transparentize(map-get($color-brand, "400"), 0.5);
       background: $background-active;
       @include colored-check-bg($color-active);
     }
@@ -195,7 +201,7 @@ input[type="range"] {
   width: 100%;
   & > label {
     @include typography("body", "2");
-    color: $gray-300;
+    color: map-get($color-gray, "400");
     position: absolute;
     top: 0;
     left: 0;
