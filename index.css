@@ -507,6 +507,26 @@ html {
   align-items: baseline !important;
 }
 
+.align-self-center {
+  align-self: center !important;
+}
+
+.align-self-start {
+  align-self: flex-start !important;
+}
+
+.align-self-end {
+  align-self: flex-end !important;
+}
+
+.align-self-stretch {
+  align-self: stretch !important;
+}
+
+.align-self-baseline {
+  align-self: baseline !important;
+}
+
 .justify-center {
   justify-content: center !important;
 }
@@ -529,6 +549,30 @@ html {
 
 .justify-evenly {
   justify-content: space-evenly !important;
+}
+
+.justify-self-center {
+  justify-self: center !important;
+}
+
+.justify-self-start {
+  justify-self: start !important;
+}
+
+.justify-self-end {
+  justify-self: end !important;
+}
+
+.justify-self-around {
+  justify-self: space-around !important;
+}
+
+.justify-self-between {
+  justify-self: space-between !important;
+}
+
+.justify-self-evenly {
+  justify-self: space-evenly !important;
 }
 
 .flex-column {

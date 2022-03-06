@@ -20,9 +20,32 @@ $util-flex: (
       "baseline": baseline,
     ),
   ),
+  "align-self": (
+    props: align-self,
+    prefix: align-self,
+    values: (
+      "center": center,
+      "start": flex-start,
+      "end": flex-end,
+      "stretch": stretch,
+      "baseline": baseline,
+    ),
+  ),
   "justify": (
     props: justify-content,
     prefix: justify,
+    values: (
+      "center": center,
+      "start": start,
+      "end": end,
+      "around": space-around,
+      "between": space-between,
+      "evenly": space-evenly,
+    ),
+  ),
+  "justify-self": (
+    props: justify-self,
+    prefix: justify-self,
     values: (
       "center": center,
       "start": start,
