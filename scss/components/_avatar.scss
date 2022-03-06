@@ -2,15 +2,16 @@
   @include util($util-borders, "rounded", "circle");
   width: 5rem;
   aspect-ratio: 1/1;
-  &-sm {
-    @extend .avatar;
-    width: 2.5rem;
-  }
-  &-md {
-    @extend .avatar;
-  }
-  &-lg {
-    @extend .avatar;
-    width: 8rem;
-  }
+}
+.avatar-sm {
+  @extend .avatar;
+  width: 2.5rem;
+}
+.avatar-md {
+  @extend .avatar;
+  width: 5rem;
+}
+.avatar-lg {
+  @extend .avatar;
+  width: 8rem;
 }
