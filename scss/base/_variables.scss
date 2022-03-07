@@ -74,17 +74,19 @@ $color-background: (
   "50": hsla(0, 0%, 100%, 1),
 );
 
-// Font sizes
-$font-size-1000: 9rem;
-$font-size-900: 6rem;
-$font-size-800: 4.5rem;
-$font-size-700: 2.875rem;
-$font-size-600: 1.75rem;
-$font-size-500: 1.25rem;
-$font-size-400: 1rem;
-$font-size-300: 0.875rem;
-$font-size-200: 0.75rem;
-$font-size-100: 0.5rem;
+// Font
+$font-sizes: (
+  "1000": 9rem,
+  "900": 6rem,
+  "800": 4.5rem,
+  "700": 2.875rem,
+  "600": 1.75rem,
+  "500": 1.25rem,
+  "400": 1rem,
+  "300": 0.875rem,
+  "200": 0.75rem,
+  "100": 0.5rem,
+);
 
 // Spacing
 $spacing-unit: 1rem;
