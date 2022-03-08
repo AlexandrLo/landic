@@ -1,6 +1,19 @@
-.container {
+.container-sm {
   width: 100%;
-  max-width: $container-max-width;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 calc($spacing-unit * 1.5);
+}
+.container,
+.container-md {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 calc($spacing-unit * 1.5);
+}
+.container-lg {
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0 calc($spacing-unit * 1.5);
 }
