@@ -1,5 +1,5 @@
 $util-sizing: (
-  "width": (
+  "w": (
     props: width,
     prefix: w,
     values: (
@@ -10,9 +10,31 @@ $util-sizing: (
       "auto": auto,
     ),
   ),
-  "height": (
+  "h": (
     props: height,
     prefix: h,
+    values: (
+      "25": 25%,
+      "50": 50%,
+      "75": 75%,
+      "100": 100%,
+      "auto": auto,
+    ),
+  ),
+  "max-w": (
+    props: max-width,
+    prefix: max-w,
+    values: (
+      "25": 25%,
+      "50": 50%,
+      "75": 75%,
+      "100": 100%,
+      "auto": auto,
+    ),
+  ),
+  "max-h": (
+    props: max-height,
+    prefix: max-h,
     values: (
       "25": 25%,
       "50": 50%,
@@ -69,9 +91,9 @@ $util-sizing: (
       "50": 50vw,
     ),
   ),
-  "max-w": (
+  "max-uw": (
     props: max-width,
-    prefix: max-w,
+    prefix: max-uw,
     values: (
       "1": $size-unit * 1,
       "2": $size-unit * 2,
@@ -88,6 +110,36 @@ $util-sizing: (
       "4x3": calc(4 / 3),
       "16x9": calc(16 / 9),
       "21x9": calc(21 / 9),
+    ),
+  ),
+  "overflow": (
+    props: overflow,
+    prefix: overflow,
+    values: (
+      "auto": auto,
+      "hidden": hidden,
+      "visible": visible,
+      "scroll": scroll,
+    ),
+  ),
+  "overflow-x": (
+    props: overflow-x,
+    prefix: overflow-x,
+    values: (
+      "auto": auto,
+      "hidden": hidden,
+      "visible": visible,
+      "scroll": scroll,
+    ),
+  ),
+  "overflow-y": (
+    props: overflow-y,
+    prefix: overflow-y,
+    values: (
+      "auto": auto,
+      "hidden": hidden,
+      "visible": visible,
+      "scroll": scroll,
     ),
   ),
 );
