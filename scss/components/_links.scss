@@ -24,12 +24,6 @@
   }
 }
 
-.link {
-  transition: $transition-duration ease color;
-  text-decoration: underline;
-  text-underline-offset: 0.1rem;
-}
-
 .parent-link::after {
   position: absolute;
   top: 0;
@@ -43,28 +37,76 @@
 $link-colors: (
   "primary": (
     names: link-primary link,
-    color: $color-brand,
+    colors: (
+      default: $color-brand,
+    ),
   ),
   "light": (
     names: link-light,
-    color: $color-light,
+    colors: (
+      default: $color-light,
+    ),
   ),
   "dark": (
     names: link-dark,
-    color: $color-dark,
+    colors: (
+      default: $color-dark,
+    ),
   ),
   "success": (
     names: link-success,
-    color: $color-success,
+    colors: (
+      default: $color-success,
+    ),
   ),
   "warning": (
     names: link-warning,
-    color: $color-warning,
+    colors: (
+      default: $color-warning,
+    ),
   ),
   "danger": (
     names: link-danger,
-    color: $color-danger,
+    colors: (
+      default: $color-danger,
+    ),
+  ),
+  "hidden-primary": (
+    names: link-hidden link-hidden-primary,
+    underline-on-hover: true,
+    colors: (
+      default: $color-light,
+      hover: $color-brand,
+      active: $color-brand,
+    ),
+  ),
+  "hidden-success": (
+    names: link-hidden-success,
+    underline-on-hover: true,
+    colors: (
+      default: $color-light,
+      hover: $color-success,
+      active: $color-success,
+    ),
+  ),
+  "hidden-warning": (
+    names: link-hidden-warning,
+    underline-on-hover: true,
+    colors: (
+      default: $color-light,
+      hover: $color-warning,
+      active: $color-warning,
+    ),
+  ),
+  "hidden-danger": (
+    names: link-hidden-danger,
+    underline-on-hover: true,
+    colors: (
+      default: $color-light,
+      hover: $color-danger,
+      active: $color-danger,
+    ),
   ),
 );
 
-@include link-color-gen($link-colors);
+@include link-gen($link-colors);

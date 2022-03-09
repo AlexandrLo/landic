@@ -160,19 +160,53 @@
   }
 }
 
-@mixin link-color-gen($variants) {
+@mixin link-gen($variants) {
   @each $variant-name, $variant in $variants {
-    $color: map-get($variant, "color");
+    // Parse colors
+    $colors: map-get($variant, "colors");
+    $default-color: map-get($colors, "default");
+    $hover-color: if(
+      map-has-key($colors, "hover"),
+      map.get($colors, "hover"),
+      $default-color
+    );
+    $active-color: if(
+      map-has-key($colors, "active"),
+      map.get($colors, "active"),
+      $hover-color
+    );
+
+    // Parse boolean settings
+    $underline-on-hover: if(
+      map-has-key($variant, underline-on-hover),
+      map.get($variant, "underline-on-hover"),
+      false
+    );
+
+    // Parse selector
     $selector: ();
     @each $name in map-get($variant, "names") {
       $selector: append($selector, ".#{$name}", $separator: comma);
     }
 
+    // Generate style
     #{$selector} {
-      @extend .link;
-      color: map-get($color, "400");
+      transition: $transition-duration ease color;
+      text-underline-offset: 0.1rem;
+      @if $underline-on-hover {
+        text-decoration: none;
+      } @else {
+        text-decoration: underline;
+      }
+      color: map-get($default-color, "400");
+      &:hover {
+        @if $underline-on-hover {
+          text-decoration: underline;
+        }
+        color: map-get($hover-color, "400");
+      }
       &:active {
-        color: map-get($color, "200");
+        color: map-get($active-color, "200");
       }
     }
   }
