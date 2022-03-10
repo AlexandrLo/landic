@@ -91,6 +91,28 @@ $util-sizing: (
       "50": 50vw,
     ),
   ),
+  "uh": (
+    props: height,
+    prefix: uh,
+    values: (
+      "1": $size-unit * 1,
+      "2": $size-unit * 2,
+      "3": $size-unit * 3,
+      "4": $size-unit * 4,
+      "5": $size-unit * 5,
+    ),
+  ),
+  "uw": (
+    props: width,
+    prefix: uw,
+    values: (
+      "1": $size-unit * 1,
+      "2": $size-unit * 2,
+      "3": $size-unit * 3,
+      "4": $size-unit * 4,
+      "5": $size-unit * 5,
+    ),
+  ),
   "max-uw": (
     props: max-width,
     prefix: max-uw,
