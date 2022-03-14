@@ -4,13 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npx sass --watch scss/style.scss:index.css"
+    "start": "webpack serve",
+    "build": "webpack",
+    "sass": "npx sass --watch src/scss/style.scss:build/index.css"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "resolve-url-loader": "^5.0.0",
     "rfs": "^9.0.6",
-    "sass": "^1.49.0"
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
   }
 }

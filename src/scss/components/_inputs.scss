@@ -1,0 +1,224 @@
+//* Text-like inputs
+@mixin input-validated($is-valid: true) {
+  $validation-color: map-get($color-danger, "400");
+  @if $is-valid {
+    $validation-color: map-get($color-success, "400");
+  }
+  border-color: $validation-color;
+  &:hover {
+    box-shadow: map-get($box-shadow-outline, "sm")
+      transparentize($validation-color, 0.25);
+  }
+  &:focus {
+    box-shadow: map-get($box-shadow-outline, "md")
+      transparentize($validation-color, 0.5);
+  }
+  & ~ .validation-feedback {
+    @include typography("body", "2");
+    width: 100%;
+    color: $validation-color;
+    padding-left: $border-width + $input-padding * 2;
+    padding-top: 0.5rem;
+  }
+}
+@mixin input-box($bg) {
+  @include typography("body", "2");
+  color: map-get($color-gray, "50");
+  background: $bg;
+  border: $border-width solid transparent;
+  border-radius: map-get($border-radius-sizes, "2");
+  padding: $input-padding * 2 $input-padding * 4;
+  transition: $transition-duration ease all;
+
+  &.is-valid {
+    @include input-validated(true);
+  }
+  &.is-invalid {
+    @include input-validated(false);
+  }
+  &:hover {
+    outline: none;
+    box-shadow: map-get($box-shadow-outline, "sm")
+      transparentize(map-get($color-brand, "400"), 0.25);
+  }
+  &:focus {
+    outline: none;
+    box-shadow: map-get($box-shadow-outline, "md")
+      transparentize(map-get($color-brand, "400"), 0.5);
+  }
+  &:disabled {
+    color: map-get($color-gray, "500");
+    background: transparentize(map-get($color-background, "700"), 0.25);
+    border-color: transparent;
+    &::placeholder {
+      color: map-get($color-gray, "500");
+    }
+  }
+  &::placeholder {
+    color: map-get($color-gray, "300");
+  }
+  // Hide cross button for webkit
+  &::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+  // Make webkit calendar button white
+  &::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+  // Remove input[type="number"] arrows
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  // Floating label input
+  .floating-input-group > & {
+    padding-left: $input-padding * 4;
+    padding-right: $input-padding * 4;
+    padding-top: $input-padding * 5;
+    padding-bottom: $input-padding;
+    &:disabled ~ label {
+      color: map-get($color-gray, "500");
+    }
+    // Minimize label when input is focused or filled
+    &:focus ~ label,
+    &:not(:placeholder-shown) ~ label {
+      @include typography("label", "sm");
+      transform: translateY(-0.5rem);
+    }
+  }
+}
+input[type="text"],
+input[type="number"],
+input[type="url"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="search"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  @include input-box(map-get($color-background, "300"));
+  &.input-secondary {
+    @include input-box(map-get($color-background, "600"));
+  }
+}
+
+//* Checkbox
+@mixin colored-check-bg($color) {
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='#{url-friendly-color($color)}' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cpolyline points='216 72 104 184 48 128' fill='none' stroke='#{url-friendly-color($color)}' stroke-linecap='round' stroke-linejoin='round' stroke-width='24'%3E%3C/polyline%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1em;
+}
+@mixin checkbox-is-checked($is-checked: true) {
+  $background: map-get($color-background, "300");
+  $background-active: map-get($color-background, "200");
+  $background-disabled: map-get($color-background, "700");
+  $color: transparent;
+  $color-active: transparent;
+  $color-disabled: transparent;
+  @if $is-checked {
+    $background: map-get($color-brand, "400");
+    $background-active: map-get($color-brand, "200");
+    $background-disabled: map-get($color-brand, "400");
+    $color: map-get($color-gray, "800");
+    $color-active: map-get($color-gray, "500");
+    $color-disabled: map-get($color-gray, "800");
+  }
+
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  & + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 1.25rem;
+      height: 1.25rem;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border-radius: map-get($border-radius-sizes, "1");
+      margin-right: 1rem;
+      transition: $transition-duration ease all;
+      background: $background;
+      @include colored-check-bg($color);
+    }
+    &:hover::before {
+      box-shadow: map-get($box-shadow-outline, "md")
+        transparentize(map-get($color-brand, "400"), 0.5);
+    }
+    &:active::before {
+      box-shadow: map-get($box-shadow-outline, "md")
+        transparentize(map-get($color-brand, "400"), 0.5);
+      background: $background-active;
+      @include colored-check-bg($color-active);
+    }
+  }
+  &:disabled + label::before {
+    box-shadow: none;
+    background: transparentize($background-disabled, 0.75);
+    @include colored-check-bg($color-disabled);
+  }
+}
+input[type="checkbox"].check {
+  &:checked {
+    @include checkbox-is-checked(true);
+  }
+  &:not(:checked) {
+    @include checkbox-is-checked(false);
+  }
+}
+
+//* Radio
+input[type="radio"] {
+  // TODO
+}
+
+//* File
+input[type="file"] {
+  // TODO
+}
+
+//* Range
+input[type="range"] {
+  // TODO
+}
+
+//* Input groups
+.floating-input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  & > label {
+    @include typography("body", "2");
+    color: map-get($color-gray, "400");
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-right: $border-width + $input-padding * 4;
+    padding-top: $border-width + $input-padding * 3;
+    padding-left: $border-width + $input-padding * 4;
+    padding-bottom: $border-width + $input-padding * 3;
+    pointer-events: none;
+    transform-origin: 0 0;
+    transition: $transition-duration ease all;
+  }
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}

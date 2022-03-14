@@ -1,0 +1,119 @@
+.navlinks {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  & > li {
+    display: inline-block;
+    & > a {
+      @include typography("label", "md");
+      display: inline-block;
+      width: 100%;
+      padding: $spacing-unit * 1.5;
+      color: map-get($color-gray, "50");
+      text-decoration: none;
+      text-align: center;
+      transition: $transition-duration ease all;
+      &:hover,
+      &.active {
+        color: map-get($color-brand, "400");
+      }
+      &:active {
+        color: map-get($color-brand, "200");
+      }
+    }
+  }
+}
+
+.parent-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: calc(-5rem - 1.25em);
+  visibility: hidden;
+}
+
+$link-colors: (
+  "primary": (
+    names: link-primary link,
+    colors: (
+      default: $color-brand,
+    ),
+  ),
+  "light": (
+    names: link-light,
+    colors: (
+      default: $color-light,
+    ),
+  ),
+  "dark": (
+    names: link-dark,
+    colors: (
+      default: $color-dark,
+    ),
+  ),
+  "success": (
+    names: link-success,
+    colors: (
+      default: $color-success,
+    ),
+  ),
+  "warning": (
+    names: link-warning,
+    colors: (
+      default: $color-warning,
+    ),
+  ),
+  "danger": (
+    names: link-danger,
+    colors: (
+      default: $color-danger,
+    ),
+  ),
+  "hidden-primary": (
+    names: link-hidden link-hidden-primary,
+    underline-on-hover: true,
+    colors: (
+      default: $color-light,
+      hover: $color-brand,
+      active: $color-brand,
+    ),
+  ),
+  "hidden-success": (
+    names: link-hidden-success,
+    underline-on-hover: true,
+    colors: (
+      default: $color-light,
+      hover: $color-success,
+      active: $color-success,
+    ),
+  ),
+  "hidden-warning": (
+    names: link-hidden-warning,
+    underline-on-hover: true,
+    colors: (
+      default: $color-light,
+      hover: $color-warning,
+      active: $color-warning,
+    ),
+  ),
+  "hidden-danger": (
+    names: link-hidden-danger,
+    underline-on-hover: true,
+    colors: (
+      default: $color-light,
+      hover: $color-danger,
+      active: $color-danger,
+    ),
+  ),
+);
+
+@include link-gen($link-colors);

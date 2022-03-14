@@ -1,0 +1,71 @@
+$border-sizes: (
+  "": (
+    $border-width solid map-get($color-gray, "400"),
+  ),
+  "0": (
+    0 solid map-get($color-gray, "400"),
+  ),
+  "1": (
+    $border-width * 1 solid map-get($color-gray, "400"),
+  ),
+  "2": (
+    $border-width * 2 solid map-get($color-gray, "400"),
+  ),
+  "3": (
+    $border-width * 3 solid map-get($color-gray, "400"),
+  ),
+);
+
+$util-borders: (
+  "b": (
+    props: border,
+    prefix: b,
+    values: $border-sizes,
+  ),
+  "bl": (
+    props: border-left,
+    prefix: bl,
+    values: $border-sizes,
+  ),
+  "br": (
+    props: border-right,
+    prefix: br,
+    values: $border-sizes,
+  ),
+  "bt": (
+    props: border-top,
+    prefix: bt,
+    values: $border-sizes,
+  ),
+  "bb": (
+    props: border-bottom,
+    prefix: bb,
+    values: $border-sizes,
+  ),
+  "rounded": (
+    props: border-radius,
+    prefix: rounded,
+    values: $border-radius-sizes,
+  ),
+  "rounded-left": (
+    props: border-top-left-radius border-bottom-left-radius,
+    prefix: rounded-left,
+    values: $border-radius-sizes,
+  ),
+  "rounded-right": (
+    props: border-top-right-radius border-bottom-right-radius,
+    prefix: rounded-right,
+    values: $border-radius-sizes,
+  ),
+  "rounded-top": (
+    props: border-top-left-radius border-top-right-radius,
+    prefix: rounded-top,
+    values: $border-radius-sizes,
+  ),
+  "rounded-bottom": (
+    props: border-bottom-left-radius border-bottom-right-radius,
+    prefix: rounded-bottom,
+    values: $border-radius-sizes,
+  ),
+);
+@include util-gen($util-borders);

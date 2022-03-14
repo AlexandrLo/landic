@@ -1,0 +1,76 @@
+//* Navbar toggle icons
+@mixin colored-stack-bg($color) {
+  $svg-color: url-friendly-color($color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='#{$svg-color}' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cline x1='40' y1='128' x2='216' y2='128' stroke='#{$svg-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/line%3E%3Cline x1='40' y1='64' x2='216' y2='64' stroke='#{$svg-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/line%3E%3Cline x1='40' y1='192' x2='216' y2='192' stroke='#{$svg-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/line%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 2em;
+}
+@mixin colored-x-bg($color) {
+  $svg-color: url-friendly-color($color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='#{$svg-color}' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cline x1='200' y1='56' x2='56' y2='200' stroke='#{$svg-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/line%3E%3Cline x1='200' y1='200' x2='56' y2='56' stroke='#{$svg-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'%3E%3C/line%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 2em;
+}
+//* Navbar toggle mixin
+@mixin navbar-toggle($is-toggled: false) {
+  $icon-color: map-get($color-light, "400");
+  $icon-bg: map-get($color-gray, "50");
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  & + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    & ~ ul.navlinks {
+      @if not $is-toggled {
+        display: none;
+      }
+    }
+    &::before {
+      content: "";
+      margin-top: $spacing-unit;
+      margin-bottom: $spacing-unit;
+      display: inline-block;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: map-get($border-radius-sizes, "pill");
+      flex-shrink: 0;
+      flex-grow: 0;
+      transition: $transition-duration ease all;
+      background: transparent;
+      @if $is-toggled {
+        @include colored-x-bg($icon-color);
+      } @else {
+        @include colored-stack-bg($icon-color);
+      }
+    }
+    &:hover::before {
+      background: transparentize($icon-bg, 0.75);
+      @if $is-toggled {
+        @include colored-x-bg($icon-color);
+      } @else {
+        @include colored-stack-bg($icon-color);
+      }
+    }
+    &:active::before {
+      background: transparentize($icon-bg, 0.5);
+      @if $is-toggled {
+        @include colored-x-bg($icon-color);
+      } @else {
+        @include colored-stack-bg($icon-color);
+      }
+    }
+  }
+}
+
+input[type="checkbox"].navbar-toggle {
+  &:checked {
+    @include navbar-toggle(true);
+  }
+  &:not(:checked) {
+    @include navbar-toggle(false);
+  }
+}

@@ -1,0 +1,349 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landic - Components</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <script src="index.js"></script>
+</head>
+
+<body class="bg-400 text-light">
+  <header class="sticky pos-top bg-600">
+    <nav class="container-lg row align-center">
+      <input type="checkbox" class="navbar-toggle" id="navbar-toggle">
+      <label class="d-none-lg mr-2" for="navbar-toggle"></label>
+      <a class="mr-2" href="index.html">
+        <img src="assets/svg/brand-logo-default.svg" aria-label="Brand logo">
+      </a>
+      <ul class="navlinks d-flex-lg row col-12 col-lg">
+        <li class="col-12 col-auto-lg"><a href="components.html" class="active">Components</a></li>
+        <li class="col-12 col-auto-lg"><a href="blocks.html">Blocks</a></li>
+        <li class="col-12 col-auto-lg"><a href="#">Contact</a></li>
+        <li class="col-12 col-auto-lg"><a href="#">About</a></li>
+      </ul>
+      <input type="button" class="btn d-none d-block-lg" value="Download Now">
+    </nav>
+  </header>
+
+  <div class="container-lg row py-2 gap-2">
+    <div class="col d-flex flex-column gap-2">
+      <!-- TYPOGRAPHY -->
+      <div>
+        <h4 class="text-uppercase text-primary pl-2">
+          Typography
+          <a class="anchor" aria-label="Anchor" id="typography"></a>
+        </h4>
+        <div class="card-dashed p-2">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+          <p class="subtitle-1">Subtitle 1</p>
+          <p class="subtitle-2">Subtitle 2</p>
+          <p class="lead-1">Lead 1</p>
+          <p class="lead-2">Lead 2</p>
+          <p class="body-1">Body 1</p>
+          <p class="body-2">Body 2</p>
+          <p class="label-lg">Label Large</p>
+          <p class="label-md">Label Medium</p>
+          <p class="label-sm">Label Small</p>
+        </div>
+      </div>
+      <!-- CARDS -->
+      <div>
+        <h4 class="text-uppercase text-primary pl-2">
+          Card
+          <a class="anchor" aria-label="Anchor" id="card"></a>
+        </h4>
+        <div class="card-dashed flex-y gap-2 p-2">
+          <!-- Row 1 -->
+          <div class="flex-x gap-2">
+            <div class="card">
+              <div class="card-header">
+                Card Header
+              </div>
+              <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Scelerisque tristique aliquet aliquam convallis cursus
+                in massa. Nulla semper amet, lorem velit, gravida vel
+                varius. Eu viverra ac a, ac sagittis turpis blandit eu.
+                Adipiscing sit ac porttitor scelerisque mi convallis massa.
+                Sit nisl eu mauris cursus. Phasellus elementum, eu sit in
+                interdum massa urna. Quis morbi in rhoncus pellentesque
+                eget. Magna dignissim purus dictum egestas congue mi.
+                Viverra leo tortor risus urna velit egestas nunc a vitae.
+              </div>
+            </div>
+            <div class="card hover">
+              <div class="card-body flex-y gap-2">
+                <div class="card-image ratio-16x9 w-100">
+                  <img src="assets/img/feature-image-1.jpg" alt="Feature image">
+                </div>
+                <h6>
+                  Card Title
+                </h6>
+                <p>
+                  Card Body. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Scelerisque tristique aliquet aliquam convallis cursus
+                  in massa. Nulla semper amet, lorem velit, gravida vel
+                  varius. Eu viverra ac a, ac sagittis turpis blandit eu.
+                  Adipiscing sit ac porttitor scelerisque mi convallis massa.
+                  Sit nisl eu mauris cursus. Phasellus elementum, eu sit in
+                  interdum massa urna. Quis morbi in rhoncus pellentesque
+                  eget. Magna dignissim purus dictum egestas congue mi.
+                  Viverra leo tortor risus urna velit egestas nunc a vitae.
+                </p>
+                <a href="#" class="link label-md parent-link">Link</a>
+              </div>
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <div class="flex-x gap-2">
+            <!-- Card Example 3 -->
+            <div class="card">
+              <div class="card-header">
+                Card Header
+              </div>
+              <div class="card-body flex-y gap-2">
+                <p>
+                  Card Body. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Scelerisque tristique aliquet aliquam convallis cursus
+                  in massa. Nulla semper amet, lorem velit, gravida vel
+                  varius. Eu viverra ac a, ac sagittis turpis blandit eu.
+                  Adipiscing sit ac porttitor scelerisque mi convallis massa.
+                  Sit nisl eu mauris cursus. Phasellus elementum, eu sit in
+                  interdum massa urna. Quis morbi in rhoncus pellentesque
+                  eget. Magna dignissim purus dictum egestas congue mi.
+                  Viverra leo tortor risus urna velit egestas nunc a vitae.
+                </p>
+              </div>
+            </div>
+            <!-- Card Example 4 -->
+            <div class="card">
+              <div class="card-body flex-y gap-2">
+                <h6>
+                  Card Title
+                </h6>
+                <p>
+                  Card Body. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Scelerisque tristique aliquet aliquam convallis cursus
+                  in massa. Nulla semper amet, lorem velit, gravida vel
+                  varius. Eu viverra ac a, ac sagittis turpis blandit eu.
+                  Adipiscing sit ac porttitor scelerisque mi convallis massa.
+                  Sit nisl eu mauris cursus. Phasellus elementum, eu sit in
+                  interdum massa urna. Quis morbi in rhoncus pellentesque
+                  eget. Magna dignissim purus dictum egestas congue mi.
+                  Viverra leo tortor risus urna velit egestas nunc a vitae.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- LINK -->
+      <div>
+        <h4 class="text-uppercase text-primary pl-2">
+          Link
+          <a class="anchor" aria-label="Anchor" id="link"></a>
+        </h4>
+        <div class="card-dashed d-flex flex-column gap-2 p-2">
+          <div>
+            <a href="#" class="link">Link</a>
+          </div>
+          <div>
+            <a href="#" class="link label-sm">Link small</a>
+            <a href="#" class="link label-md">Link medium</a>
+            <a href="#" class="link label-lg">Link large</a>
+          </div>
+          <div>
+            <a href="#" class="link-primary">Link primary</a>
+            <a href="#" class="link-light">Link light</a>
+            <a href="#" class="link-dark">Link dark</a>
+            <a href="#" class="link-success">Link success</a>
+            <a href="#" class="link-warning">Link warning</a>
+            <a href="#" class="link-danger">Link danger</a>
+          </div>
+          <div>
+            <a href="#" class="link-hidden-primary">Link hidden primary</a>
+            <a href="#" class="link-hidden-success">Link hidden success</a>
+            <a href="#" class="link-hidden-warning">Link hidden warning</a>
+            <a href="#" class="link-hidden-danger">Link hidden danger</a>
+          </div>
+          <div class="card hover" style="width: 30rem;">
+            <div class="card-body flex-y gap-2">
+              <h6>
+                Card with .parent-link
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Scelerisque tristique aliquet aliquam convallis cursus
+                in massa. Nulla semper amet, lorem velit, gravida vel
+                varius.
+              </p>
+              <a href="#" class="link parent-link">Parent Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BUTTONS -->
+      <div>
+        <h4 class="text-uppercase text-primary pl-2">
+          Button
+          <a class="anchor" aria-label="Anchor" id="button"></a>
+        </h4>
+        <div class="card-dashed d-flex flex-column gap-2 p-2">
+          <div>
+            <input class="btn" type="button" value="&lt;input type=&quot;button&quot;&gt;" />
+            <input class="btn" type="reset" value="&lt;input type=&quot;reset&quot;&gt;" />
+            <input class="btn" type="submit" value="&lt;input type=&quot;submit&quot;&gt;" />
+            <button class="btn" type="button">&lt;button&gt;</button>
+          </div>
+          <div>
+            <button type="button" class="btn">Enabled</button>
+            <button type="button" class="btn" disabled>Disabled</button>
+          </div>
+          <div>
+            <button type="button" class="btn">Text</button>
+            <button type="button" class="btn-icon">
+              <i class="ph-arrows-clockwise-bold"></i>
+            </button>
+          </div>
+          <div>
+            <button type="button" class="btn-sm">Small</button>
+            <button type="button" class="btn-md">Medium</button>
+            <button type="button" class="btn-lg">Large</button>
+          </div>
+          <div>
+            <button type="button" class="btn-primary">Primary</button>
+            <button type="button" class="btn-light">Light</button>
+            <button type="button" class="btn-dark">Dark</button>
+            <button type="button" class="btn-success">Success</button>
+            <button type="button" class="btn-warning">Warning</button>
+            <button type="button" class="btn-danger">Danger</button>
+          </div>
+          <div>
+            <button type="button" class="btn-outline-primary">Primary</button>
+            <button type="button" class="btn-outline-light">Light</button>
+            <button type="button" class="btn-outline-dark">Dark</button>
+            <button type="button" class="btn-outline-success">Success</button>
+            <button type="button" class="btn-outline-warning">Warning</button>
+            <button type="button" class="btn-outline-danger">Danger</button>
+          </div>
+          <div>
+            <button type="button" class="btn-transparent-primary">Primary</button>
+            <button type="button" class="btn-transparent-light">Light</button>
+            <button type="button" class="btn-transparent-dark">Dark</button>
+            <button type="button" class="btn-transparent-success">Success</button>
+            <button type="button" class="btn-transparent-warning">Warning</button>
+            <button type="button" class="btn-transparent-danger">Danger</button>
+          </div>
+        </div>
+      </div>
+      <!-- Forms -->
+      <div>
+        <h4 class="text-uppercase text-primary pl-2">
+          Form
+          <a class="anchor" aria-label="Anchor" id="form"></a>
+        </h4>
+        <div class="card-dashed d-flex flex-column gap-2 p-2">
+          <div class="input-group">
+            <input type="text" placeholder="Default input">
+          </div>
+          <div class="input-group">
+            <input type="text" placeholder="Secondary input" class="input-secondary">
+          </div>
+          <div class="input-group">
+            <input type="text" placeholder="Default input">
+            <button type="button" class="btn-md">Text</button>
+          </div>
+          <div class="floating-input-group">
+            <input id="input-test-2" type="text" placeholder=" ">
+            <label for="input-test-2">Floating label input</label>
+            <button type="button" class="btn-md">Text</button>
+          </div>
+          <div class="input-group">
+            <input type="text" class="is-valid" placeholder="Input Validation">
+            <div class="validation-feedback">
+              Input is valid!
+            </div>
+          </div>
+          <div class="input-group">
+            <input type="text" class="is-invalid" placeholder="Input Validation">
+            <div class="validation-feedback">
+              Input is invalid!
+            </div>
+          </div>
+          <div class="floating-input-group">
+            <input id="input-test-3" type="text" class="is-valid" placeholder=" ">
+            <label for="input-test-3">Floating label input validation</label>
+            <div class="validation-feedback">
+              Input is valid!
+            </div>
+          </div>
+          <div class="floating-input-group">
+            <input id="input-test-4" type="text" class="is-invalid" placeholder=" ">
+            <label for="input-test-4">Floating label input validation</label>
+            <div class="validation-feedback">
+              Input is invalid!
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" class="check" id="check-test-1">
+            <label for="check-test-1">Checkbox</label>
+          </div>
+          <div>
+            <input type="checkbox" class="check" id="check-test-2" checked>
+            <label for="check-test-2">Checkbox</label>
+          </div>
+          <div>
+            <input type="checkbox" class="check" id="check-test-3" disabled>
+            <label for="check-test-3">Checkbox</label>
+          </div>
+          <div>
+            <input type="checkbox" class="check" id="check-test-4" checked disabled>
+            <label for="check-test-4">Checkbox</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Anchors -->
+    <div class="col-2 d-none d-block-lg sidebar">
+      <div class="card">
+        <div class="card-header">On this page</div>
+        <div class="card-body d-flex flex-column max-h-100 overflow-y-auto">
+          <a class="link-hidden label-md" href="#typography">Typography</a>
+          <a class="link-hidden label-md" href="#card">Card</a>
+          <a class="link-hidden label-md" href="#link">Link</a>
+          <a class="link-hidden label-md" href="#button">Button</a>
+          <a class="link-hidden label-md" href="#form">Form</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-700 py-2">
+    <div class="container d-flex justify-between align-center">
+      <div class="text-center body-2 text-gray">
+        © 2022 Landic Design System. All rights reserved
+      </div>
+      <div>
+        <a class="btn-transparent btn-icon" href="#">
+          <i class="ph-instagram-logo-bold"></i>
+        </a>
+        <a class="btn-transparent btn-icon" href="#">
+          <i class="ph-telegram-logo-bold"></i>
+        </a>
+        <a class="btn-transparent btn-icon" href="#">
+          <i class="ph-github-logo-bold"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
