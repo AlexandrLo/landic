@@ -15,6 +15,7 @@ $util-colors: (
       "gray": map-get($color-gray, "300"),
       "dark": map-get($color-dark, "400"),
       "primary": map-get($color-brand, "400"),
+      "primary-muted": transparentize(map-get($color-brand, "400"), 0.75),
       "success": map-get($color-success, "400"),
       "warning": map-get($color-warning, "400"),
       "danger": map-get($color-danger, "400"),
