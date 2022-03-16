@@ -1,30 +1,68 @@
 .card {
-  @include util($util-borders, "rounded", "3");
+  @include util($util-borders, "rounded", "2");
   @include util($util-colors, "bg", "500");
   position: relative;
   display: flex;
   flex-direction: column;
-}
-.card-image {
-  @include util($util-borders, "rounded", "2");
-  position: relative;
-  overflow: hidden;
-  & > img {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+
+  & > .card-header {
+    @include util($util-colors, "bg", "600");
+    @include util($util-spacing, "p", "2");
+    @include util($util-borders, "rounded", "2");
+    @include util($util-typography, "heading", "6");
   }
-}
-.card-header {
-  @include util($util-spacing, "p", "3");
-  @include util($util-borders, "rounded", "3");
-  @include util($util-colors, "bg", "600");
-  @include util($util-typography, "heading", "6");
-}
-.card-body {
-  @include util($util-spacing, "p", "3");
-  @include util($util-typography, "body", "1");
-  flex: 1 1 auto;
+  & > .card-body {
+    @include util($util-spacing, "p", "2");
+    @include util($util-typography, "body", "1");
+    flex: 1 1 auto;
+    & > .card-image {
+      @include util($util-borders, "rounded", "2");
+      position: relative;
+      overflow: hidden;
+      & > img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &-sm {
+    @extend .card;
+    @include util($util-borders, "rounded", "1");
+    & > .card-header {
+      @include util($util-spacing, "p", "1");
+      @include util($util-borders, "rounded", "1");
+      @include util($util-typography, "label", "lg");
+    }
+    & > .card-body {
+      @include util($util-spacing, "p", "1");
+    }
+  }
+  &-md {
+    @extend .card;
+    @include util($util-borders, "rounded", "2");
+    & > .card-header {
+      @include util($util-spacing, "p", "2");
+      @include util($util-borders, "rounded", "2");
+      @include util($util-typography, "heading", "6");
+    }
+    & > .card-body {
+      @include util($util-spacing, "p", "2");
+    }
+  }
+  &-lg {
+    @extend .card;
+    @include util($util-borders, "rounded", "3");
+    & > .card-header {
+      @include util($util-spacing, "p", "3");
+      @include util($util-borders, "rounded", "3");
+      @include util($util-typography, "heading", "5");
+    }
+    & > .card-body {
+      @include util($util-spacing, "p", "3");
+    }
+  }
 }
 
 .card-dashed {
