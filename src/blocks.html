@@ -5,9 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Landic - Components</title>
-  <link rel="stylesheet" href="index.css" />
   <script src="https://unpkg.com/phosphor-icons"></script>
-  <script src="index.js"></script>
 </head>
 
 <body class="bg-400 text-light">
@@ -29,7 +27,7 @@
     </nav>
   </header>
 
-  <main class="d-flex flex-column gap-2 py-2">
+  <main class="flex-y gap-2 py-2">
     <!-- NAVBARS -->
     <div>
       <div class="heading-4 text-uppercase text-primary pl-3">Navbar</div>
@@ -133,7 +131,7 @@
         <!-- Hero 2 -->
         <div class="bg-hero-1 bg-no-repeat bg-cover mb-3">
           <div class="d-flex min-vh-80 py-4 bf-blur bf-brightness">
-            <div class="container max-uw-5 d-flex flex-column justify-center align-center">
+            <div class="container max-uw-5 flex-y justify-center align-center">
               <h2 class="text-center">
                 Landing Page Design System
               </h2>
@@ -174,7 +172,7 @@
         <!-- Hero 4 -->
         <div class="bg-hero-2 bg-no-repeat bg-y-bottom bg-cover mb-3">
           <div class="d-flex min-vh-80 py-3">
-            <div class="container d-flex flex-column justify-center align-center">
+            <div class="container flex-y justify-center align-center">
               <h3 class="text-center mt-3">
                 Track your product sales from anywhere, anytime.
               </h3>
@@ -255,14 +253,16 @@
       <div class="heading-4 text-uppercase text-primary pl-3">Stats</div>
       <div class="card-dashed">
         <!-- Stats 1 -->
-        <div class="container flex-y align-center py-3">
-          <h3 class="text-center">
-            Some count that matters
-          </h3>
-          <p class="lead-1 text-center">
-            Our achievement in the journey depicted in numbers
-          </p>
-          <div class="card mt-2">
+        <div class="container flex-y align-center py-3 gap-3">
+          <div>
+            <h3 class="text-center">
+              Some count that matters
+            </h3>
+            <p class="lead-1 text-center">
+              Our achievement in the journey depicted in numbers
+            </p>
+          </div>
+          <div class="card-lg">
             <div class="card-body flex-x flex-wrap justify-center gap-3">
               <div>
                 <h4 class="text-center">50</h4>
@@ -294,32 +294,40 @@
             </p>
           </div>
           <div class="col-12 col-6-xl d-flex flex-wrap gap-3 justify-center">
-            <div class="d-flex flex-column gap-3">
+            <div class="flex-y gap-3">
               <div class="d-flex align-center">
-                <i class="ph-download-bold fs-800 text-primary mr-1"></i>
+                <div class="rounded-circle bg-primary-muted p-1 mr-1">
+                  <i class="ph-download-bold fs-700 text-primary"></i>
+                </div>
                 <div>
                   <h5>15 000+</h5>
                   <p class="lead-1">Downloads</p>
                 </div>
               </div>
               <div class="d-flex align-center">
-                <i class="ph-users-four-bold fs-800 text-primary mr-1"></i>
+                <div class="rounded-circle bg-primary-muted p-1 mr-1">
+                  <i class="ph-users-four-bold fs-700 text-primary"></i>
+                </div>
                 <div>
                   <h5>50</h5>
                   <p class="lead-1">Happy Clients</p>
                 </div>
               </div>
             </div>
-            <div class="d-flex flex-column gap-3">
+            <div class="flex-y gap-3">
               <div class="d-flex align-center">
-                <i class="ph-eye-bold fs-800 text-primary mr-1"></i>
+                <div class="rounded-circle bg-primary-muted p-1 mr-1">
+                  <i class="ph-eye-bold fs-700 text-primary"></i>
+                </div>
                 <div>
                   <h5>500 000+</h5>
                   <p class="lead-1">Views</p>
                 </div>
               </div>
               <div class="d-flex align-center">
-                <i class="ph-browsers-bold fs-800 text-primary mr-1"></i>
+                <div class="rounded-circle bg-primary-muted p-1 mr-1">
+                  <i class="ph-browsers-bold fs-700 text-primary"></i>
+                </div>
                 <div>
                   <h5>420+</h5>
                   <p class="lead-1">Projects Completed</p>
@@ -338,60 +346,67 @@
       <div class="card-dashed">
         <!-- Features 1 -->
         <div class="container my-3">
-          <div class="card d-flex flex-column">
-            <h3 class="text-center mb-3">
-              Experiences built for tomorrow, not yesterday
-            </h3>
-            <div class="row">
-              <div class="col-12 col-6-md row align-center p-2">
-                <div class="col-12 col-auto-sm mb-1 mr-1-sm mb-0-sm">
-                  <i class="ph-puzzle-piece-bold fs-800 text-primary"></i>
+          <div class="card-lg">
+            <div class="card-body flex-y gap-3">
+              <h3 class="text-center">
+                Experiences built for tomorrow, not yesterday
+              </h3>
+              <div class="row gap-3">
+                <div class="col-12 col-md row align-center">
+                  <div class="col-12 col-auto-sm mb-1 mr-2-sm mb-0-sm">
+                    <i class="ph-puzzle-piece-bold fs-800 text-primary"></i>
+                  </div>
+                  <div class="flex-y col-12 col-sm">
+                    <h5>Better components</h5>
+                    <p class="lead-1">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+                    </p>
+                  </div>
                 </div>
-                <div class="d-flex flex-column col-12 col-sm">
-                  <h5>Better components</h5>
-                  <p class="lead-1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 col-6-md row align-center p-2">
-                <div class="col-12 col-auto-sm mb-1 mr-1-sm mb-0-sm">
-                  <i class="ph-stack-bold fs-800 text-primary"></i>
-                </div>
-                <div class="d-flex flex-column col-12 col-sm">
-                  <h5>Well organised</h5>
-                  <p class="lead-1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 col-6-md row align-center p-2">
-                <div class="col-12 col-auto-sm mb-1 mr-1-sm mb-0-sm">
-                  <i class="ph-heart-bold fs-800 text-primary"></i>
-                </div>
-                <div class="d-flex flex-column col-12 col-sm">
-                  <h5>User friendly</h5>
-                  <p class="lead-1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
-                  </p>
+                <div class="col-12 col-md row align-center">
+                  <div class="col-12 col-auto-sm mb-1 mr-2-sm mb-0-sm">
+                    <i class="ph-stack-bold fs-800 text-primary"></i>
+                  </div>
+                  <div class="flex-y col-12 col-sm">
+                    <h5>Well organised</h5>
+                    <p class="lead-1">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="col-12 col-6-md row align-center p-2">
-                <div class="col-12 col-auto-sm mb-1 mr-1-sm mb-0-sm">
-                  <i class="ph-swatches-bold fs-800 text-primary"></i>
+              <div class="row gap-3">
+                <div class="col-12 col-md row align-center">
+                  <div class="col-12 col-auto-sm mb-1 mr-2-sm mb-0-sm">
+                    <i class="ph-heart-bold fs-800 text-primary"></i>
+                  </div>
+                  <div class="flex-y col-12 col-sm">
+                    <h5>User friendly</h5>
+                    <p class="lead-1">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+                    </p>
+                  </div>
                 </div>
-                <div class="d-flex flex-column col-12 col-sm">
-                  <h5>Flexibility</h5>
-                  <p class="lead-1">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
-                  </p>
+                <div class="col-12 col-md row align-center">
+                  <div class="col-12 col-auto-sm mb-1 mr-2-sm mb-0-sm">
+                    <i class="ph-swatches-bold fs-800 text-primary"></i>
+                  </div>
+                  <div class="flex-y col-12 col-sm">
+                    <h5>Flexibility</h5>
+                    <p class="lead-1">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+                    </p>
+                  </div>
                 </div>
+              </div>
+              <div class="text-center">
+                <a href="#" class="btn-outline-light btn-lg">Explore</a>
               </div>
             </div>
           </div>
         </div>
         <!-- Features 2 -->
-        <div class="container d-flex flex-column my-3">
+        <div class="container flex-y my-3">
           <h3 class="px-1 text-center">
             Discover the key features
           </h3>
@@ -399,43 +414,55 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
           </p>
           <div class="row">
-            <div class="col-12 col-6-md col-4-lg d-flex flex-column align-center gap-1 p-1">
-              <i class="ph-flow-arrow-bold fs-800 text-primary"></i>
+            <div class="col-12 col-6-md col-4-lg flex-y align-center gap-1 p-1">
+              <div class="bg-primary-muted rounded-circle p-2">
+                <i class="ph-flow-arrow-bold fs-700 text-primary"></i>
+              </div>
               <h5 class="text-center">Robust workflow</h5>
               <p class="lead-1 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
               </p>
             </div>
-            <div class="col-12 col-6-md col-4-lg d-flex flex-column align-center gap-1 p-1">
-              <i class="ph-swatches-bold fs-800 text-primary"></i>
+            <div class="col-12 col-6-md col-4-lg flex-y align-center gap-1 p-1">
+              <div class="bg-primary-muted rounded-circle p-2">
+                <i class="ph-swatches-bold fs-700 text-primary"></i>
+              </div>
               <h5 class="text-center">Flexibility</h5>
               <p class="lead-1 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
               </p>
             </div>
-            <div class="col-12 col-6-md col-4-lg d-flex flex-column align-center gap-1 p-1">
-              <i class="ph-heart-bold fs-800 text-primary"></i>
+            <div class="col-12 col-6-md col-4-lg flex-y align-center gap-1 p-1">
+              <div class="bg-primary-muted rounded-circle p-2">
+                <i class="ph-heart-bold fs-700 text-primary"></i>
+              </div>
               <h5 class="text-center">User friendly</h5>
               <p class="lead-1 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
               </p>
             </div>
-            <div class="col-12 col-6-md col-4-lg d-flex flex-column align-center gap-1 p-1">
-              <i class="ph-layout-bold fs-800 text-primary"></i>
+            <div class="col-12 col-6-md col-4-lg flex-y align-center gap-1 p-1">
+              <div class="bg-primary-muted rounded-circle p-2">
+                <i class="ph-layout-bold fs-700 text-primary"></i>
+              </div>
               <h5 class="text-center">Multiple layouts</h5>
               <p class="lead-1 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
               </p>
             </div>
-            <div class="col-12 col-6-md col-4-lg d-flex flex-column align-center gap-1 p-1">
-              <i class="ph-puzzle-piece-bold fs-800 text-primary"></i>
+            <div class="col-12 col-6-md col-4-lg flex-y align-center gap-1 p-1">
+              <div class="bg-primary-muted rounded-circle p-2">
+                <i class="ph-puzzle-piece-bold fs-700 text-primary"></i>
+              </div>
               <h5 class="text-center">Better components</h5>
               <p class="lead-1 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
               </p>
             </div>
-            <div class="col-12 col-6-md col-4-lg d-flex flex-column align-center gap-1 p-1">
-              <i class="ph-stack-bold fs-800 text-primary"></i>
+            <div class="col-12 col-6-md col-4-lg flex-y align-center gap-1 p-1">
+              <div class="bg-primary-muted rounded-circle p-2">
+                <i class="ph-stack-bold fs-700 text-primary"></i>
+              </div>
               <h5 class="text-center">Well organized</h5>
               <p class="lead-1 text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
@@ -445,31 +472,36 @@
         </div>
         <!-- Features 3 -->
         <div class="container my-3">
-          <div class="d-flex flex-column card">
-            <h3 class="mb-3 px-1">
-              Experiences built for tomorrow, not yesterday
-            </h3>
-            <div class="row">
-              <div class="col-12 col-4-lg d-flex flex-column gap-1 p-1">
-                <i class="ph-puzzle-piece-bold fs-800 text-primary"></i>
-                <h5>Better components</h5>
-                <p class="lead-1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
-                </p>
-              </div>
-              <div class="col-12 col-4-lg d-flex flex-column gap-1 p-1">
-                <i class="ph-swatches-bold fs-800 text-primary"></i>
-                <h5>Flexibility</h5>
-                <p class="lead-1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
-                </p>
-              </div>
-              <div class="col-12 col-4-lg d-flex flex-column gap-1 p-1">
-                <i class="ph-heart-bold fs-800 text-primary"></i>
-                <h5>User friendly</h5>
-                <p class="lead-1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
-                </p>
+          <div class="card-lg">
+            <div class="card-body flex-y gap-3">
+              <h3>
+                Experiences built for tomorrow, not yesterday
+              </h3>
+              <div class="row gap-3">
+                <div class="col-12 col-lg flex-y gap-1">
+                  <i class="ph-puzzle-piece-bold fs-800 text-primary"></i>
+                  <h5>Better components</h5>
+                  <p class="lead-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+                  </p>
+                  <a href="#" class="link label-lg">Learn More</a>
+                </div>
+                <div class="col-12 col-lg flex-y gap-1">
+                  <i class="ph-swatches-bold fs-800 text-primary"></i>
+                  <h5>Flexibility</h5>
+                  <p class="lead-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+                  </p>
+                  <a href="#" class="link label-lg">Learn More</a>
+                </div>
+                <div class="col-12 col-lg flex-y gap-1">
+                  <i class="ph-heart-bold fs-800 text-primary"></i>
+                  <h5>User friendly</h5>
+                  <p class="lead-1">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+                  </p>
+                  <a href="#" class="link label-lg">Learn More</a>
+                </div>
               </div>
             </div>
           </div>
@@ -479,7 +511,7 @@
           <div class="col-12 col-auto-xl d-flex justify-center">
             <img src="assets/svg/feature-image-1.svg" alt="Feature">
           </div>
-          <div class="col d-flex flex-column justify-center align-start gap-2">
+          <div class="col flex-y justify-center align-start gap-2">
             <h4>Access impact data: Anytime, anywhere</h4>
             <p class="lead-1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida rhoncus convallis sed magna. Tristique
@@ -494,7 +526,7 @@
         </div>
         <!-- Features 5 -->
         <div class="container row py-3 gap-3">
-          <div class="col d-flex flex-column justify-center align-start gap-2">
+          <div class="col flex-y justify-center align-start gap-2">
             <h4>Access impact data: Anytime, anywhere</h4>
             <p class="lead-1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida rhoncus convallis sed magna. Tristique
@@ -513,8 +545,8 @@
         <!-- Features 6 -->
         <div class="bg-none bg-feature-1-lg bg-y-center bg-no-repeat bg-cover my-3 py-3">
           <div class="container row">
-            <div class="col-6-lg">
-              <div class="card d-flex flex-column align-start gap-2">
+            <div class="card-lg col-6-lg">
+              <div class="card-body flex-y gap-2">
                 <div class="card-image ratio-16x9 align-self-stretch d-block d-none-lg">
                   <img src="assets/img/feature-image-1.jpg" alt="Feature image">
                 </div>
@@ -524,7 +556,9 @@
                   Tristique vivamus enim amet, vitae vel iaculis lectus. Mi dictum mattis venenatis blandit viverra id
                   sagittis egestas diam. Cras lectus erat eget varius vitae.
                 </p>
-                <input type="button" class="btn-lg" value="Learn More">
+                <div>
+                  <a href="#" class="btn-lg">Learn More</a>
+                </div>
               </div>
             </div>
           </div>
@@ -532,10 +566,10 @@
         <!-- Features 7 -->
         <div class="bg-none bg-feature-2-lg bg-y-center bg-no-repeat bg-cover my-3 py-3">
           <div class="container row justify-end">
-            <div class="col-6-lg">
-              <div class="card bg-light text-dark d-flex flex-column align-start gap-2">
+            <div class="card-lg col-6-lg bg-light text-dark">
+              <div class="card-body flex-y gap-2">
                 <div class="card-image ratio-16x9 align-self-stretch d-block d-none-lg">
-                  <img src="assets/img/feature-image-2.jpg" alt="Feature image">
+                  <img src="assets/img/feature-image-1.jpg" alt="Feature image">
                 </div>
                 <h4>Access impact data: Anytime, anywhere</h4>
                 <p class="lead-1">
@@ -543,7 +577,9 @@
                   Tristique vivamus enim amet, vitae vel iaculis lectus. Mi dictum mattis venenatis blandit viverra id
                   sagittis egestas diam. Cras lectus erat eget varius vitae.
                 </p>
-                <input type="button" class="btn-lg" value="Learn More">
+                <div>
+                  <a href="#" class="btn-lg">Learn More</a>
+                </div>
               </div>
             </div>
           </div>
@@ -560,7 +596,7 @@
         <div class="container py-3 row justify-center">
           <div class="col-4-lg d-flex align-center gap-2">
             <img class="avatar" src="assets/img/avatar-1.png" alt="">
-            <div class="d-flex flex-column justify-center">
+            <div class="flex-y justify-center">
               <h5>Franklyn Rankin</h5>
               <p class="lead-1 text-gray">Vice President</p>
             </div>
@@ -593,7 +629,7 @@
             <p class="heading-2">“</p>
           </div>
           <div class="col-4-lg d-flex align-center justify-end gap-2">
-            <div class="d-flex flex-column justify-center align-end">
+            <div class="flex-y justify-center align-end">
               <h5>Sophia Baxter</h5>
               <p class="lead-1 text-gray">CEO, ABC Company</p>
             </div>
@@ -609,63 +645,75 @@
       <div class="heading-4 text-uppercase text-primary pl-3">Resources</div>
       <div class="card-dashed">
         <!-- Resources 1 -->
-        <div class="container my-3">
-          <h3 class="text-center mb-3">
+        <div class="container my-3 flex-y gap-3">
+          <h3 class="text-center">
             Resources to keep you informed
           </h3>
           <div class="row gap-3">
-            <div class="card col-12 col-lg d-flex flex-column gap-2">
-              <div class="card-image ratio-16x9">
-                <img src="assets/img/resources-image-1.jpg" alt="Blog image">
+            <div class="card-lg hover col-12 col-lg">
+              <div class="card-body flex-y gap-2">
+                <div class="card-image ratio-16x9">
+                  <img src="assets/img/resources-image-1.jpg" alt="Blog image">
+                </div>
+                <div>
+                  <h6 class="text-uppercase text-gray">
+                    From the blog
+                  </h6>
+                  <h5>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h5>
+                </div>
+                <div>
+                  <a href="#" class="btn parent-link">Learn more</a>
+                </div>
               </div>
-              <div>
-                <h6 class="text-uppercase text-gray">
-                  From the blog
-                </h6>
-                <h5>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h5>
-              </div>
-              <a href="#" class="btn align-self-start parent-link">Learn more</a>
             </div>
-            <div class="card col-12 col-lg d-flex flex-column gap-2">
-              <div class="card-image ratio-16x9">
-                <img src="assets/img/resources-image-2.jpg" alt="Blog image">
+            <div class="card-lg hover col-12 col-lg">
+              <div class="card-body flex-y gap-2">
+                <div class="card-image ratio-16x9">
+                  <img src="assets/img/resources-image-2.jpg" alt="Blog image">
+                </div>
+                <div>
+                  <h6 class="text-uppercase text-gray">
+                    News
+                  </h6>
+                  <h5>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h5>
+                </div>
+                <div>
+                  <a href="#" class="btn parent-link">Learn more</a>
+                </div>
               </div>
-              <div>
-                <h6 class="text-uppercase text-gray">
-                  News
-                </h6>
-                <h5>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h5>
-              </div>
-              <a href="#" class="btn align-self-start parent-link">Learn more</a>
             </div>
           </div>
         </div>
-        <!-- Resources 1 -->
+        <!-- Resources 2 -->
         <div class="container my-3">
-          <div class="card">
-            <h3 class="text-center">
-              Our Comunity
-            </h3>
-            <p class="text-center">
-              Discuss, build with, and meet thousands of customers from all around the world.
-            </p>
-            <div class="d-flex flex-wrap justify-center gap-1 mt-1">
-              <a href="#" class="btn-outline-light">
-                <i class="ph-chats-teardrop-bold"></i>
-                Forum
-              </a>
-              <a href="#" class="btn-outline-light">
-                <i class="ph-github-logo-bold"></i>
-                GitHub
-              </a>
-              <a href="#" class="btn-outline-light">
-                <i class="ph-telegram-logo-bold"></i>
-                Telegram
-              </a>
+          <div class="card-lg">
+            <div class="card-body flex-y gap-2">
+              <div>
+                <h3 class="text-center">
+                  Our Comunity
+                </h3>
+                <p class="text-center">
+                  Discuss, build with, and meet thousands of customers from all around the world.
+                </p>
+              </div>
+              <div class="d-flex flex-wrap justify-center gap-1">
+                <a href="#" class="btn-outline-light btn-lg">
+                  <i class="ph-chats-teardrop-bold"></i>
+                  Forum
+                </a>
+                <a href="#" class="btn-outline-light btn-lg">
+                  <i class="ph-github-logo-bold"></i>
+                  GitHub
+                </a>
+                <a href="#" class="btn-outline-light btn-lg">
+                  <i class="ph-telegram-logo-bold"></i>
+                  Telegram
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -679,7 +727,7 @@
       <div class="card-dashed">
         <!-- CTA 1 -->
         <div class="rounded-top-4 bg-primary mt-3">
-          <div class="container d-flex flex-column align-center gap-3 py-4">
+          <div class="container flex-y align-center gap-3 py-4">
             <h2 class="text-center text-bg">
               Fasten your website creation process with Landic
             </h2>
@@ -703,20 +751,23 @@
         </div>
         <!-- CTA 3 -->
         <div class="container my-3">
-          <div class="card row gap-3 justify-between">
+          <div class="card-lg">
+            <div class="card-body row gap-3 justify-between">
 
-            <div class="col-12 col-auto-xl d-flex justify-center">
-              <img src="assets/svg/email-illustration.svg" alt="Email illustration">
+              <div class="col-12 col-auto-xl d-flex justify-center">
+                <img src="assets/svg/email-illustration.svg" alt="Email illustration">
+              </div>
+              <div class="col-12 col-6-xl flex-y justify-center gap-2">
+                <h4 class="text-center text-start-xl">
+                  Join 456 more people in the waitlist
+                </h4>
+                <form class="row gap-1 justify-center">
+                  <input class="col max-uw-3" type="text" placeholder="Email">
+                  <input class="btn col-auto" type="submit" value="Join the waitlist">
+                </form>
+              </div>
             </div>
-            <div class="col-12 col-6-xl d-flex flex-column justify-center gap-2">
-              <h4 class="text-center text-start-xl">
-                Join 456 more people in the waitlist
-              </h4>
-              <form class="d-flex gap-1 flex-wrap justify-center">
-                <input class="w-100 max-uw-2" type="text" placeholder="Email">
-                <input class="btn" type="submit" value="Join the waitlist">
-              </form>
-            </div>
+
           </div>
         </div>
 
@@ -726,7 +777,7 @@
     <!-- FOOTERS -->
     <div>
       <div class="heading-4 text-uppercase text-primary pl-3">Footer</div>
-      <div class="card-dashed d-flex flex-column gap-2">
+      <div class="card-dashed flex-y gap-2">
         <!-- Footer 1 -->
         <footer class="bg-700 text-gray body-2 text-center py-2">
           © 2021 Landic Design System. All rights reserved
@@ -782,7 +833,7 @@
         </footer>
         <!-- Footer 4-->
         <footer class="bg-700">
-          <div class="container d-flex flex-column align-center">
+          <div class="container flex-y align-center">
             <a class="py-2 pb-0-md" href="index.html">
               <img src="assets/svg/brand-logo-default.svg" aria-label="Brand logo">
             </a>
