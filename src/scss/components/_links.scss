@@ -34,13 +34,6 @@
   content: "";
 }
 
-.anchor {
-  display: block;
-  position: relative;
-  top: calc(-5rem - 1.25em);
-  visibility: hidden;
-}
-
 $link-colors: (
   "primary": (
     names: link-primary link,
