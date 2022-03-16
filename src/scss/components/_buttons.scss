@@ -8,50 +8,33 @@
   padding: var(--btn-padding, 0) calc(var(--btn-padding, 0) * 2);
   transition: $transition-duration ease all;
   box-shadow: 0 0 0 var(--outline-size, 0) var(--outline-color, transparent);
+
+  & > i {
+    display: inline-block;
+    vertical-align: -0.267em;
+    font-size: 1.5em;
+  }
 }
 
 .btn-sm {
   @extend .btn;
   @include typography("label", "sm");
   --btn-padding: #{$spacing-unit * 0.5};
-  & > i {
-    font-size: map-get($font-sizes, "300");
-  }
 }
 .btn-md {
   @extend .btn;
   @include typography("label", "md");
   --btn-padding: #{$spacing-unit * 0.75};
-  & > i {
-    font-size: map-get($font-sizes, "500");
-  }
 }
 .btn-lg {
   @extend .btn;
   @include typography("label", "lg");
   --btn-padding: #{$spacing-unit * 1.25};
-  & > i {
-    font-size: map-get($font-sizes, "600");
-  }
 }
 
 .btn-icon {
   @extend .btn;
-  position: relative;
-  vertical-align: top;
   padding: var(--btn-padding, 0);
-  &::before {
-    content: "";
-    display: block;
-    height: 1.5em;
-    width: 1.5em;
-  }
-  & > i {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
 }
 
 $btn-colors: (
