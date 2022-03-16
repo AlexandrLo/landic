@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack serve",
     "build": "webpack",
-    "sass": "npx sass --watch src/scss/style.scss:build/index.css"
+    "sass": "npx sass src/scss/style.scss:css/index.css",
+    "sass-min": "npx sass --no-source-map --style compressed src/scss/style.scss:css/index.css "
   },
   "author": "",
   "license": "ISC",
