@@ -5,9 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Landic - Components</title>
-  <link rel="stylesheet" href="index.css" />
   <script src="https://unpkg.com/phosphor-icons"></script>
-  <script src="index.js"></script>
 </head>
 
 <body class="bg-400 text-light">
@@ -29,7 +27,7 @@
   </header>
 
   <div class="container-lg row py-2 gap-2">
-    <div class="col d-flex flex-column gap-2">
+    <div class="col flex-y gap-2">
       <!-- TYPOGRAPHY -->
       <div>
         <h4 class="text-uppercase text-primary pl-2">
@@ -187,7 +185,7 @@
           Link
           <a class="anchor" aria-label="Anchor" id="link"></a>
         </h4>
-        <div class="card-dashed d-flex flex-column gap-2 p-2">
+        <div class="card-dashed flex-y gap-2 p-2">
           <div>
             <a href="#" class="link">Link</a>
           </div>
@@ -232,7 +230,7 @@
           Button
           <a class="anchor" aria-label="Anchor" id="button"></a>
         </h4>
-        <div class="card-dashed d-flex flex-column gap-2 p-2">
+        <div class="card-dashed flex-y gap-2 p-2">
           <div>
             <input class="btn" type="button" value="&lt;input type=&quot;button&quot;&gt;" />
             <input class="btn" type="reset" value="&lt;input type=&quot;reset&quot;&gt;" />
@@ -286,7 +284,7 @@
           Form
           <a class="anchor" aria-label="Anchor" id="form"></a>
         </h4>
-        <div class="card-dashed d-flex flex-column gap-2 p-2">
+        <div class="card-dashed flex-y gap-2 p-2">
           <div class="input-group">
             <input type="text" placeholder="Default input">
           </div>
@@ -351,7 +349,7 @@
     <div class="col-2 d-none d-block-lg sidebar">
       <div class="card">
         <div class="card-header">On this page</div>
-        <div class="card-body d-flex flex-column max-h-100 overflow-y-auto">
+        <div class="card-body flex-y max-h-100 overflow-y-auto">
           <a class="link-hidden label-md" href="#typography">Typography</a>
           <a class="link-hidden label-md" href="#card">Card</a>
           <a class="link-hidden label-md" href="#link">Link</a>
