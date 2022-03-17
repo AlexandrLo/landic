@@ -1,5 +1,5 @@
 # Landic Design System
-
+[Live Preview](https://alexandrlo.github.io/landic/index.html)
 ## Installation
 
 1. Clone this repository

@@ -2,9 +2,8 @@ name: Automatic Release
 
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+    tags:
+      - "v*.*.*"
 
 jobs:
   build:
@@ -28,14 +27,25 @@ jobs:
 
       - name: Build
         run: |
+          npm run sass
+
+      - name: Build minified
+        run: |
           npm run sass-min
 
-      - name: Automatic Releases
-        uses: marvinpinto/action-automatic-releases@v1.2.1
+      - name: Zip
+        uses: montudor/action-zip@v1
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          title: "Minified Build"
+          args: zip -qq -r landic.zip LICENSE css/landic.css
+
+      - name: Zip Minified
+        uses: montudor/action-zip@v1
+        with:
+          args: zip -qq -r landic.min.zip LICENSE css/landic.min.css
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
           files: |
-            LICENSE.txt
-            /css/*
+            landic.min.zip
+            landic.zip
