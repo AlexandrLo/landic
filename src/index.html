@@ -10,65 +10,300 @@
   <script src="index.js"></script>
 </head>
 
-<body class="bg-400 text-white">
-  <!-- NAVBAR -->
-  <header class="sticky pos-top bg-600">
+<body class="bg-400 text-light">
+  <header class="bg-600">
     <nav class="container row align-center">
-      <input type="checkbox" class="navbar-toggle" id="navbar-toggle">
-      <label class="d-none-lg mr-2" for="navbar-toggle"></label>
-      <a class="brand-logo mr-2" href="index.html">
+      <input type="checkbox" class="navbar-toggle" id="navbar-toggle-4">
+      <label class="d-none-lg mr-2" for="navbar-toggle-4"></label>
+      <a class="col justify-center" href="index.html">
         <img src="assets/svg/brand-logo-default.svg" aria-label="Brand logo">
       </a>
-      <ul class="navlinks d-flex-lg row col-12 col-lg">
+      <ul class="navlinks d-flex-lg row col-12 col-auto-lg">
         <li class="col-12 col-auto-lg"><a href="components.html">Components</a></li>
         <li class="col-12 col-auto-lg"><a href="blocks.html">Blocks</a></li>
-        <li class="col-12 col-auto-lg"><a href="#">Contact</a></li>
         <li class="col-12 col-auto-lg"><a href="#">About</a></li>
       </ul>
-      <input type="button" class="btn d-none d-block-lg" value="Download Now">
+      <div class="d-none d-flex-lg col justify-end">
+        <input type="button" class="btn " value="Download Now">
+      </div>
     </nav>
   </header>
-  <!-- HERO -->
-  <div class="d-flex justify-center bg-500 mb-5 py-5">
-    <div class="container row align-center p-0">
-      <div class="col-12 col-6-xl p-3">
-        <h3>
-          Landing Page
-          Design System
-        </h3>
-        <p class="lead1 my-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida rhoncus convallis sed magna. Tristique
-          vivamus enim amet, vitae vel iaculis lectus.
-        </p>
-        <div>
-          <a href="#" class="btn btn-lg">Get Started</a>
-          <a href="#" class="btn btn-lg btn-transparent">Download</a>
+
+  <main>
+    <div class="bg-hero-2 bg-no-repeat bg-y-bottom bg-cover mb-3">
+      <div class="d-flex min-vh-80 py-3">
+        <div class="container flex-y justify-center align-center">
+          <h3 class="text-center mt-3">
+            Track your product sales from anywhere, anytime.
+          </h3>
+          <div class="d-flex justify-center my-3">
+            <a href="#" class="btn btn-lg">Get Started</a>
+          </div>
+          <div class="col-12 col-6-xl d-flex justify-center">
+            <img src="assets/svg/hero-illustration-2.svg" alt="Hero illustration">
+          </div>
         </div>
       </div>
-      <div class="col-12 col-6-xl p-3 d-flex justify-center">
-        <img src="assets/svg/hero-illustration-1.svg" alt="Hero illustration">
+    </div>
+
+    <div class="container py-3">
+      <h3 class="text-center mb-3">
+        Our Clients
+      </h3>
+      <div class="d-flex flex-wrap justify-evenly gap-2">
+        <img src="assets/svg/logo-circle-airbnb.svg" alt="Airbnb">
+        <img src="assets/svg/logo-circle-amazon.svg" alt="Amazon">
+        <img src="assets/svg/logo-circle-dropbox.svg" alt="Dropbox">
+        <img src="assets/svg/logo-circle-evernote.svg" alt="Evernote">
+        <img src="assets/svg/logo-circle-google.svg" alt="Google">
+        <img src="assets/svg/logo-circle-meta.svg" alt="Meta">
+        <img src="assets/svg/logo-circle-patreon.svg" alt="Patreon">
+        <img src="assets/svg/logo-circle-spotify.svg" alt="Spotify">
       </div>
     </div>
-  </div>
-  <!-- Footer -->
-  <footer class="bg-700 py-3">
-    <div class="container d-flex justify-between align-center">
-      <div class="text-center text-body-2 text-secondary">
-        © 2022 Landic Design System. All rights reserved
+
+    <div class="container row py-3 justify-center align-center">
+      <div class="col-12 col-5-xl pr-0 pb-3 pr-2-xl pb-0-xl">
+        <h4 class="text-center text-start-xl">
+          Our 5 years of achievements
+        </h4>
+        <p class="lead-1 text-center text-start-xl">
+          With our super powers we have reached this
+        </p>
       </div>
-      <div>
-        <a class="btn btn-transparent btn-icon" href="#">
-          <i class="ph-instagram-logo-bold"></i>
-        </a>
-        <a class="btn btn-transparent btn-icon" href="#">
-          <i class="ph-telegram-logo-bold"></i>
-        </a>
-        <a class="btn btn-transparent btn-icon" href="#">
-          <i class="ph-github-logo-bold"></i>
-        </a>
+      <div class="col-12 col-6-xl d-flex flex-wrap gap-3 justify-center">
+        <div class="flex-y gap-3">
+          <div class="d-flex align-center">
+            <div class="rounded-circle bg-primary-muted p-1 mr-1">
+              <i class="ph-download-bold fs-700 text-primary"></i>
+            </div>
+            <div>
+              <h5>15 000+</h5>
+              <p class="lead-1">Downloads</p>
+            </div>
+          </div>
+          <div class="d-flex align-center">
+            <div class="rounded-circle bg-primary-muted p-1 mr-1">
+              <i class="ph-users-four-bold fs-700 text-primary"></i>
+            </div>
+            <div>
+              <h5>50</h5>
+              <p class="lead-1">Happy Clients</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-y gap-3">
+          <div class="d-flex align-center">
+            <div class="rounded-circle bg-primary-muted p-1 mr-1">
+              <i class="ph-eye-bold fs-700 text-primary"></i>
+            </div>
+            <div>
+              <h5>500 000+</h5>
+              <p class="lead-1">Views</p>
+            </div>
+          </div>
+          <div class="d-flex align-center">
+            <div class="rounded-circle bg-primary-muted p-1 mr-1">
+              <i class="ph-browsers-bold fs-700 text-primary"></i>
+            </div>
+            <div>
+              <h5>420+</h5>
+              <p class="lead-1">Projects Completed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container flex-y my-3">
+      <h3 class="px-1 text-center">
+        Discover the key features
+      </h3>
+      <p class="lead-1 text-center mb-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+      </p>
+      <div class="row">
+        <div class="col-12 col-6-md col-4-lg flex-y align-center gap-1 p-1">
+          <div class="bg-primary-muted rounded-circle p-2">
+            <i class="ph-flow-arrow-bold fs-700 text-primary"></i>
+          </div>
+          <h5 class="text-center">Robust workflow</h5>
+          <p class="lead-1 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+          </p>
+        </div>
+        <div class="col-12 col-6-md col-4-lg flex-y align-center gap-1 p-1">
+          <div class="bg-primary-muted rounded-circle p-2">
+            <i class="ph-swatches-bold fs-700 text-primary"></i>
+          </div>
+          <h5 class="text-center">Flexibility</h5>
+          <p class="lead-1 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+          </p>
+        </div>
+        <div class="col-12 col-6-md col-4-lg flex-y align-center gap-1 p-1">
+          <div class="bg-primary-muted rounded-circle p-2">
+            <i class="ph-heart-bold fs-700 text-primary"></i>
+          </div>
+          <h5 class="text-center">User friendly</h5>
+          <p class="lead-1 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+          </p>
+        </div>
+        <div class="col-12 col-6-md col-4-lg flex-y align-center gap-1 p-1">
+          <div class="bg-primary-muted rounded-circle p-2">
+            <i class="ph-layout-bold fs-700 text-primary"></i>
+          </div>
+          <h5 class="text-center">Multiple layouts</h5>
+          <p class="lead-1 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+          </p>
+        </div>
+        <div class="col-12 col-6-md col-4-lg flex-y align-center gap-1 p-1">
+          <div class="bg-primary-muted rounded-circle p-2">
+            <i class="ph-puzzle-piece-bold fs-700 text-primary"></i>
+          </div>
+          <h5 class="text-center">Better components</h5>
+          <p class="lead-1 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+          </p>
+        </div>
+        <div class="col-12 col-6-md col-4-lg flex-y align-center gap-1 p-1">
+          <div class="bg-primary-muted rounded-circle p-2">
+            <i class="ph-stack-bold fs-700 text-primary"></i>
+          </div>
+          <h5 class="text-center">Well organized</h5>
+          <p class="lead-1 text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-3 row justify-center">
+      <div class="col-4-lg d-flex align-center gap-2">
+        <img class="avatar" src="assets/img/avatar-1.png" alt="">
+        <div class="flex-y justify-center">
+          <h5>Franklyn Rankin</h5>
+          <p class="lead-1 text-gray">Vice President</p>
+        </div>
+      </div>
+      <div class="col-8-lg d-flex gap-2">
+        <p class="heading-2">“</p>
+        <q class="py-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dui nam sed fermentum. Purus ipsum
+          vestibulum urna, in in. Pretium condimentum tempus arcu, magna ac felis consectetur augue. Sed eros,
+          viverra
+          bibendum quis arcu, viverra congue. Sit in in in elit consequat. Aliquam amet, turpis aliquam elit. Id sit
+          euismod a nunc faucibus eleifend nec neque, blandit. Egestas ultrices quam congue rhoncus, porttitor.
+          Nulla
+          praesent facilisi quis pulvinar viverra vulputate tincidunt aliquam.
+        </q>
+      </div>
+    </div>
+
+    <div class="container py-3 row justify-center">
+      <div class="col-8-lg d-flex gap-2">
+        <q class="py-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat dui nam sed fermentum. Purus ipsum
+          vestibulum urna, in in. Pretium condimentum tempus arcu, magna ac felis consectetur augue. Sed eros,
+          viverra
+          bibendum quis arcu, viverra congue. Sit in in in elit consequat. Aliquam amet, turpis aliquam elit. Id sit
+          euismod a nunc faucibus eleifend nec neque, blandit. Egestas ultrices quam congue rhoncus, porttitor.
+          Nulla
+          praesent facilisi quis pulvinar viverra vulputate tincidunt aliquam.
+        </q>
+        <p class="heading-2">“</p>
+      </div>
+      <div class="col-4-lg d-flex align-center justify-end gap-2">
+        <div class="flex-y justify-center align-end">
+          <h5>Sophia Baxter</h5>
+          <p class="lead-1 text-gray">CEO, ABC Company</p>
+        </div>
+        <img class="avatar" src="assets/img/avatar-2.png" alt="">
+      </div>
+    </div>
+
+    <div class="bg-none bg-feature-1-lg bg-y-center bg-no-repeat bg-cover py-3">
+      <div class="container row">
+        <div class="card-lg col-6-lg">
+          <div class="card-body flex-y gap-2">
+            <div class="card-image ratio-16x9 align-self-stretch d-block d-none-lg">
+              <img src="assets/img/feature-image-1.jpg" alt="Feature image">
+            </div>
+            <h4>Most thoughtful and visionary exteriors</h4>
+            <p class="lead-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida rhoncus convallis sed magna.
+              Tristique vivamus enim amet, vitae vel iaculis lectus. Mi dictum mattis venenatis blandit viverra id
+              sagittis egestas diam. Cras lectus erat eget varius vitae.
+            </p>
+            <div>
+              <a href="#" class="btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-none bg-feature-2-lg bg-y-center bg-no-repeat bg-cover py-3">
+      <div class="container row justify-end">
+        <div class="card-lg col-6-lg bg-light text-dark">
+          <div class="card-body flex-y gap-2">
+            <div class="card-image ratio-16x9 align-self-stretch d-block d-none-lg">
+              <img src="assets/img/feature-image-1.jpg" alt="Feature image">
+            </div>
+            <h4>Access impact data: Anytime, anywhere</h4>
+            <p class="lead-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida rhoncus convallis sed magna.
+              Tristique vivamus enim amet, vitae vel iaculis lectus. Mi dictum mattis venenatis blandit viverra id
+              sagittis egestas diam. Cras lectus erat eget varius vitae.
+            </p>
+            <div>
+              <a href="#" class="btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-primary">
+      <div class="container row align-center gap-3 py-5">
+        <h3 class="col-12 col-xl text-center  text-bg">
+          Get Started with Landic
+        </h3>
+        <div class="col-12 col-auto-xl d-flex justify-center">
+          <a href="#" class=" btn-light btn-lg">
+            Request demo
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-700 py-2">
+    <div class="container row justify-between align-center gap-2">
+      <div class="col-12 col-md flex-order-2 flex-order-1-md ">
+        <p class="body-2 text-gray text-center text-start-md">
+          © 2022 Landic Design System. All rights reserved
+        </p>
+      </div>
+      <div class="col-12 col-auto-md flex-order-1 flex-order-2-md">
+        <div class="text-center text-end-md">
+          <a class="btn-transparent btn-icon" href="#">
+            <i class="ph-instagram-logo-bold"></i>
+          </a>
+          <a class="btn-transparent btn-icon" href="#">
+            <i class="ph-telegram-logo-bold"></i>
+          </a>
+          <a class="btn-transparent btn-icon" href="#">
+            <i class="ph-github-logo-bold"></i>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>
