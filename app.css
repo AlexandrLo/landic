@@ -6704,20 +6704,21 @@ input[type=checkbox].check:checked + label {
   user-select: none;
 }
 input[type=checkbox].check:checked + label::before {
-  content: "";
+  content: "\f755";
+  font-family: Phosphor;
+  text-align: center;
   display: inline-block;
-  width: 1.25rem;
-  height: 1.25rem;
   flex-shrink: 0;
   flex-grow: 0;
-  border-radius: 0.3125rem;
   margin-right: 1rem;
-  transition: 250ms ease all;
+  width: 1.25rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  border-radius: 0.3125rem;
+  color: black;
   background: #ffd500;
-  background-image: url("data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27192%27 height=%27192%27 fill=%27%23000000FF%27 viewBox=%270 0 256 256%27%3E%3Crect width=%27256%27 height=%27256%27 fill=%27none%27%3E%3C/rect%3E%3Cpolyline points=%27216 72 104 184 48 128%27 fill=%27none%27 stroke=%27%23000000FF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2724%27%3E%3C/polyline%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 1em;
+  transition: 250ms ease;
+  transition-property: box-shadow, background-color, color;
 }
 input[type=checkbox].check:checked + label:hover::before {
   box-shadow: 0 0 0 0.25rem rgba(255, 213, 0, 0.5);
@@ -6725,18 +6726,12 @@ input[type=checkbox].check:checked + label:hover::before {
 input[type=checkbox].check:checked + label:active::before {
   box-shadow: 0 0 0 0.25rem rgba(255, 213, 0, 0.5);
   background: #ffee99;
-  background-image: url("data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27192%27 height=%27192%27 fill=%27%23595959FF%27 viewBox=%270 0 256 256%27%3E%3Crect width=%27256%27 height=%27256%27 fill=%27none%27%3E%3C/rect%3E%3Cpolyline points=%27216 72 104 184 48 128%27 fill=%27none%27 stroke=%27%23595959FF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2724%27%3E%3C/polyline%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 1em;
+  color: #595959;
 }
 input[type=checkbox].check:checked:disabled + label::before {
   box-shadow: none;
   background: rgba(255, 213, 0, 0.25);
-  background-image: url("data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27192%27 height=%27192%27 fill=%27%23000000FF%27 viewBox=%270 0 256 256%27%3E%3Crect width=%27256%27 height=%27256%27 fill=%27none%27%3E%3C/rect%3E%3Cpolyline points=%27216 72 104 184 48 128%27 fill=%27none%27 stroke=%27%23000000FF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2724%27%3E%3C/polyline%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 1em;
+  color: black;
 }
 input[type=checkbox].check:not(:checked) {
   position: absolute;
@@ -6749,20 +6744,21 @@ input[type=checkbox].check:not(:checked) + label {
   user-select: none;
 }
 input[type=checkbox].check:not(:checked) + label::before {
-  content: "";
+  content: "\f755";
+  font-family: Phosphor;
+  text-align: center;
   display: inline-block;
-  width: 1.25rem;
-  height: 1.25rem;
   flex-shrink: 0;
   flex-grow: 0;
-  border-radius: 0.3125rem;
   margin-right: 1rem;
-  transition: 250ms ease all;
+  width: 1.25rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  border-radius: 0.3125rem;
+  color: transparent;
   background: #494554;
-  background-image: url("data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27192%27 height=%27192%27 fill=%27%2300000000%27 viewBox=%270 0 256 256%27%3E%3Crect width=%27256%27 height=%27256%27 fill=%27none%27%3E%3C/rect%3E%3Cpolyline points=%27216 72 104 184 48 128%27 fill=%27none%27 stroke=%27%2300000000%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2724%27%3E%3C/polyline%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 1em;
+  transition: 250ms ease;
+  transition-property: box-shadow, background-color, color;
 }
 input[type=checkbox].check:not(:checked) + label:hover::before {
   box-shadow: 0 0 0 0.25rem rgba(255, 213, 0, 0.5);
@@ -6770,18 +6766,12 @@ input[type=checkbox].check:not(:checked) + label:hover::before {
 input[type=checkbox].check:not(:checked) + label:active::before {
   box-shadow: 0 0 0 0.25rem rgba(255, 213, 0, 0.5);
   background: #7a738c;
-  background-image: url("data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27192%27 height=%27192%27 fill=%27%2300000000%27 viewBox=%270 0 256 256%27%3E%3Crect width=%27256%27 height=%27256%27 fill=%27none%27%3E%3C/rect%3E%3Cpolyline points=%27216 72 104 184 48 128%27 fill=%27none%27 stroke=%27%2300000000%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2724%27%3E%3C/polyline%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 1em;
+  color: transparent;
 }
 input[type=checkbox].check:not(:checked):disabled + label::before {
   box-shadow: none;
   background: rgba(0, 0, 0, 0.25);
-  background-image: url("data:image/svg+xml, %3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27192%27 height=%27192%27 fill=%27%2300000000%27 viewBox=%270 0 256 256%27%3E%3Crect width=%27256%27 height=%27256%27 fill=%27none%27%3E%3C/rect%3E%3Cpolyline points=%27216 72 104 184 48 128%27 fill=%27none%27 stroke=%27%2300000000%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2724%27%3E%3C/polyline%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 1em;
+  color: transparent;
 }
 
 .floating-input-group {
