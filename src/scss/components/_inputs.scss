@@ -28,7 +28,8 @@
   border: $border-width solid transparent;
   border-radius: map-get($border-radius-sizes, "2");
   padding: $input-padding * 2 $input-padding * 4;
-  transition: $transition-duration ease all;
+  transition: $transition-duration ease;
+  transition-property: box-shadow, background-color, color, border-color;
 
   &.is-valid {
     @include input-validated(true);
@@ -209,7 +210,8 @@ input[type="range"] {
     padding-bottom: $border-width + $input-padding * 3;
     pointer-events: none;
     transform-origin: 0 0;
-    transition: $transition-duration ease all;
+    transition: $transition-duration ease;
+    transition-property: transform, font-size, font-weight;
   }
 }
 

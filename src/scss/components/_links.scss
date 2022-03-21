@@ -12,7 +12,7 @@
       color: map-get($color-gray, "50");
       text-decoration: none;
       text-align: center;
-      transition: $transition-duration ease all;
+      transition: $transition-duration ease color;
       &:hover,
       &.active {
         color: map-get($color-brand, "400");

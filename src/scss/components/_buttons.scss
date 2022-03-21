@@ -6,8 +6,9 @@
   border-radius: map-get($border-radius-sizes, "pill");
   --btn-padding: #{$spacing-unit * 0.75};
   padding: var(--btn-padding, 0) calc(var(--btn-padding, 0) * 2);
-  transition: $transition-duration ease all;
   box-shadow: 0 0 0 var(--outline-size, 0) var(--outline-color, transparent);
+  transition: $transition-duration ease;
+  transition-property: background-color, color, box-shadow, border-color;
 
   & > i {
     display: inline-block;
