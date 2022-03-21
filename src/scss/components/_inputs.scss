@@ -109,12 +109,6 @@ input[type="password"] {
 }
 
 //* Checkbox
-@mixin colored-check-bg($color) {
-  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' fill='#{url-friendly-color($color)}' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'%3E%3C/rect%3E%3Cpolyline points='216 72 104 184 48 128' fill='none' stroke='#{url-friendly-color($color)}' stroke-linecap='round' stroke-linejoin='round' stroke-width='24'%3E%3C/polyline%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 1em;
-}
 @mixin checkbox-is-checked($is-checked: true) {
   $background: map-get($color-background, "300");
   $background-active: map-get($color-background, "200");
@@ -139,17 +133,21 @@ input[type="password"] {
     align-items: center;
     user-select: none;
     &::before {
-      content: "";
+      content: "\f755";
+      font-family: Phosphor;
+      text-align: center;
       display: inline-block;
-      width: 1.25rem;
-      height: 1.25rem;
       flex-shrink: 0;
       flex-grow: 0;
-      border-radius: map-get($border-radius-sizes, "1");
       margin-right: 1rem;
-      transition: $transition-duration ease all;
+      width: 1.25rem;
+      height: 1.25rem;
+      line-height: 1.25rem;
+      border-radius: map-get($border-radius-sizes, "1");
+      color: $color;
       background: $background;
-      @include colored-check-bg($color);
+      transition: $transition-duration ease;
+      transition-property: box-shadow, background-color, color;
     }
     &:hover::before {
       box-shadow: map-get($box-shadow-outline, "md")
@@ -159,13 +157,13 @@ input[type="password"] {
       box-shadow: map-get($box-shadow-outline, "md")
         transparentize(map-get($color-brand, "400"), 0.5);
       background: $background-active;
-      @include colored-check-bg($color-active);
+      color: $color-active;
     }
   }
   &:disabled + label::before {
     box-shadow: none;
     background: transparentize($background-disabled, 0.75);
-    @include colored-check-bg($color-disabled);
+    color: $color-disabled;
   }
 }
 input[type="checkbox"].check {
