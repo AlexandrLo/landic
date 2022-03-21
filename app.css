@@ -5,6 +5,7 @@
 /*!*********************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/scss/style.scss (1) ***!
   \*********************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -5568,8 +5569,9 @@ q::before {
   border-radius: 100vmax;
   --btn-padding: 0.75rem;
   padding: var(--btn-padding, 0) calc(var(--btn-padding, 0) * 2);
-  transition: 250ms ease all;
   box-shadow: 0 0 0 var(--outline-size, 0) var(--outline-color, transparent);
+  transition: 250ms ease;
+  transition-property: background-color, color, box-shadow, border-color;
 }
 .btn > i, .btn-transparent-danger > i, .btn-transparent-warning > i, .btn-transparent-success > i, .btn-transparent-dark > i, .btn-transparent-light > i, .btn-transparent > i, .btn-transparent-primary > i, .btn-outline-danger > i, .btn-outline-warning > i, .btn-outline-success > i, .btn-outline-dark > i, .btn-outline-light > i, .btn-outline-primary > i, .btn-outline > i, .btn-danger > i, .btn-warning > i, .btn-success > i, .btn-dark > i, .btn-light > i, .btn-primary > i, .btn-icon > i, .btn-lg > i, .btn-md > i, .btn-sm > i {
   display: inline-block;
@@ -6042,7 +6044,8 @@ input[type=password] {
   border: 0.125rem solid transparent;
   border-radius: 0.625rem;
   padding: 0.625rem 1.25rem;
-  transition: 250ms ease all;
+  transition: 250ms ease;
+  transition-property: box-shadow, background-color, color, border-color;
   -webkit-appearance: none;
   -moz-appearance: textfield;
 }
@@ -6377,7 +6380,8 @@ input[type=password].input-secondary {
   border: 0.125rem solid transparent;
   border-radius: 0.625rem;
   padding: 0.625rem 1.25rem;
-  transition: 250ms ease all;
+  transition: 250ms ease;
+  transition-property: box-shadow, background-color, color, border-color;
   -webkit-appearance: none;
   -moz-appearance: textfield;
 }
@@ -6795,7 +6799,8 @@ input[type=checkbox].check:not(:checked):disabled + label::before {
   padding-bottom: 1.0625rem;
   pointer-events: none;
   transform-origin: 0 0;
-  transition: 250ms ease all;
+  transition: 250ms ease;
+  transition-property: transform, font-size, font-weight;
 }
 
 .input-group {
@@ -6910,7 +6915,7 @@ input[type=checkbox].check:not(:checked):disabled + label::before {
   color: white;
   text-decoration: none;
   text-align: center;
-  transition: 250ms ease all;
+  transition: 250ms ease color;
 }
 .navlinks > li > a:hover, .navlinks > li > a.active {
   color: #ffd500;
@@ -7088,35 +7093,29 @@ input[type=checkbox].navbar-toggle:checked + label {
   user-select: none;
 }
 input[type=checkbox].navbar-toggle:checked + label::before {
-  content: "";
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  content: "\f8ae";
+  font-family: Phosphor;
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
   display: inline-block;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 100vmax;
   flex-shrink: 0;
   flex-grow: 0;
-  transition: 250ms ease all;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  color: white;
   background: transparent;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27192%27 height=%27192%27 fill=%27%23FFFFFFFF%27 viewBox=%270 0 256 256%27%3E%3Crect width=%27256%27 height=%27256%27 fill=%27none%27%3E%3C/rect%3E%3Cline x1=%27200%27 y1=%2756%27 x2=%2756%27 y2=%27200%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3Cline x1=%27200%27 y1=%27200%27 x2=%2756%27 y2=%2756%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 2em;
+  transition: 250ms ease background;
+  content: "繁";
 }
 input[type=checkbox].navbar-toggle:checked + label:hover::before {
   background: rgba(255, 255, 255, 0.25);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27192%27 height=%27192%27 fill=%27%23FFFFFFFF%27 viewBox=%270 0 256 256%27%3E%3Crect width=%27256%27 height=%27256%27 fill=%27none%27%3E%3C/rect%3E%3Cline x1=%27200%27 y1=%2756%27 x2=%2756%27 y2=%27200%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3Cline x1=%27200%27 y1=%27200%27 x2=%2756%27 y2=%2756%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 2em;
 }
 input[type=checkbox].navbar-toggle:checked + label:active::before {
   background: rgba(255, 255, 255, 0.5);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27192%27 height=%27192%27 fill=%27%23FFFFFFFF%27 viewBox=%270 0 256 256%27%3E%3Crect width=%27256%27 height=%27256%27 fill=%27none%27%3E%3C/rect%3E%3Cline x1=%27200%27 y1=%2756%27 x2=%2756%27 y2=%27200%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3Cline x1=%27200%27 y1=%27200%27 x2=%2756%27 y2=%2756%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 2em;
 }
 input[type=checkbox].navbar-toggle:not(:checked) {
   position: absolute;
@@ -7132,35 +7131,28 @@ input[type=checkbox].navbar-toggle:not(:checked) + label ~ ul.navlinks {
   display: none;
 }
 input[type=checkbox].navbar-toggle:not(:checked) + label::before {
-  content: "";
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  content: "\f8ae";
+  font-family: Phosphor;
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
   display: inline-block;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 100vmax;
   flex-shrink: 0;
   flex-grow: 0;
-  transition: 250ms ease all;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  color: white;
   background: transparent;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27192%27 height=%27192%27 fill=%27%23FFFFFFFF%27 viewBox=%270 0 256 256%27%3E%3Crect width=%27256%27 height=%27256%27 fill=%27none%27%3E%3C/rect%3E%3Cline x1=%2740%27 y1=%27128%27 x2=%27216%27 y2=%27128%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3Cline x1=%2740%27 y1=%2764%27 x2=%27216%27 y2=%2764%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3Cline x1=%2740%27 y1=%27192%27 x2=%27216%27 y2=%27192%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 2em;
+  transition: 250ms ease background;
 }
 input[type=checkbox].navbar-toggle:not(:checked) + label:hover::before {
   background: rgba(255, 255, 255, 0.25);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27192%27 height=%27192%27 fill=%27%23FFFFFFFF%27 viewBox=%270 0 256 256%27%3E%3Crect width=%27256%27 height=%27256%27 fill=%27none%27%3E%3C/rect%3E%3Cline x1=%2740%27 y1=%27128%27 x2=%27216%27 y2=%27128%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3Cline x1=%2740%27 y1=%2764%27 x2=%27216%27 y2=%2764%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3Cline x1=%2740%27 y1=%27192%27 x2=%27216%27 y2=%27192%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 2em;
 }
 input[type=checkbox].navbar-toggle:not(:checked) + label:active::before {
   background: rgba(255, 255, 255, 0.5);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27192%27 height=%27192%27 fill=%27%23FFFFFFFF%27 viewBox=%270 0 256 256%27%3E%3Crect width=%27256%27 height=%27256%27 fill=%27none%27%3E%3C/rect%3E%3Cline x1=%2740%27 y1=%27128%27 x2=%27216%27 y2=%27128%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3Cline x1=%2740%27 y1=%2764%27 x2=%27216%27 y2=%2764%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3Cline x1=%2740%27 y1=%27192%27 x2=%27216%27 y2=%27192%27 stroke=%27%23FFFFFFFF%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%2716%27%3E%3C/line%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 2em;
 }
 
 .avatar, .avatar-lg, .avatar-md, .avatar-sm {
