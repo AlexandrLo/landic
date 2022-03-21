@@ -37,7 +37,7 @@ eval("var head = document.getElementsByTagName(\"head\")[0];\nvar link = documen
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var phosphor_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! phosphor-icons */ \"./node_modules/phosphor-icons/src/index.js\");\n/* harmony import */ var phosphor_icons__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(phosphor_icons__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n\n//# sourceURL=webpack://landify/./src/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./src/scss/style.scss\");\n/* harmony import */ var phosphor_icons__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! phosphor-icons */ \"./node_modules/phosphor-icons/src/index.js\");\n/* harmony import */ var phosphor_icons__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(phosphor_icons__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  let node = document.querySelector(\".preload\");\n  node.classList.remove(\"preload\");\n});\n\n\n//# sourceURL=webpack://landify/./src/js/app.js?");
 
 /***/ })
 

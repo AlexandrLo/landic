@@ -36,6 +36,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
 }
+body.preload {
+  transition: none !important;
+}
 
 ul[role=list],
 ol[role=list] {
