@@ -28,6 +28,9 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
+  &.preload {
+    transition: none !important;
+  }
 }
 
 ul[role="list"],
